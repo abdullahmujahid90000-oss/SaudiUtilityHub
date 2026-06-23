@@ -13,7 +13,15 @@
     { "source": "/eos-calculator-ar.html",      "destination": "/ar/eos-calculator-ar.html",       "permanent": true },
     { "source": "/iqama-expiry-ar.html",        "destination": "/ar/iqama-expiry-ar.html",         "permanent": true },
     { "source": "/vat-calculator-ar.html",      "destination": "/ar/vat-calculator-ar.html",       "permanent": true },
-    { "source": "/zakat-calculator-ar.html",    "destination": "/ar/zakat-calculator-ar.html",     "permanent": true }
+    { "source": "/zakat-calculator-ar.html",    "destination": "/ar/zakat-calculator-ar.html",     "permanent": true },
+    { "source": "/blog/driving-license-conversion.html",                "destination": "/driving-license-conversion.html",                "permanent": true },
+    { "source": "/blog/family-visit-visa-guide.html",                   "destination": "/family-visit-visa-guide.html",                   "permanent": true },
+    { "source": "/blog/iqama-expiry-calculator.html",                   "destination": "/iqama-expiry-calculator.html",                   "permanent": true },
+    { "source": "/blog/saudi-work-visa-types-2026.html",                "destination": "/saudi-work-visa-types-2026.html",                "permanent": true },
+    { "source": "/absher-guide-expats-2026.html",                      "destination": "/blog/absher-guide-expats-2026.html",            "permanent": true },
+    { "source": "/saudi-rental-law-expats-2026.html",                  "destination": "/blog/saudi-rental-law-expats-2026.html",        "permanent": true },
+    { "source": "/send-money-saudi-arabia-to-pakistan-2026.html",      "destination": "/blog/send-money-saudi-arabia-to-pakistan-2026.html", "permanent": true },
+    { "source": "/income-tax-calculator.html",                        "destination": "/salary-calculator.html",                        "permanent": true }
   ],
   "headers": [
     {
