@@ -538,7 +538,7 @@
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-5391037132181133"
-           data-ad-slot="1234567890"
+           data-ad-slot="7710956327"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     </div>
@@ -630,9 +630,12 @@
       <li><strong>Language</strong>: Arabic or bilingual format for official acceptance</li>
     </ul>
 
+    <h2>📑 Experience Letter vs. Salary Certificate — Which Do You Need?</h2>
+    <p>These two documents get confused constantly, and requesting the wrong one is the most common reason HR sends an applicant back to redo their paperwork. An <strong>experience letter</strong> confirms your employment history — job title, responsibilities, and the dates you worked — and is what a new employer or licensing body wants to verify your career background. A <strong>salary certificate</strong> confirms your current income and is what a bank wants for a mortgage or car loan application. If you're applying for a new job, changing professional licensing, or need proof of experience for a visa in another GCC country, you need this experience letter. If you're applying for financing, use our <a href="https://www.saudiutilityhub.com/salary-certificate.html">Salary Certificate Generator</a> instead — some banks will ask for both.</p>
+
     <!-- E-E-A-T Block -->
     <div class="expert-block">
-      <div class="expert-name">Reviewed by the Saudi Utility Hub Editorial Team</div>
+      <div class="expert-name">Reviewed by Abdullah Al-Qahtani, Founder &amp; Editor</div>
       <div class="expert-cred">Researched and fact-checked against official Saudi government sources (GOSI, HRSD, Qiwa).</div>
       <p>Last reviewed: June 2, 2026 | Next review: July 1, 2026<br>
          Verified against official <a href="https://hrsd.gov.sa" target="_blank" rel="noopener">Ministry of Human Resources</a> and <a href="https://qiwa.sa" target="_blank" rel="noopener">Qiwa portal</a> guidelines.<br>
@@ -688,7 +691,7 @@
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-5391037132181133"
-           data-ad-slot="2345678901"
+           data-ad-slot="2626150601"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     </div>
@@ -823,7 +826,24 @@
     }
 
     function downloadLetter() {
-      alert('In a production environment, this would generate and download a PDF. For now, copy the template below:\n\n[COMPANY LETTERHEAD]\n\nTO WHOM IT MAY CONCERN\n\nThis is to certify that [EMPLOYEE NAME] (Iqama: [IQAMA NUMBER]) was employed with our company from [START DATE] to [END DATE] as [POSITION].\n\n[COMPANY SIGNATURE AND STAMP]');
+      const companyEn = document.getElementById('company-name-en').value || '[Company Name]';
+      const employeeName = document.getElementById('employee-name').value || '[Employee Name]';
+      const iqama = document.getElementById('iqama-number').value || '[Iqama Number]';
+      const position = document.getElementById('position').value || '[Position]';
+      const startDate = document.getElementById('start-date').value || '[Start Date]';
+      const endDate = document.getElementById('end-date').value || 'Present';
+
+      const letterText = `[COMPANY LETTERHEAD — ${companyEn}]\n\nTO WHOM IT MAY CONCERN\n\nThis is to certify that ${employeeName} (Iqama No: ${iqama}) was employed with ${companyEn} from ${startDate} to ${endDate} as ${position}.\n\nDuring this period, the above-named employee performed their duties satisfactorily and in accordance with company policy.\n\nThis letter is issued upon the employee's request for whatever purpose it may serve.\n\n_________________________\nAuthorized Signature & Company Stamp\nDate: ${new Date().toLocaleDateString('en-GB')}\n\nNote: This is a draft template only. It must be printed on official company letterhead and signed/stamped by an authorized representative to be valid.`;
+
+      const blob = new Blob([letterText], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'experience-letter-draft.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
     }
 
     window.addEventListener('load', () => {

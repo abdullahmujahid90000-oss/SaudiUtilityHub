@@ -7,7 +7,5 @@ Allow: /
 # Internal/admin
 Disallow: /cdn-cgi/
 
-# AR/UR crawlable but noindex (lets Google cleanly drop them); re-enable post-AdSense.
-
 # Sitemap
 Sitemap: https://www.saudiutilityhub.com/sitemap.xml

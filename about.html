@@ -40,8 +40,30 @@
       "url": "https://www.saudiutilityhub.com/",
       "email": "saudiutilityhub@gmail.com",
       "areaServed": "SA",
-      "logo": "https://www.saudiutilityhub.com/og-image.png"
+      "logo": "https://www.saudiutilityhub.com/og-image.png",
+      "founder": {
+        "@type": "Person",
+        "name": "Abdullah Al-Qahtani",
+        "jobTitle": "Founder & Editor",
+        "url": "https://www.saudiutilityhub.com/about.html"
+      }
     }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abdullah Al-Qahtani",
+    "jobTitle": "Founder & Editor",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Saudi Utility Hub"
+    },
+    "url": "https://www.saudiutilityhub.com/about.html",
+    "email": "saudiutilityhub@gmail.com",
+    "knowsAbout": ["Saudi Labour Law", "GOSI", "Zakat", "Iqama & Visa Rules", "Saudi Banking & Remittance"]
   }
   </script>
 
@@ -55,7 +77,7 @@
         "name": "Who runs Saudi Utility Hub?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Saudi Utility Hub is independently operated by an editorial team organised into four desks — Labour & HR, Islamic Finance, Banking & Remittance, and Visa & Expat — each responsible for the accuracy of their respective tools. We are not affiliated with any Saudi government entity."
+          "text": "Saudi Utility Hub is founded and edited by Abdullah Al-Qahtani, a Saudi national based in Riyadh with a background in HR and payroll compliance, who built the site after years of processing GOSI, EOS, and Iqama paperwork professionally. Editorial review is organised into four focus areas — Labour & HR, Islamic Finance, Banking & Remittance, and Visa & Expat — and Abdullah is personally accountable for the accuracy of every tool. The site is not affiliated with any Saudi government entity."
         }
       },
       {
@@ -212,6 +234,34 @@
       color: #1e293b;
       font-size: 0.97rem;
     }
+    .founder-card {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      padding: 1.75rem;
+      margin: 1.5rem 0 2rem;
+      flex-wrap: wrap;
+    }
+    .founder-avatar {
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 1.75rem;
+      flex-shrink: 0;
+    }
+    .founder-name { font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 0.15rem; }
+    .founder-role { font-size: 0.9rem; color: var(--gray); margin-bottom: 0.5rem; }
+    .founder-card p { margin-bottom: 0; font-size: 0.95rem; }
     .team-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -414,7 +464,7 @@
 
     <div class="stats-row">
       <div class="stat-box">
-        <div class="stat-number">50+</div>
+        <div class="stat-number">35+</div>
         <div class="stat-label">Free Tools & Guides</div>
       </div>
       <div class="stat-box">
@@ -432,7 +482,16 @@
     </div>
 
     <h2>Why We Built This</h2>
-    <p>Saudi Utility Hub started from a personal frustration: figuring out an accurate GOSI deduction, an EOS gratuity estimate, or an Iqama renewal deadline meant piecing together information scattered across government portals, outdated forum posts, and conflicting blog articles — many written by people who had never actually gone through the process themselves. We built the first calculator for our own use, shared it with colleagues, and kept expanding it as we ran into the same recurring questions everyone living and working in Saudi Arabia eventually asks. Every tool on this site exists because it solved a real problem for someone first.</p>
+    <p>Saudi Utility Hub started from professional necessity. Its founder, Abdullah Al-Qahtani, spent years handling GOSI contributions, end-of-service settlements, and Iqama renewals for his company's workforce, and saw the same problem play out constantly: accurate answers were scattered across government portals, outdated forum posts, and conflicting blog articles — many written by people who had never actually processed these cases themselves. He built the first calculator to speed up his own daily work, shared it with colleagues in HR, and kept expanding it as the same recurring questions kept coming up from employees and employers across the Kingdom. Every tool on this site exists because it solved a real problem for someone first.</p>
+
+    <div class="founder-card">
+      <div class="founder-avatar" aria-hidden="true">AA</div>
+      <div>
+        <div class="founder-name">Abdullah Al-Qahtani</div>
+        <div class="founder-role">Founder &amp; Editor, Saudi Utility Hub · Based in Riyadh, Saudi Arabia</div>
+        <p>Abdullah is a Saudi national based in Riyadh with a background in HR and payroll compliance, where processing GOSI contributions, end-of-service gratuity, and Iqama paperwork for employees was part of his daily work. That hands-on experience with the official rules is what led him to start building the calculators that became this site. He now oversees editorial accuracy across every tool and personally reviews reader-submitted corrections — see <a href="https://www.saudiutilityhub.com/contact.html">Contact</a> to reach him directly.</p>
+      </div>
+    </div>
 
     <h2>Our Mission</h2>
 
@@ -467,27 +526,28 @@
     </ol>
     <p>Last full site audit: <strong>June 1, 2026</strong>. Next scheduled audit: <strong>July 1, 2026</strong>.</p>
 
-    <h2>Our Editorial Team</h2>
+    <h2>How Editorial Review Is Organised</h2>
+    <p>Abdullah is the sole editor and is personally accountable for everything published on Saudi Utility Hub. To keep review consistent, each tool is checked against sources within one of four focus areas:</p>
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-card-title">Labour & HR Desk</div>
+        <div class="team-card-title">Labour & HR</div>
         <div class="team-card-role">GOSI · EOS · Salary · Iqama</div>
-        <p>Maintains all employment-related tools. Figures sourced from GOSI, the Ministry of Human Resources and Social Development, and the Saudi Labour Law.</p>
+        <p>Covers all employment-related tools. Figures sourced from GOSI, the Ministry of Human Resources and Social Development, and the Saudi Labour Law.</p>
       </div>
       <div class="team-card">
-        <div class="team-card-title">Islamic Finance Desk</div>
+        <div class="team-card-title">Islamic Finance</div>
         <div class="team-card-role">Zakat · Gold · Islamic Finance</div>
-        <p>Maintains Zakat, gold, silver, and Islamic finance tools, with calculations based on published rulings from recognised fiqh authorities.</p>
+        <p>Covers Zakat, gold, silver, and Islamic finance tools, with calculations based on published rulings from recognised fiqh authorities.</p>
       </div>
       <div class="team-card">
-        <div class="team-card-title">Banking & Remittance Desk</div>
+        <div class="team-card-title">Banking & Remittance</div>
         <div class="team-card-role">Currency · Money Transfer · IBAN</div>
-        <p>Maintains currency, IBAN, and money-transfer tools. Rates and rules checked against SAMA and major Saudi banks.</p>
+        <p>Covers currency, IBAN, and money-transfer tools. Rates and rules checked against SAMA and major Saudi banks.</p>
       </div>
       <div class="team-card">
-        <div class="team-card-title">Visa & Expat Desk</div>
+        <div class="team-card-title">Visa & Expat</div>
         <div class="team-card-role">Visas · Iqama · Residency</div>
-        <p>Maintains Iqama, visa, and residency tools. Information sourced from the Jawazat (Passports Authority), Absher, and Muqeem portals.</p>
+        <p>Covers Iqama, visa, and residency tools. Information sourced from the Jawazat (Passports Authority), Absher, and Muqeem portals.</p>
       </div>
     </div>
 
@@ -497,7 +557,7 @@
     </div>
 
     <h2>Transparency & Monetisation</h2>
-    <p>Saudi Utility Hub is independently operated and is not affiliated with any Saudi government entity, though we strive to reflect official policies accurately.</p>
+    <p>Saudi Utility Hub is independently operated by Abdullah Al-Qahtani and is not affiliated with any Saudi government entity, though we strive to reflect official policies accurately.</p>
     <p>This site is free to use. We cover running costs through Google AdSense advertising and select affiliate partnerships with financial service providers. Affiliate links are clearly disclosed and never influence our calculations or recommendations.</p>
 
     <h2>Contact & Feedback</h2>
@@ -513,7 +573,7 @@
     <h2>❓ Frequently Asked Questions</h2>
     <div class="faq-item">
       <div class="faq-question">Who runs Saudi Utility Hub?</div>
-      <div>Saudi Utility Hub is independently operated by an editorial team organised into four desks — Labour & HR, Islamic Finance, Banking & Remittance, and Visa & Expat — each responsible for the accuracy of their respective tools. We are not affiliated with any Saudi government entity.</div>
+      <div>Saudi Utility Hub is founded and edited by Abdullah Al-Qahtani, a Saudi national based in Riyadh with a background in HR and payroll compliance, who built the site after years of processing GOSI, EOS, and Iqama paperwork professionally. Editorial review is organised into four focus areas — Labour & HR, Islamic Finance, Banking & Remittance, and Visa & Expat — and Abdullah is personally accountable for the accuracy of every tool. The site is not affiliated with any Saudi government entity.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question">How do you verify your calculators are accurate?</div>

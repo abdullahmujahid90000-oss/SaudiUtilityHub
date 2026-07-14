@@ -543,7 +543,7 @@
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-5391037132181133"
-           data-ad-slot="1234567890"
+           data-ad-slot="7710956327"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     </div>
@@ -646,9 +646,12 @@
     </ul>
     <p>If you meet these conditions, your employer cannot legally prevent your transfer, even without providing NOC.</p>
 
+    <h2>👨‍👩‍👧 NOC for Family Visit Visa — What Sponsors Need to Know</h2>
+    <p>Of the five NOC types this generator covers, the family-visit sponsorship NOC has the strictest documentation requirements because it's reviewed by the Jawazat (Passports Directorate), not just your employer's HR. Beyond the standard company letterhead and no-objection clause, most family-visit NOCs also require your Iqama profession to be listed as eligible for family sponsorship (not all professions qualify), proof your salary meets the minimum sponsorship threshold, and a copy of your Iqama attached to the letter. Submit the NOC alongside your Absher family-visit application — a letter alone, without the Absher request, will not move your visa forward.</p>
+
     <!-- E-E-A-T Block -->
     <div class="expert-block">
-      <div class="expert-name">Reviewed by the Saudi Utility Hub Editorial Team</div>
+      <div class="expert-name">Reviewed by Abdullah Al-Qahtani, Founder &amp; Editor</div>
       <div class="expert-cred">Researched and fact-checked against official Saudi government sources (GOSI, HRSD, Qiwa).</div>
       <p>Last reviewed: June 2, 2026 | Next review: July 1, 2026<br>
          Verified against official <a href="https://hrsd.gov.sa" target="_blank" rel="noopener">Ministry of Human Resources</a> and <a href="https://qiwa.sa" target="_blank" rel="noopener">Qiwa portal</a> guidelines.<br>
@@ -704,7 +707,7 @@
       <ins class="adsbygoogle"
            style="display:block"
            data-ad-client="ca-pub-5391037132181133"
-           data-ad-slot="2345678901"
+           data-ad-slot="2626150601"
            data-ad-format="auto"
            data-full-width-responsive="true"></ins>
     </div>
@@ -841,7 +844,31 @@
     }
 
     function downloadNOC() {
-      alert('In a production environment, this would generate and download a PDF. For now, copy the template below:\n\n[COMPANY LETTERHEAD]\n\nTO WHOM IT MAY CONCERN\n\nThis is to certify that [EMPLOYEE NAME] (Iqama: [IQAMA NUMBER]) is employed with our company as [POSITION].\n\nWe have no objection to [PURPOSE OF NOC].\n\n[COMPANY SIGNATURE AND STAMP]');
+      const companyEn = document.getElementById('company-name-noc-en').value || '[Company Name]';
+      const employeeName = document.getElementById('employee-name-noc').value || '[Employee Name]';
+      const iqama = document.getElementById('iqama-number-noc').value || '[Iqama Number]';
+      const position = document.getElementById('position-noc').value || '[Position]';
+      const purposeMap = {
+        'visa-transfer': 'the transfer of the employee\'s sponsorship (Iqama) to a new employer',
+        'family-visit': 'the sponsorship of a family visit visa',
+        'final-exit': 'the employee\'s final exit from the Kingdom of Saudi Arabia',
+        'job-change': 'a change of the employee\'s job category / profession',
+        'other': '[state purpose]'
+      };
+      const purposeSelect = document.getElementById('noc-purpose');
+      const purpose = purposeMap[purposeSelect.value] || purposeMap['other'];
+
+      const nocText = `[COMPANY LETTERHEAD — ${companyEn}]\n\nTO WHOM IT MAY CONCERN\n\nThis is to certify that ${employeeName} (Iqama No: ${iqama}) is employed with ${companyEn} as ${position}.\n\nWe, the undersigned, hereby confirm that we have NO OBJECTION to ${purpose}.\n\nThis No Objection Certificate is issued upon the employee's request for submission to the relevant authority.\n\n_________________________\nAuthorized Signature & Company Stamp\nDate: ${new Date().toLocaleDateString('en-GB')}\n\nNote: This is a draft template only. It must be printed on official company letterhead and signed/stamped by an authorized representative to be valid.`;
+
+      const blob = new Blob([nocText], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'noc-letter-draft.txt';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
     }
 
     window.addEventListener('load', () => {
