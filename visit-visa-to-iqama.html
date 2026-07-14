@@ -384,6 +384,49 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
     </div>
   </div>
 
+  <!-- Interactive calculator -->
+  <div class="card" id="calc">
+    <h2>🧮 Child Iqama Conversion Cost Calculator</h2>
+    <p style="color:#555;font-size:.92rem;margin-bottom:1rem">Enter how many children you're converting from visit visa to Iqama and get your total estimated cost for the first year, including the dependent levy.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+      <div>
+        <label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.4rem">Number of children converting</label>
+        <input type="number" id="calcKids" value="1" min="1" max="10" step="1" style="width:100%;padding:.65rem .8rem;border:2px solid #e5e7eb;border-radius:8px;font-size:.95rem" oninput="calcVisitToIqama()">
+      </div>
+      <div>
+        <label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.4rem">Health insurance class</label>
+        <select id="calcInsurance" style="width:100%;padding:.65rem .8rem;border:2px solid #e5e7eb;border-radius:8px;font-size:.95rem" onchange="calcVisitToIqama()">
+          <option value="400">Class C — approx SAR 400/child</option>
+          <option value="600" selected>Class B — approx SAR 600/child</option>
+          <option value="800">Class A — approx SAR 800/child</option>
+        </select>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+      <div>
+        <label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.4rem">Medical test cost per child (SAR)</label>
+        <input type="number" id="calcMedical" value="300" min="0" step="10" style="width:100%;padding:.65rem .8rem;border:2px solid #e5e7eb;border-radius:8px;font-size:.95rem" oninput="calcVisitToIqama()">
+      </div>
+      <div>
+        <label style="display:block;font-weight:600;font-size:.88rem;margin-bottom:.4rem">Months of dependent levy this year</label>
+        <input type="number" id="calcLevyMonths" value="9" min="0" max="12" step="1" style="width:100%;padding:.65rem .8rem;border:2px solid #e5e7eb;border-radius:8px;font-size:.95rem" oninput="calcVisitToIqama()">
+        <div style="font-size:.78rem;color:#888;margin-top:.3rem">First 90 days are levy-free as a new entrant, so 9 months is typical for year one.</div>
+      </div>
+    </div>
+    <table class="fee-table" style="margin-top:1rem">
+      <thead><tr><th>Item</th><th>Per Child</th><th>Total (<span id="calcKidsLabel">1</span> children)</th></tr></thead>
+      <tbody>
+        <tr><td>Family Visa / Iqama Issuance</td><td>SAR 2,000</td><td id="calcRowVisa">SAR 2,000</td></tr>
+        <tr><td>Iqama Card Printing</td><td>SAR 200</td><td id="calcRowPrint">SAR 200</td></tr>
+        <tr><td>Medical Test</td><td id="calcRowMedicalPer">SAR 300</td><td id="calcRowMedical">SAR 300</td></tr>
+        <tr><td>Health Insurance</td><td id="calcRowInsPer">SAR 600</td><td id="calcRowIns">SAR 600</td></tr>
+        <tr><td>Dependent Levy (SAR 400/month)</td><td id="calcRowLevyPer">SAR 3,600</td><td id="calcRowLevy">SAR 3,600</td></tr>
+        <tr class="total-row"><td>Total (first year)</td><td id="calcRowTotalPer">SAR 6,700</td><td id="calcRowTotal">SAR 6,700</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:.8rem;color:#888;margin-top:.75rem">Estimate only — actual medical, insurance and levy costs vary by provider and case. Twins/multiple children are always charged per child, with no family discount.</p>
+  </div>
+
   <!-- Wife process -->
   <div class="card">
     <h2>👩 Wife's Visit Visa Expired / About to Expire — What To Do</h2>
@@ -619,5 +662,33 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
   </div>
 </footer>
 
+<script>
+function calcVisitToIqama(){
+  var kids = parseInt(document.getElementById('calcKids').value) || 1;
+  var insurance = parseFloat(document.getElementById('calcInsurance').value) || 0;
+  var medical = parseFloat(document.getElementById('calcMedical').value) || 0;
+  var levyMonths = parseFloat(document.getElementById('calcLevyMonths').value) || 0;
+
+  var visaPer = 2000, printPer = 200;
+  var levyPer = levyMonths * 400;
+  var totalPer = visaPer + printPer + medical + insurance + levyPer;
+  var totalAll = totalPer * kids;
+
+  var fmt = function(v){ return 'SAR ' + v.toLocaleString('en',{minimumFractionDigits:0,maximumFractionDigits:0}); };
+
+  document.getElementById('calcKidsLabel').textContent = kids;
+  document.getElementById('calcRowVisa').textContent = fmt(visaPer * kids);
+  document.getElementById('calcRowPrint').textContent = fmt(printPer * kids);
+  document.getElementById('calcRowMedicalPer').textContent = fmt(medical);
+  document.getElementById('calcRowMedical').textContent = fmt(medical * kids);
+  document.getElementById('calcRowInsPer').textContent = fmt(insurance);
+  document.getElementById('calcRowIns').textContent = fmt(insurance * kids);
+  document.getElementById('calcRowLevyPer').textContent = fmt(levyPer);
+  document.getElementById('calcRowLevy').textContent = fmt(levyPer * kids);
+  document.getElementById('calcRowTotalPer').textContent = fmt(totalPer);
+  document.getElementById('calcRowTotal').textContent = fmt(totalAll);
+}
+document.addEventListener('DOMContentLoaded', calcVisitToIqama);
+</script>
 </body>
 </html>

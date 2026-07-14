@@ -153,6 +153,59 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <header><div class="header-inner"><a href="index.html" class="logo">Saudi<span style="color:#f0a500">Utility</span>Hub</a><a href="index.html" class="back-btn">← All Tools</a></div></header>
 <div class="page-hero"><div class="badge">📋 Tax Guide</div><h1>Saudi Arabia VAT <span>15% Explained</span></h1><p>Complete guide to VAT in KSA — who pays, what is exempt, how to register</p></div>
 <div class="ad-zone"></div>
+<div class="main-wrap">
+  <div class="calc-card">
+    <div class="calc-header">
+      <h2>🧾 VAT Calculator (15%)</h2>
+      <p>Add or remove Saudi VAT from any amount instantly</p>
+    </div>
+    <div class="calc-body">
+      <div class="field-group">
+        <label for="vatAmount">Amount (SAR)</label>
+        <input type="number" id="vatAmount" placeholder="e.g. 1000" min="0" step="0.01" oninput="calcVAT()">
+      </div>
+      <div class="field-group">
+        <label for="vatMode">Calculation type</label>
+        <select id="vatMode" onchange="calcVAT()">
+          <option value="add">Add 15% VAT (amount is before tax)</option>
+          <option value="remove">Remove 15% VAT (amount already includes tax)</option>
+        </select>
+      </div>
+      <button class="calc-btn" onclick="calcVAT()">Calculate VAT</button>
+      <div class="results-section" id="vatResults">
+        <div class="result-hero">
+          <div class="label">VAT Amount (15%)</div>
+          <div class="amount" id="vatAmountOut">SAR 0.00</div>
+          <div class="sub" id="vatModeNote">Added to your base price</div>
+        </div>
+        <div class="result-breakdown">
+          <div class="result-row"><span class="r-label">Price before VAT</span><span class="r-value" id="vatBaseOut">SAR 0.00</span></div>
+          <div class="result-row"><span class="r-label">VAT (15%)</span><span class="r-value" id="vatTaxOut">SAR 0.00</span></div>
+          <div class="result-row total-row"><span class="r-label">Total price with VAT</span><span class="r-value" id="vatTotalOut">SAR 0.00</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sidebar">
+    <div class="side-card">
+      <h3>VAT Quick Facts</h3>
+      <div class="info-row"><span>Standard rate</span><span>15%</span></div>
+      <div class="info-row"><span>Effective since</span><span>1 July 2020</span></div>
+      <div class="info-row"><span>Mandatory registration</span><span>&gt; SAR 375,000/yr</span></div>
+      <div class="info-row"><span>Voluntary registration</span><span>SAR 187,500–375,000</span></div>
+      <div class="info-row"><span>Regulator</span><span>ZATCA</span></div>
+    </div>
+    <div class="side-card">
+      <h3>Before You Calculate</h3>
+      <ul class="tip-list">
+        <li>Displayed prices in Saudi shops already include VAT — use "Remove VAT" to see the base price</li>
+        <li>B2B quotes are often shown before VAT — use "Add VAT" to get the final payable amount</li>
+        <li>Basic groceries, healthcare, and education are typically zero-rated or exempt</li>
+        <li>Need the full breakdown for a large invoice? Try the <a href="vat-calculator.html" style="color:var(--green);font-weight:600">standalone VAT Calculator</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
 <div class="content-section" style="padding-top:24px;">
 <div class="content-card">
 <h2>Saudi Arabia VAT — Complete Guide 2026</h2>
@@ -221,10 +274,34 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <a href="vat-calculator.html" style="display:inline-block;background:var(--green);color:white;border-radius:8px;padding:14px 28px;font-weight:700;margin-top:16px;">Calculate VAT Now →</a>
 </div>
 <div class="content-card"><h2>Frequently Asked Questions</h2><div class="faq-item"><div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">When was Saudi VAT introduced?<span class="arrow">▾</span></div><div class="faq-a">VAT was introduced at 5% on January 1, 2018, and raised to 15% on July 1, 2020 to support government revenues during COVID-19.</div></div><div class="faq-item"><div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">Are supermarket groceries subject to VAT in Saudi Arabia?<span class="arrow">▾</span></div><div class="faq-a">Basic food items (staples, vegetables, dairy) are generally zero-rated. However, prepared foods, snacks, soft drinks, and restaurant meals are taxable at 15%.</div></div><div class="faq-item"><div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">How do I get a VAT invoice in Saudi Arabia?<span class="arrow">▾</span></div><div class="faq-a">Businesses registered for VAT must issue tax invoices for taxable sales. The invoice must include the ZATCA VAT number, tax amount, and QR code for simplified invoices.</div></div><div class="faq-item"><div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">What happens if I file my VAT return late?<span class="arrow">▾</span></div><div class="faq-a">Late filing incurs a penalty of 5% to 25% of the unpaid tax depending on the delay, plus a separate 5% penalty for every 30 days the payment remains outstanding.</div></div><div class="faq-item"><div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">Do freelancers in Saudi Arabia need to register for VAT?<span class="arrow">▾</span></div><div class="faq-a">Only if annual taxable income exceeds SAR 375,000 (mandatory) or is between SAR 187,500 and SAR 375,000 (optional). Below SAR 187,500, no registration is required, though voluntary registration can allow reclaiming input VAT on business expenses.</div></div><div class="faq-item"><div class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">Is Saudi Arabia's VAT rate the highest in the Gulf?<span class="arrow">▾</span></div><div class="faq-a">Yes. At 15%, Saudi Arabia has the highest standard VAT rate in the GCC, compared to 5% in the UAE and Oman, and 10% in Bahrain. Qatar and Kuwait had not implemented VAT as of 2026.</div></div></div>
-<div class="content-card"><h2>More Free KSA Tools</h2><div class="tools-grid"><a href="gold-zakat-calculator.html"><div class="tool-mini"><div class="t-icon">🌙</div><div class="t-name">Gold Zakat</div><div class="t-desc">Zakat on gold</div></div></a><a href="vat-calculator.html"><div class="tool-mini"><div class="t-icon">🧾</div><div class="t-name">VAT 15%</div><div class="t-desc">Add/remove VAT</div></div></a><a href="ksa-eos-calculator.html"><div class="tool-mini"><div class="t-icon">🤝</div><div class="t-name">EOS Calc</div><div class="t-desc">Gratuity</div></div></a><a href="salary-calculator.html"><div class="tool-mini"><div class="t-icon">💼</div><div class="t-name">Salary</div><div class="t-desc">Take-home pay</div></div></a><a href="gosi-calculator.html"><div class="tool-mini"><div class="t-icon">🏛️</div><div class="t-name">GOSI</div><div class="t-desc">Insurance</div></div></a><a href="car-finance-calculator.html"><div class="tool-mini"><div class="t-icon">🚗</div><div class="t-name">Car Finance</div><div class="t-desc">Monthly payments</div></div></a><a href="mortgage-calculator.html"><div class="tool-mini"><div class="t-icon">🏠</div><div class="t-name">Mortgage</div><div class="t-desc">Home loan</div></div></a><a href="dependent-levy-calculator.html"><div class="tool-mini"><div class="t-icon">👨‍👩‍👧‍👦</div><div class="t-name">Dependent Levy</div><div class="t-desc">Family fees</div></div></a><a href="iqama-expiry-calculator.html"><div class="tool-mini"><div class="t-icon">🪪</div><div class="t-name">Iqama</div><div class="t-desc">Expiry tracker</div></div></a><a href="currency-converter.html"><div class="tool-mini"><div class="t-icon">💱</div><div class="t-name">Currency</div><div class="t-desc">Exchange rates</div></div></a><a href="remittance-fee-compare.html"><div class="tool-mini"><div class="t-icon">💸</div><div class="t-name">Remittance</div><div class="t-desc">Compare fees</div></div></a><a href="vat-calculator.html"><div class="tool-mini"><div class="t-icon">⚖️</div><div class="t-name">BMI</div><div class="t-desc">Health check</div></div></a></div></div>
+<div class="content-card"><h2>More Free KSA Tools</h2><div class="tools-grid"><a href="gold-zakat-calculator.html"><div class="tool-mini"><div class="t-icon">🌙</div><div class="t-name">Gold Zakat</div><div class="t-desc">Zakat on gold</div></div></a><a href="vat-calculator.html"><div class="tool-mini"><div class="t-icon">🧾</div><div class="t-name">VAT 15%</div><div class="t-desc">Add/remove VAT</div></div></a><a href="ksa-eos-calculator.html"><div class="tool-mini"><div class="t-icon">🤝</div><div class="t-name">EOS Calc</div><div class="t-desc">Gratuity</div></div></a><a href="salary-calculator.html"><div class="tool-mini"><div class="t-icon">💼</div><div class="t-name">Salary</div><div class="t-desc">Take-home pay</div></div></a><a href="gosi-calculator.html"><div class="tool-mini"><div class="t-icon">🏛️</div><div class="t-name">GOSI</div><div class="t-desc">Insurance</div></div></a><a href="car-finance-calculator.html"><div class="tool-mini"><div class="t-icon">🚗</div><div class="t-name">Car Finance</div><div class="t-desc">Monthly payments</div></div></a><a href="mortgage-calculator.html"><div class="tool-mini"><div class="t-icon">🏠</div><div class="t-name">Mortgage</div><div class="t-desc">Home loan</div></div></a><a href="dependent-levy-calculator.html"><div class="tool-mini"><div class="t-icon">👨‍👩‍👧‍👦</div><div class="t-name">Dependent Levy</div><div class="t-desc">Family fees</div></div></a><a href="iqama-expiry-calculator.html"><div class="tool-mini"><div class="t-icon">🪪</div><div class="t-name">Iqama</div><div class="t-desc">Expiry tracker</div></div></a><a href="currency-converter.html"><div class="tool-mini"><div class="t-icon">💱</div><div class="t-name">Currency</div><div class="t-desc">Exchange rates</div></div></a><a href="remittance-fee-compare.html"><div class="tool-mini"><div class="t-icon">💸</div><div class="t-name">Remittance</div><div class="t-desc">Compare fees</div></div></a><a href="traffic-fine-calculator.html"><div class="tool-mini"><div class="t-icon">🚦</div><div class="t-name">Traffic Fines</div><div class="t-desc">Check &amp; pay</div></div></a></div></div>
 </div>
 <p style="font-size:.78rem;color:#6b7280;text-align:center;max-width:900px;margin:14px auto 0;padding:0 20px">Sources: Zakat, Tax and Customs Authority (ZATCA) VAT regulations and public guidance. Figures and rules are set by the issuing authority and may change — verify current details on the official portal before relying on them. Last reviewed: June 2026.</p>
 <div style="max-width:900px;margin:0 auto;padding:0 20px 28px;"><p style="font-size:12px;color:#666;background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;margin:0;">⚠️ <strong>Disclaimer:</strong> All results are estimates based on publicly available Saudi government regulations and rates. Always verify important financial or legal decisions with your employer, bank, or the relevant Saudi authority (Ministry of Human Resources, GOSI, ZATCA, Jawazat, or SAMA).</p></div>
 <footer><div class="footer-inner"><p>© 2026 Saudi Utility Hub — Estimates only.</p><div class="footer-links"><a href="index.html">Home</a><a href="gold-zakat-calculator.html">Zakat</a><a href="salary-calculator.html">Salary</a><a href="vat-calculator.html">VAT</a><a href="ksa-eos-calculator.html">EOS</a><a href="remittance-fee-compare.html">Remittance</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></div></div></footer>
-<script>document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.closest('.faq-item').classList.toggle('open')));</script>
+<script>document.querySelectorAll('.faq-q').forEach(q=>q.addEventListener('click',()=>q.closest('.faq-item').classList.toggle('open')));
+
+function calcVAT(){
+  var amount = parseFloat(document.getElementById('vatAmount').value) || 0;
+  var mode = document.getElementById('vatMode').value;
+  var base, tax, total;
+  if(mode === 'add'){
+    base = amount;
+    total = amount * 1.15;
+    tax = total - base;
+  } else {
+    total = amount;
+    base = amount / 1.15;
+    tax = total - base;
+  }
+  var fmt = function(v){ return 'SAR ' + v.toLocaleString('en',{minimumFractionDigits:2,maximumFractionDigits:2}); };
+  document.getElementById('vatAmountOut').textContent = fmt(tax);
+  document.getElementById('vatModeNote').textContent = mode === 'add' ? 'Added to your base price' : 'Included in your total price';
+  document.getElementById('vatBaseOut').textContent = fmt(base);
+  document.getElementById('vatTaxOut').textContent = fmt(tax);
+  document.getElementById('vatTotalOut').textContent = fmt(total);
+  document.getElementById('vatResults').classList.add('show');
+}
+document.addEventListener('DOMContentLoaded', calcVAT);
+</script>
 </body></html>

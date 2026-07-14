@@ -121,6 +121,29 @@ ul,ol{margin:0 0 14px 22px;font-size:.93rem;line-height:1.65;}
 <h1>Saudi 5-Year Resident ID (Muqeem Card) — Full 2026 Guide</h1>
 <p class="page-meta">Updated May 2026 · Based on Jawazat &amp; Absher official announcements</p>
 <div class="info-box">🪪 Saudi Arabia rolled out a new <strong>physical Resident ID card valid for 5 years</strong> in 2026. Important: <strong>the card lasts 5 years, but your underlying Iqama (residency) still renews annually</strong>. This guide explains exactly what changed, what you need to do, and what stays the same.</div>
+<div class="calc-card" id="cardCalc">
+<h2>🧮 When Will I Get My 5-Year Card?</h2>
+<p style="font-size:0.88rem;color:var(--muted);margin-bottom:14px">Enter your next Iqama renewal date (or current card expiry) to see your renewal deadline and roughly when your new 5-year card itself will need replacing.</p>
+<div class="field">
+<label for="renewalDate">Next Iqama Renewal / Current Card Expiry Date</label>
+<input type="date" id="renewalDate" onchange="calcCardTimeline()">
+<div class="field-hint">Find this date on your current Iqama card or in Absher → My Profile.</div>
+</div>
+<button class="calc-btn" onclick="calcCardTimeline()">Calculate</button>
+<div class="results" id="cardResults">
+<div class="result-hero">
+<span class="lbl">Days Until Your Iqama Renewal</span>
+<span class="big" id="daysToRenewal">—</span>
+<span class="sub" id="renewalUrgency"></span>
+</div>
+<div class="result-grid">
+<div class="rg-item"><span class="rl">Annual Iqama Fee Due</span><span class="rv">SAR 650</span></div>
+<div class="rg-item"><span class="rl">New 5-Year Card Expiry (est.)</span><span class="rv" id="cardExpiryDate">—</span></div>
+</div>
+<div class="info-box">Remember: this only estimates your <strong>physical card's</strong> 5-year lifespan starting from your next renewal. Your <strong>Iqama residency itself still renews every year</strong> — the SAR 650 fee is due annually regardless of how many years remain on the card.</div>
+</div>
+</div>
+
 <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5391037132181133" data-ad-slot="7710956327" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
 <h2>What Exactly Is the New 5-Year Resident ID?</h2>
 <p>In late 2025, the Saudi General Directorate of Passports (Jawazat) announced a new generation of physical Iqama cards. Unlike the old card which had to be physically replaced every year at renewal, the new card is <strong>valid for 5 years</strong> from issuance.</p>
@@ -225,6 +248,36 @@ ul,ol{margin:0 0 14px 22px;font-size:.93rem;line-height:1.65;}
 document.querySelectorAll('.faq-q').forEach(q=>{
   q.onclick=()=>{q.parentElement.classList.toggle('open');};
 });
+
+function calcCardTimeline(){
+  var val = document.getElementById('renewalDate').value;
+  if(!val) return;
+  var renewal = new Date(val + 'T00:00:00');
+  var today = new Date();
+  today.setHours(0,0,0,0);
+  var msPerDay = 1000*60*60*24;
+  var days = Math.round((renewal - today) / msPerDay);
+
+  var daysEl = document.getElementById('daysToRenewal');
+  var urgencyEl = document.getElementById('renewalUrgency');
+  if(days < 0){
+    daysEl.textContent = Math.abs(days) + ' days overdue';
+    urgencyEl.textContent = '⚠️ Renew now — SAR 500/month late penalty applies';
+  } else if(days === 0){
+    daysEl.textContent = 'Today';
+    urgencyEl.textContent = 'Renew today to avoid penalties';
+  } else {
+    daysEl.textContent = days;
+    urgencyEl.textContent = days <= 30 ? '⚠️ Renew soon — within 30 days' : 'days remaining until renewal';
+  }
+
+  var cardExpiry = new Date(renewal);
+  cardExpiry.setFullYear(cardExpiry.getFullYear() + 5);
+  var opts = { day: 'numeric', month: 'long', year: 'numeric' };
+  document.getElementById('cardExpiryDate').textContent = cardExpiry.toLocaleDateString('en-GB', opts);
+
+  document.getElementById('cardResults').classList.add('show');
+}
 </script>
 </body>
 </html>

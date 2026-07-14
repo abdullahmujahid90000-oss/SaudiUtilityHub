@@ -199,6 +199,20 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
     <p>Saudi Arabia offers several work-related visa categories: the standard <strong>Work Visa (Iqama)</strong>, <strong>Freelance/Self-Employment Visa</strong>, <strong>Premium Residency (Green Card)</strong>, <strong>Seasonal Work Visa</strong>, and the <strong>Visit Visa with work permission</strong>. Each has different costs, eligibility rules, and rights. The most common for expats is the employer-sponsored Work Visa leading to an Iqama.</p>
   </div>
 
+  <div class="visa-card" id="visa-finder" style="border:2px solid #22c55e">
+    <h3>🧭 Which Work Visa Do I Need?</h3>
+    <p style="font-size:0.9rem;color:#374151;margin-bottom:14px">Answer one question and get a recommended visa category for your situation.</p>
+    <label style="display:block;font-weight:700;font-size:0.85rem;margin-bottom:8px;color:#0f172a">My situation is:</label>
+    <select id="visaSituation" onchange="findVisaType()" style="width:100%;padding:10px 12px;border:2px solid #e2e8f0;border-radius:8px;font-size:0.92rem;font-family:inherit;margin-bottom:14px">
+      <option value="job">I have (or am seeking) a job offer from a Saudi employer</option>
+      <option value="invest">I want to invest, start a business, or qualify by high net worth — with no employer sponsor</option>
+      <option value="freelance">I'm a skilled independent professional (IT, design, consulting, media) with my own clients</option>
+      <option value="seasonal">I'm coming for short-term seasonal work (Hajj/Umrah, agriculture, events, hospitality)</option>
+      <option value="family">I'm joining a spouse or parent who already holds an Iqama</option>
+    </select>
+    <div id="visaResult" style="background:#f0fdf4;border-left:4px solid #22c55e;border-radius:0 8px 8px 0;padding:14px 18px;font-size:0.9rem;color:#14532d"></div>
+  </div>
+
   <div class="ad-box"></div>
 
   <h2>Why Your Visa Type Matters</h2>
@@ -407,6 +421,19 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
       item.classList.toggle('open');
     });
   });
+
+  var VISA_RESULTS = {
+    job: "<strong>Recommended: Standard Work Visa → Iqama.</strong> Since you have or are seeking an employer-sponsored role, your employer applies for your work visa through HRSD/Qiwa, and it converts to an Iqama once you arrive. Cost: ~SAR 650/year for the Iqama. Check your renewal status anytime with the <a href=\"https://www.saudiutilityhub.com/iqama-expiry-calculator.html\">Iqama Expiry Tracker</a>.",
+    invest: "<strong>Recommended: Premium Residency (Green Card).</strong> With no employer sponsor needed, this suits investors, entrepreneurs, and high-net-worth applicants. Choose the SAR 800,000 one-time permanent option or SAR 100,000/year renewable option. You can freely change jobs or start a business without a Saudi partner.",
+    freelance: "<strong>Recommended: Freelance / Self-Employment Visa.</strong> Issued through HRSD for skilled professionals in eligible fields (IT, design, consulting, media) with SAR 500-2,000 in fees. No sponsor required, but you must arrange your own health insurance and cannot sponsor dependents on this permit alone. Apply via <a href=\"https://qiwa.sa\" target=\"_blank\" rel=\"noopener\">qiwa.sa</a>.",
+    seasonal: "<strong>Recommended: Seasonal / Temporary Work Visa.</strong> Suited to Hajj/Umrah, agriculture, hospitality, and event-driven roles, typically 3-6 months and tied to a licensed Saudi employer. Not renewable — you exit the Kingdom once the visa/project ends. You still get full Labour Law protections (rest periods, overtime, proportional end-of-service) during your stay.",
+    family: "<strong>Recommended: Dependent Iqama (via your sponsor's residency).</strong> You don't need your own work visa — your sponsor (spouse or parent) adds you as a dependent, and the Dependent Levy of SAR 400/month applies per dependent. Estimate the annual cost with the <a href=\"https://www.saudiutilityhub.com/dependent-levy-calculator.html\">Dependent Levy Calculator</a>. If you later find employment yourself, you can be sponsored separately under a standard Work Visa."
+  };
+  function findVisaType(){
+    var sel = document.getElementById('visaSituation').value;
+    document.getElementById('visaResult').innerHTML = VISA_RESULTS[sel];
+  }
+  document.addEventListener('DOMContentLoaded', findVisaType);
 </script>
 
 </body>
