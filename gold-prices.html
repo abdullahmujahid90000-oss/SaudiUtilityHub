@@ -99,7 +99,7 @@
       {
         "@type": "HowToStep",
         "name": "Adjust the dealer spread",
-        "text": "Buying price is typically 40 to 50 SAR per gram higher than the selling price. Move the slider to match your dealer's quoted spread."
+        "text": "For investment-grade bars and coins, buying price is typically 2 to 15 SAR per gram higher than the selling price \u2014 smaller bars usually cost more per gram, larger bars less. Jewelry has an additional, separate making-charge cost. Move the slider to match your dealer's quoted spread."
       },
       {
         "@type": "HowToStep",
@@ -128,7 +128,7 @@
         "name": "How much does 5 grams of gold cost today in Saudi Arabia?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Use the calculator on this page: select your karat, enter 5 grams (or tap the '5 g' quick button), and it will show the estimated buying price and selling price for 5 grams based on today's live gold price and a typical 40-50 SAR/gram dealer spread."
+          "text": "Use the calculator on this page: select your karat, enter 5 grams (or tap the '5 g' quick button), and it will show the estimated buying price and selling price for 5 grams based on today's live gold price and a typical 2-15 SAR/gram dealer spread for investment-grade bars and coins."
         }
       },
       {
@@ -136,7 +136,7 @@
         "name": "Why is the buying price higher than the selling price?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Gold dealers and jewelers add a margin, usually around 40-50 SAR per gram in Saudi Arabia, between what they charge you to buy gold and what they pay you to buy it back. This spread covers their operating costs, handling, certification, and profit margin. It is normal and applies across most gold souqs and jewelers."
+          "text": "Gold dealers add a margin between what they charge you to buy investment-grade bars/coins and what they pay you to buy it back \u2014 typically 2 to 15 SAR per gram in Saudi Arabia, often tighter on larger bars and wider on small bars or coins. This spread covers their operating costs, handling, certification, and profit margin. Jewelry carries a separate, usually much larger making-charge (maksariya) cost on top of this. It is normal and applies across most gold souqs and jewelers."
         }
       },
       {
@@ -144,7 +144,7 @@
         "name": "How is the buy/sell spread calculated on this calculator?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The calculator treats the live market price as the estimated selling price, and adds a dealer premium (default 45 SAR/gram, adjustable between 40 and 50 SAR) to get the estimated buying price. You can move the slider to match the spread quoted by your local dealer."
+          "text": "The calculator treats the live market price as the estimated selling price, and adds a dealer premium (default 5 SAR/gram, adjustable between 2 and 15 SAR) to get the estimated buying price for investment-grade bars and coins. You can move the slider to match the spread quoted by your local dealer."
         }
       },
       {
@@ -184,7 +184,7 @@
         "name": "Does this calculator include VAT?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. In Saudi Arabia, investment-grade gold (99% purity or higher, in bar, ingot, or recognized coin form) is generally VAT-exempt, while gold jewelry is typically subject to the standard 15% VAT, usually applied to the making-charge portion of the invoice. This calculator does not add VAT — confirm the exact treatment with your dealer or ZATCA before you buy."
+          "text": "No. In Saudi Arabia, investment-grade gold (99% purity or higher, in bar, ingot, or recognized coin form) is generally VAT-exempt, while gold jewelry is typically subject to the standard 15% VAT, usually applied to the making-charge portion of the invoice. VAT liability officially depends on the gold's form and the seller's VAT registration, not on your payment method — but small cash-only souq dealers do not always itemize it the way larger registered retailers do. This calculator does not add VAT — always ask your dealer whether VAT is included, and confirm the exact treatment with ZATCA before a large purchase."
         }
       }
     ]
@@ -671,8 +671,8 @@
       </div>
 
       <div class="form-group">
-        <label for="calcSpread">Dealer Buy Premium: <span id="spreadVal">45</span> SAR/gram <span class="note-inline">(typical range: 40–50 SAR — adjust to match your dealer's quote)</span></label>
-        <input type="range" id="calcSpread" min="40" max="50" step="1" value="45" oninput="runCalculator()" />
+        <label for="calcSpread">Dealer Buy Premium: <span id="spreadVal">5</span> SAR/gram <span class="note-inline">(typical range for investment bars/coins: 2–15 SAR — smaller bars and jewelry often cost more; adjust to match your dealer's quote)</span></label>
+        <input type="range" id="calcSpread" min="2" max="15" step="1" value="5" oninput="runCalculator()" />
       </div>
 
       <div class="results" id="calcResults">
@@ -692,7 +692,7 @@
         <thead><tr><th>Weight</th><th>Estimated Buy Price</th><th>Estimated Sell Price</th></tr></thead>
         <tbody id="quickRefBody"><tr><td colspan="3">Loading…</td></tr></tbody>
       </table>
-      <p class="note">Based on today's live 24K market price and a dealer spread of <span id="quickRefSpreadNote">45</span> SAR/gram (matches the slider in the calculator above — move it to see this table update).</p>
+      <p class="note">Based on today's live 24K market price and a dealer spread of <span id="quickRefSpreadNote">5</span> SAR/gram (matches the slider in the calculator above — move it to see this table update).</p>
     </div>
 
     <!-- Today's movement -->
@@ -700,7 +700,7 @@
       <h2>📊 Today's Movement (24K)</h2>
       <p id="chgValue" style="font-size:1.4rem;font-weight:700;color:var(--gray);">—</p>
       <p id="changeNote" style="color:var(--gray);">Change vs. the previous close, based on the global gold spot price.</p>
-      <p style="margin-top:1rem;font-size:0.9rem;color:var(--gray);">How this is calculated: we take the international gold spot price (XAU per troy ounce in USD), convert it to SAR at the fixed 3.75 USD–SAR peg, divide by 31.1035 to get the per-gram 24K rate, then scale by each karat's purity (22K = 91.7%, 21K = 87.5%, 18K = 75%). The buy/sell calculator above then adds a typical 40-50 SAR/gram dealer spread on top of this reference price. Local souq prices may differ slightly due to dealer premiums and making charges.</p>
+      <p style="margin-top:1rem;font-size:0.9rem;color:var(--gray);">How this is calculated: we take the international gold spot price (XAU per troy ounce in USD), convert it to SAR at the fixed 3.75 USD–SAR peg, divide by 31.1035 to get the per-gram 24K rate, then scale by each karat's purity (22K = 91.7%, 21K = 87.5%, 18K = 75%). The buy/sell calculator above then adds a typical 2-15 SAR/gram dealer premium for investment-grade bars/coins on top of this reference price. Jewelry and small bars/coins often cost more due to making charges and fixed minting costs. Local souq prices may differ from these estimates.</p>
     </div>
 
     <h2>📖 Understanding Gold Prices in Saudi Arabia</h2>
@@ -715,23 +715,23 @@
     </ul>
 
     <h2>💱 How the Buy/Sell Spread Works</h2>
-    <p>Gold dealers rarely buy and sell at the exact same price. Just like currency exchange counters, they quote two numbers: a higher price to <strong>sell you</strong> gold, and a lower price at which they'll <strong>buy it back</strong> from you. In Saudi Arabia, this spread is commonly around <strong>40 to 50 SAR per gram</strong>, though it can vary depending on the dealer, the city, whether the gold is 24K bullion or finished jewelry, and how competitive the local market is.</p>
+    <p>Gold dealers rarely buy and sell at the exact same price. Just like currency exchange counters, they quote two numbers: a higher price to <strong>sell you</strong> gold, and a lower price at which they'll <strong>buy it back</strong> from you. For investment-grade bars and coins in Saudi Arabia, this spread is typically small — commonly just <strong>2 to 15 SAR per gram</strong>, often tighter (closer to 2–5 SAR/gram) on larger bars (50g and up), since minting and certification costs are spread across more gold. Small bars and coins can carry a proportionally higher premium because those fixed costs are spread over less weight. This is separate from <strong>jewelry</strong>, where making charges (maksariya) are a much larger, separate cost on top of the raw gold price — jewelry isn't priced on a simple spot-plus-spread basis the way investment bars are.</p>
     <p>This spread exists because dealers take on costs and risk: verifying purity, covering overheads, insuring stock, and making a margin on every transaction. It is completely normal and not unique to Saudi Arabia — you'll see similar spreads in gold markets worldwide.</p>
-    <p>The calculator above models this by treating the live market price as the approximate <strong>selling</strong> price, and adding your chosen spread (default 45 SAR/gram) to estimate the <strong>buying</strong> price. If your dealer quotes a different spread, simply move the slider to match it.</p>
+    <p>The calculator above models the investment bar/coin spread by treating the live market price as the approximate <strong>selling</strong> price, and adding your chosen premium (default 5 SAR/gram) to estimate the <strong>buying</strong> price. If your dealer quotes a different spread — larger for small bars or coins, or a jewelry price that includes making charges — move the slider, or use this estimate only as a starting reference point.</p>
 
-    <h3>Worked Example: Buying and Selling 5 Grams of 24K Gold</h3>
-    <p>Suppose the live 24K market price shown on this page is SAR 390 per gram, and you use the default 45 SAR/gram spread:</p>
+    <h3>Worked Example: Buying and Selling 5 Grams of 24K Gold (Investment Bar)</h3>
+    <p>Suppose the live 24K market price shown on this page is SAR 390 per gram, and you use the default 5 SAR/gram spread for an investment-grade bar:</p>
     <table>
       <thead>
         <tr><th>Scenario</th><th>Price per Gram</th><th>Total for 5 Grams</th></tr>
       </thead>
       <tbody>
-        <tr><td>You are <strong>buying</strong> 5g of 24K gold</td><td>390 + 45 = SAR 435</td><td>SAR 2,175</td></tr>
+        <tr><td>You are <strong>buying</strong> 5g of 24K gold</td><td>390 + 5 = SAR 395</td><td>SAR 1,975</td></tr>
         <tr><td>You are <strong>selling</strong> 5g of 24K gold</td><td>SAR 390</td><td>SAR 1,950</td></tr>
-        <tr><td>Spread on this transaction</td><td>SAR 45</td><td>SAR 225</td></tr>
+        <tr><td>Spread on this transaction</td><td>SAR 5</td><td>SAR 25</td></tr>
       </tbody>
     </table>
-    <p><em>This example uses illustrative numbers. Use the live calculator above for today's actual estimate — it recalculates automatically as the market price updates.</em></p>
+    <p><em>This example uses illustrative numbers for an investment-grade bar. Jewelry (making charges) and very small bars/coins can carry a higher effective premium. Use the live calculator above for today's actual estimate — it recalculates automatically as the market price updates.</em></p>
 
     <h2>🏪 Where to Buy or Sell Gold in Saudi Arabia</h2>
     <p>Major gold souqs include:</p>
@@ -749,12 +749,12 @@
     </ul>
 
     <h2>🧾 Do You Pay VAT on Gold in Saudi Arabia?</h2>
-    <p>Saudi Arabia's standard VAT rate is 15%. Under ZATCA's regulations, <strong>investment-grade gold</strong> — generally 99% purity or higher, in the form of bars, ingots, or coins recognized by bullion markets — is normally VAT-exempt when the conditions for investment metals are met. <strong>Gold jewelry</strong>, however, is typically treated differently: VAT is usually applied to the making-charge (labor) portion of the price, though treatment can vary by retailer and invoice structure. This calculator does not add VAT to its estimates, so always confirm the exact tax treatment with your dealer or check <a href="https://zatca.gov.sa" target="_blank" rel="noopener">ZATCA</a>'s guidance before a large purchase.</p>
+    <p>Saudi Arabia's standard VAT rate is 15%. Under ZATCA's regulations, <strong>investment-grade gold</strong> — generally 99% purity or higher, in the form of bars, ingots, or coins recognized by bullion markets — is normally VAT-exempt when the conditions for investment metals are met. <strong>Gold jewelry</strong>, however, is typically treated differently: VAT is usually applied to the making-charge (labor) portion of the price, though treatment can vary by retailer and invoice structure. Officially, VAT liability depends on the gold's purity/form and whether the seller is VAT-registered — not on how you pay — but in practice, many small, cash-only souq dealers may not itemize or consistently charge VAT the way larger, card-accepting, VAT-registered retailers do. This calculator does not add VAT to its estimates, so always ask the dealer directly whether their quoted price already includes VAT, and check <a href="https://zatca.gov.sa" target="_blank" rel="noopener">ZATCA</a>'s guidance before a large purchase.</p>
 
     <h2>✅ Tips Before You Buy or Sell Gold</h2>
     <ul class="checklist">
       <li>Compare the live spot-based reference price on this page with what a dealer is quoting — a huge gap may signal an unfair spread.</li>
-      <li>Ask whether the quoted price includes making charges, VAT, and any certification fee.</li>
+      <li>Ask whether the quoted price includes making charges, VAT, and any certification fee — small cash-only dealers don't always itemize VAT separately.</li>
       <li>For investment purposes, 24K bars or coins usually carry the lowest making charges and the tightest buy/sell spread.</li>
       <li>Keep receipts and certificates — they make future resale faster and can support a better buy-back price.</li>
       <li>Prices move throughout the trading day — refresh this page for the latest rate before finalizing a deal.</li>
@@ -787,15 +787,15 @@
     </div>
     <div class="faq-item">
       <div class="faq-question">How much does 5 grams of gold cost today in Saudi Arabia?</div>
-      <div>Use the calculator on this page: select your karat, enter 5 grams (or tap the "5 g" quick button), and it will show the estimated buying price and selling price for 5 grams based on today's live gold price and a typical 40-50 SAR/gram dealer spread.</div>
+      <div>Use the calculator on this page: select your karat, enter 5 grams (or tap the "5 g" quick button), and it will show the estimated buying price and selling price for 5 grams based on today's live gold price and a typical 2-15 SAR/gram dealer spread for investment-grade bars and coins.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question">Why is the buying price higher than the selling price?</div>
-      <div>Gold dealers and jewelers add a margin, usually around 40-50 SAR per gram in Saudi Arabia, between what they charge you to buy gold and what they pay you to buy it back. This spread covers their operating costs, handling, certification, and profit margin. It is normal and applies across most gold souqs and jewelers.</div>
+      <div>Gold dealers add a margin between what they charge you to buy investment-grade bars/coins and what they pay you to buy it back — typically 2 to 15 SAR per gram in Saudi Arabia, often tighter on larger bars and wider on small bars or coins. This spread covers their operating costs, handling, certification, and profit margin. Jewelry carries a separate, usually much larger making-charge (maksariya) cost on top of this. It is normal and applies across most gold souqs and jewelers.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question">How is the buy/sell spread calculated on this calculator?</div>
-      <div>The calculator treats the live market price as the estimated selling price, and adds a dealer premium (default 45 SAR/gram, adjustable between 40 and 50 SAR) to get the estimated buying price. You can move the slider to match the spread quoted by your local dealer.</div>
+      <div>The calculator treats the live market price as the estimated selling price, and adds a dealer premium (default 5 SAR/gram, adjustable between 2 and 15 SAR) to get the estimated buying price for investment-grade bars and coins. You can move the slider to match the spread quoted by your local dealer.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question">How often do gold prices change in KSA?</div>
@@ -815,7 +815,7 @@
     </div>
     <div class="faq-item">
       <div class="faq-question">Does this calculator include VAT?</div>
-      <div>No. In Saudi Arabia, investment-grade gold (99% purity or higher, in bar, ingot, or recognized coin form) is generally VAT-exempt, while gold jewelry is typically subject to the standard 15% VAT, usually applied to the making-charge portion of the invoice. This calculator does not add VAT — confirm the exact treatment with your dealer or ZATCA before you buy.</div>
+      <div>No. In Saudi Arabia, investment-grade gold (99% purity or higher, in bar, ingot, or recognized coin form) is generally VAT-exempt, while gold jewelry is typically subject to the standard 15% VAT, usually applied to the making-charge portion of the invoice. VAT liability officially depends on the gold's form and the seller's VAT registration, not on your payment method — but small cash-only dealers do not always itemize it the way larger registered retailers do. This calculator does not add VAT — always ask your dealer whether VAT is included, and confirm the exact treatment with ZATCA before a large purchase.</div>
     </div>
 
     <!-- Ad Slot 2 -->
@@ -1046,7 +1046,7 @@
 
       var karat = parseInt(karatEl.value, 10);
       var weight = parseFloat(weightEl.value) || 0;
-      var spread = parseFloat(spreadEl.value) || 45;
+      var spread = parseFloat(spreadEl.value) || 5;
 
       var spreadValSpan = document.getElementById('spreadVal');
       if (spreadValSpan) spreadValSpan.textContent = spread;
@@ -1077,7 +1077,7 @@
       var tbody = document.getElementById('quickRefBody');
       if (!tbody) return;
       var spreadEl = document.getElementById('calcSpread');
-      var spread = spreadEl ? (parseFloat(spreadEl.value) || 45) : 45;
+      var spread = spreadEl ? (parseFloat(spreadEl.value) || 5) : 5;
       var market = PRICES[24] || 0;
       var weights = [1, 5, 10, 11.66, 20, 50, 100];
 

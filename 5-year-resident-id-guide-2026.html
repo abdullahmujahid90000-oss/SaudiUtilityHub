@@ -196,7 +196,7 @@ ul,ol{margin:0 0 14px 22px;font-size:.93rem;line-height:1.65;}
 <ul>
 <li>✅ Log into Absher and confirm your <strong>National Address</strong> is current.</li>
 <li>✅ Update your <strong>mobile number</strong> in Absher to receive delivery SMS.</li>
-<li>✅ Renew your Iqama on time — late renewal still costs SAR 500/month penalty.</li>
+<li>✅ Renew your Iqama on time — late renewal starts at a SAR 500 penalty and rises for repeated delays.</li>
 <li>✅ Keep your <strong>old card</strong> until the new one arrives. Don't throw it away.</li>
 <li>✅ Verify the new card details (Iqama number, name, expiry) on delivery and report any errors immediately.</li>
 </ul>
@@ -262,7 +262,7 @@ function calcCardTimeline(){
   var urgencyEl = document.getElementById('renewalUrgency');
   if(days < 0){
     daysEl.textContent = Math.abs(days) + ' days overdue';
-    urgencyEl.textContent = '⚠️ Renew now — SAR 500/month late penalty applies';
+    urgencyEl.textContent = '⚠️ Renew now — SAR 500 first-offense late penalty applies';
   } else if(days === 0){
     daysEl.textContent = 'Today';
     urgencyEl.textContent = 'Renew today to avoid penalties';
