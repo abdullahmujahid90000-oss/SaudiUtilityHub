@@ -90,7 +90,7 @@
       {
         "@type": "HowToStep",
         "name": "Select visa type",
-        "text": "Choose between work visa (2 years) or other types."
+        "text": "Choose your visa type, then enter your actual validity period in months \u2014 commonly 12 or 24 months, or a flexible 3/6/9-month period depending on your employment contract. Check your Iqama card or Absher for the exact figure."
       },
       {
         "@type": "HowToStep",
@@ -100,7 +100,7 @@
       {
         "@type": "HowToStep",
         "name": "Calculate expiry date",
-        "text": "Get your exact expiry date (issue date + 2 years)."
+        "text": "Get your exact expiry date (issue date + your validity period in months)."
       },
       {
         "@type": "HowToStep",
@@ -121,7 +121,7 @@
         "name": "How long is Iqama valid in Saudi Arabia?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Iqama is valid for 2 years (24 months) from the issue date for most expatriate workers in Saudi Arabia."
+          "text": "Iqama validity varies by employment contract and sponsor choice \u2014 commonly 12 months (1 year), sometimes 24 months (2 years), and Saudi Arabia now also allows flexible 3, 6, or 9-month renewal periods. There is no single standard duration; check your physical Iqama card or the Absher portal for your exact validity period."
         }
       },
       {
@@ -551,7 +551,7 @@
     <div class="hero">
       <h1>🪪 Iqama Expiry Calculator Saudi Arabia 2026</h1>
       <p>Calculate your Iqama expiry date: validity period, SAR 650 renewal fee, SAR 500 first-offense late penalty</p>
-      <span class="badge">Updated June 2026 • Validity: 2 years • Renewal Fee: SAR 650</span>
+      <span class="badge">Updated June 2026 • Validity: varies by contract (commonly 12 or 24 months) • Renewal Fee: SAR 650</span>
     </div>
 
     <div class="quick-answer">
@@ -579,14 +579,16 @@
       <div class="form-group">
         <label for="visa-type">Visa Type</label>
         <select id="visa-type">
-          <option value="work">Work Visa (2 years)</option>
-          <option value="family">Family Visa (2 years)</option>
-          <option value="other">Other (specify duration)</option>
+          <option value="work">Work Visa</option>
+          <option value="family">Family Visa</option>
+          <option value="other">Other</option>
         </select>
+        <div class="note">Validity depends on your employment contract and sponsor's choice — commonly 12 or 24 months, or a flexible 3/6/9-month period. Enter your exact duration below.</div>
       </div>
-      <div class="form-group" id="custom-duration" style="display:none;">
+      <div class="form-group" id="custom-duration">
         <label for="duration-months">Validity Duration (Months)</label>
-        <input type="number" id="duration-months" value="24" min="1" max="60">
+        <input type="number" id="duration-months" value="12" min="1" max="60">
+        <div class="note">Check your physical Iqama card or Absher for the exact figure — commonly 12 months, sometimes 24, or a flexible 3/6/9-month period.</div>
       </div>
       <div class="btn-group">
         <button class="btn-primary" onclick="calculateExpiry()">Calculate Expiry</button>
@@ -618,7 +620,7 @@
 
     <ol>
       <li><strong>Enter Your Issue Date</strong><br>Find your Iqama issue date on the front of your physical card or in the Absher portal under "My Services".</li>
-      <li><strong>Select Visa Type</strong><br>Most work and family visas are valid for 2 years (24 months). Select "Other" if you have a different duration.</li>
+      <li><strong>Select Visa Type, Then Enter Your Validity Period</strong><br>Validity varies by employment contract and sponsor choice — commonly 12 or 24 months, or a flexible 3/6/9-month period. Enter the exact number of months from your Iqama card or Absher.</li>
       <li><strong>Calculate Expiry Date</strong><br>The calculator adds the validity period to your issue date to determine your exact expiry date.</li>
       <li><strong>Check Status</strong><br>See if your Iqama is still valid, in grace period, or expired with applicable penalties.</li>
       <li><strong>Plan Renewal</strong><br>You can renew up to 180 days before expiry. Note the SAR 650 fee and medical test requirement.</li>
@@ -627,7 +629,7 @@
     <h2>📊 Worked Examples: Iqama Expiry Scenarios</h2>
 
     <h3>Example 1: Engineer in Riyadh</h3>
-    <p><strong>Scenario:</strong> Ahmed's Iqama was issued on March 15, 2025.</p>
+    <p><strong>Scenario:</strong> Ahmed's Iqama was issued on March 15, 2025, with the common 12-month validity period on his contract.</p>
     <table>
       <thead>
         <tr>
@@ -642,15 +644,15 @@
         </tr>
         <tr>
           <td>Validity Period</td>
-          <td>24 months</td>
+          <td>12 months</td>
         </tr>
         <tr>
           <td><strong>Expiry Date</strong></td>
-          <td><strong>March 15, 2027</strong></td>
+          <td><strong>March 15, 2026</strong></td>
         </tr>
         <tr>
           <td>Renewal Window Opens</td>
-          <td>September 15, 2026</td>
+          <td>~September 15, 2025 (180 days before)</td>
         </tr>
         <tr>
           <td>Renewal Fee</td>
@@ -658,6 +660,7 @@
         </tr>
       </tbody>
     </table>
+    <p><em>If Ahmed's sponsor had instead chosen a 24-month validity period, his expiry date would be March 15, 2027 instead. Always check your own card or Absher — don't assume either duration.</em></p>
 
     <h3>Example 2: Late Renewal Penalty</h3>
     <p><strong>Scenario:</strong> Fatima's Iqama expired on January 10, 2026, and she renews on February 15, 2026.</p>
@@ -714,7 +717,7 @@
     <h2>❓ Frequently Asked Questions</h2>
     <div class="faq-item">
       <div class="faq-question">How long is Iqama valid in Saudi Arabia?</div>
-      <div>Iqama is valid for 2 years (24 months) from the issue date for most expatriate workers in Saudi Arabia.</div>
+      <div>Iqama validity varies by employment contract and sponsor choice — commonly 12 months (1 year), sometimes 24 months (2 years), and Saudi Arabia now also allows flexible 3, 6, or 9-month renewal periods. There is no single standard duration; check your physical Iqama card or the Absher portal for your exact validity period.</div>
     </div>
     <div class="faq-item">
       <div class="faq-question">What is the Iqama renewal fee in 2026?</div>
@@ -863,15 +866,6 @@
     function acceptCookies() { document.getElementById('cookieBanner').style.display = 'none'; }
     function declineCookies() { document.getElementById('cookieBanner').style.display = 'none'; }
 
-    document.getElementById('visa-type').addEventListener('change', function() {
-      const customDiv = document.getElementById('custom-duration');
-      if (this.value === 'other') {
-        customDiv.style.display = 'block';
-      } else {
-        customDiv.style.display = 'none';
-      }
-    });
-
     function calculateExpiry() {
       const issueDate = new Date(document.getElementById('issue-date').value);
       if (isNaN(issueDate.getTime())) {
@@ -879,10 +873,9 @@
         return;
       }
 
-      let monthsToAdd = 24;
-      if (document.getElementById('visa-type').value === 'other') {
-        monthsToAdd = parseInt(document.getElementById('duration-months').value) || 24;
-      }
+      // Validity varies by contract/sponsor (commonly 12 or 24 months, or a flexible 3/6/9-month period) —
+      // always read the user-entered duration rather than assuming a fixed default.
+      let monthsToAdd = parseInt(document.getElementById('duration-months').value) || 12;
 
       // Add months to issue date
       const expiryDate = new Date(issueDate);
@@ -911,7 +904,7 @@
     function resetExpiryForm() {
       document.getElementById('issue-date').value = '';
       document.getElementById('visa-type').selectedIndex = 0;
-      document.getElementById('custom-duration').style.display = 'none';
+      document.getElementById('duration-months').value = 12;
       document.getElementById('expiry-results').style.display = 'none';
     }
 
