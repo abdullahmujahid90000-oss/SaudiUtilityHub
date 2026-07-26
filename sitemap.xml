@@ -19,25 +19,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/bangladesh-remittance.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/car-finance-calculator.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/contact.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/currency-converter.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -49,22 +31,10 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/driving-license-conversion.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/exit-reentry-calculator.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/expat-affordability-dashboard.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/experience-letter-generator.html</loc>
@@ -97,40 +67,10 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/fuel-cost-calculator.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/gold-prices.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/gold-zakat-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/gosi-calculator.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/housing-allowance-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/india-remittance.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/iqama-expiry-calculator.html</loc>
@@ -145,32 +85,14 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/islamic-finance-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/ksa-eos-calculator.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/ksa-vat-explained-15.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/leave-calculator.html</loc>
     <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/mortgage-calculator.html</loc>
-    <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -199,30 +121,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/nwc-water-bill-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/pakistan-remittance.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/philippines-remittance.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/premium-residency-cost-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/privacy.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -233,12 +131,6 @@
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/remittance-fee-compare.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/salary-calculator.html</loc>
@@ -259,40 +151,16 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/saudi-iban-validator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/saudi-work-visa-types-2026.html</loc>
     <lastmod>2026-07-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/sec-electricity-bill-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/terms.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/traffic-fine-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/vat-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/visit-visa-to-iqama.html</loc>
@@ -307,20 +175,6 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/zakat-calculator.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/zakat-nisab-gold.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <!-- ROOT PAGES ADDED -->
-  <!-- BLOG PAGES ADDED -->
-  <url>
     <loc>https://www.saudiutilityhub.com/blog/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -328,30 +182,6 @@
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/blog/absher-guide-expats-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/dependent-levy-guide-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/eos-guide-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/gold-zakat-guide-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/gosi-guide-2026.html</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -369,24 +199,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-health-insurance-expats-2026.html</loc>
-    <lastmod>2026-06-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/noc-letter-saudi-arabia-2026.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/premium-residency-real-estate-off-plan-2026.html</loc>
-    <lastmod>2026-07-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/blog/saned-unemployment-insurance-guide-2026.html</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -397,18 +209,6 @@
     <lastmod>2026-07-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-customs-personal-import-rules-2026.html</loc>
-    <lastmod>2026-07-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-annual-leave-rules-2026.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/blog/how-to-file-labour-complaint-qiwa-2026.html</loc>
@@ -423,100 +223,10 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/blog/salary-certificate-guide-2026.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-annual-flight-ticket-allowance-2026.html</loc>
-    <lastmod>2026-06-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-overtime-pay-calculation-2026.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-probation-period-rules-2026.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-5-year-resident-id-explained-2026.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-rental-law-expats-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/saudi-traffic-fines-guide-2026.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/sec-electricity-bills-saudi-arabia-2026.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/send-money-saudi-arabia-to-bangladesh-2026.html</loc>
-    <lastmod>2026-07-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/send-money-saudi-arabia-to-pakistan-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/send-money-saudi-india-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/blog/sick-leave-saudi-arabia-2026.html</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/open-bank-account-saudi-arabia-expat-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/stc-pay-guide-expats-2026.html</loc>
-    <lastmod>2026-06-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/vat-saudi-guide-2026.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/blog/vision-2030-guide.html</loc>
-    <lastmod>2026-05-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/blog/worker-rights.html</loc>
