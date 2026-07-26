@@ -1,0 +1,6 @@
+# Internal/non-public project files - never deploy
+_internal/
+*.md
+seo-keyword-backlink-strategy.md
+social-media-content-pack.md
+GA4_Measurement_ID_Guide.docx

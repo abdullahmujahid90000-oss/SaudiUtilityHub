@@ -1,0 +1,375 @@
+{
+  "generated": "2026-07-26",
+  "count": 41,
+  "pages": [
+    {
+      "filename": "bangladesh-remittance.html",
+      "url": "https://www.saudiutilityhub.com/bangladesh-remittance.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/gold-zakat-guide-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/gold-zakat-guide-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/open-bank-account-saudi-arabia-expat-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/open-bank-account-saudi-arabia-expat-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/premium-residency-real-estate-off-plan-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/premium-residency-real-estate-off-plan-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers real-estate investment, rental law, or broad cost-of-living dashboards rather than employment/payroll/HR or Iqama/visa/expat procedures specifically.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/saudi-annual-flight-ticket-allowance-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/saudi-annual-flight-ticket-allowance-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Subject matter (flight allowance, customs/import, health insurance, national economic vision) sits outside employment/payroll/HR and Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/saudi-customs-personal-import-rules-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/saudi-customs-personal-import-rules-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Subject matter (flight allowance, customs/import, health insurance, national economic vision) sits outside employment/payroll/HR and Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/saudi-health-insurance-expats-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/saudi-health-insurance-expats-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Subject matter (flight allowance, customs/import, health insurance, national economic vision) sits outside employment/payroll/HR and Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/saudi-rental-law-expats-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/saudi-rental-law-expats-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers real-estate investment, rental law, or broad cost-of-living dashboards rather than employment/payroll/HR or Iqama/visa/expat procedures specifically.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/saudi-traffic-fines-guide-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/saudi-traffic-fines-guide-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers driving licences/traffic fines, not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/sec-electricity-bills-saudi-arabia-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/sec-electricity-bills-saudi-arabia-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers household utility bills (fuel, water, electricity) unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/send-money-saudi-arabia-to-bangladesh-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/send-money-saudi-arabia-to-bangladesh-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/send-money-saudi-arabia-to-pakistan-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/send-money-saudi-arabia-to-pakistan-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/send-money-saudi-india-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/send-money-saudi-india-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/stc-pay-guide-expats-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/stc-pay-guide-expats-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/traffic-fines.html",
+      "url": "https://www.saudiutilityhub.com/blog/traffic-fines.html",
+      "paused_date": "2026-07-26",
+      "reason": "Undocumented legacy duplicate of the (also paused) traffic-fines guide; already marked noindex,nofollow in its own <meta> tag and only reachable via a redirect stub. Paused alongside the rest of the driving/traffic topic for consistency.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/vat-saudi-guide-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/vat-saudi-guide-2026.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "blog/vision-2030-guide.html",
+      "url": "https://www.saudiutilityhub.com/blog/vision-2030-guide.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Subject matter (flight allowance, customs/import, health insurance, national economic vision) sits outside employment/payroll/HR and Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "car-finance-calculator.html",
+      "url": "https://www.saudiutilityhub.com/car-finance-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "currency-converter.html",
+      "url": "https://www.saudiutilityhub.com/currency-converter.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "driving-license-conversion.html",
+      "url": "https://www.saudiutilityhub.com/driving-license-conversion.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers driving licences/traffic fines, not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "end-of-service-calculator.html",
+      "url": "https://www.saudiutilityhub.com/end-of-service-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Undocumented legacy duplicate of the retained ksa-eos-calculator.html page. A permanent redirect to the retained page already existed in vercel.json prior to this restructure.",
+      "related_replacement_page": "ksa-eos-calculator.html",
+      "restore_requirements": "Not recommended to restore as-is: this page duplicated ksa-eos-calculator.html, which remains live. If restored, it must redirect (not duplicate) to ksa-eos-calculator.html, matching the existing vercel.json rule.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "expat-affordability-dashboard.html",
+      "url": "https://www.saudiutilityhub.com/expat-affordability-dashboard.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers real-estate investment, rental law, or broad cost-of-living dashboards rather than employment/payroll/HR or Iqama/visa/expat procedures specifically.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "fuel-cost-calculator.html",
+      "url": "https://www.saudiutilityhub.com/fuel-cost-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers household utility bills (fuel, water, electricity) unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "gold-prices.html",
+      "url": "https://www.saudiutilityhub.com/gold-prices.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "gold-zakat-calculator.html",
+      "url": "https://www.saudiutilityhub.com/gold-zakat-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "housing-allowance-calculator.html",
+      "url": "https://www.saudiutilityhub.com/housing-allowance-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers household utility bills (fuel, water, electricity) unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "india-remittance.html",
+      "url": "https://www.saudiutilityhub.com/india-remittance.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "islamic-finance-calculator.html",
+      "url": "https://www.saudiutilityhub.com/islamic-finance-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "ksa-vat-explained-15.html",
+      "url": "https://www.saudiutilityhub.com/ksa-vat-explained-15.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "mortgage-calculator.html",
+      "url": "https://www.saudiutilityhub.com/mortgage-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "nwc-water-bill-calculator.html",
+      "url": "https://www.saudiutilityhub.com/nwc-water-bill-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers household utility bills (fuel, water, electricity) unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "pakistan-remittance.html",
+      "url": "https://www.saudiutilityhub.com/pakistan-remittance.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "philippines-remittance.html",
+      "url": "https://www.saudiutilityhub.com/philippines-remittance.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "premium-residency-cost-calculator.html",
+      "url": "https://www.saudiutilityhub.com/premium-residency-cost-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers real-estate investment, rental law, or broad cost-of-living dashboards rather than employment/payroll/HR or Iqama/visa/expat procedures specifically.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "remittance-fee-compare.html",
+      "url": "https://www.saudiutilityhub.com/remittance-fee-compare.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus (Saudi employment/payroll/HR and Iqama/visa/expat procedures). Covers remittance, currency conversion, or e-wallet/banking topics unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "saudi-iban-validator.html",
+      "url": "https://www.saudiutilityhub.com/saudi-iban-validator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers bank account/IBAN validation, not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "sec-electricity-bill-calculator.html",
+      "url": "https://www.saudiutilityhub.com/sec-electricity-bill-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers household utility bills (fuel, water, electricity) unrelated to either retained subject.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "traffic-fine-calculator.html",
+      "url": "https://www.saudiutilityhub.com/traffic-fine-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers driving licences/traffic fines, not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "vat-calculator.html",
+      "url": "https://www.saudiutilityhub.com/vat-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "zakat-calculator.html",
+      "url": "https://www.saudiutilityhub.com/zakat-calculator.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "zakat-nisab-gold.html",
+      "url": "https://www.saudiutilityhub.com/zakat-nisab-gold.html",
+      "paused_date": "2026-07-26",
+      "reason": "Off-topic for the site's new two-topic AdSense focus. Covers general personal finance, VAT, Zakat, or gold pricing \u2014 not employment/payroll/HR nor Iqama/visa/expat procedures.",
+      "related_replacement_page": null,
+      "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
+      "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    }
+  ]
+}
