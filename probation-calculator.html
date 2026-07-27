@@ -4,86 +4,73 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
-<title>Probation Period Calculator Saudi Arabia 2026</title>
-<meta content="Saudi probation period calculator — 90-day end date, notice rights &amp; EOS impact for new employees. 2026 Labour Law rules." name="description"/>
+<title>Probation End-Date Estimator Saudi Arabia | Labour Law Article 53/54</title>
+<meta content="Estimate your Saudi employment probation end date from your contract-stated duration. Explains Article 53/54 rules on maximum duration, excluded days, repeat probation and termination — no legal determination made." name="description"/>
 <link href="https://www.saudiutilityhub.com/probation-calculator.html" rel="canonical"/>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"Saudi Probation Period Calculator 2026",
-  "description":"Calculate your probation end date, notice period during and after probation, EOS rights under Saudi Labour Law 2025.",
-  "url":"https://www.saudiutilityhub.com/probation-calculator.html",
-  "applicationCategory":"FinanceApplication",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"}
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is the probation period in Saudi Arabia 2025?","acceptedAnswer":{"@type":"Answer","text":"The standard probation period in Saudi Arabia is 90 days (3 months). It can be extended up to 180 days (6 months) by mutual written agreement. Under the 2025 Labour Law amendments, only one probation period is allowed per employee at any one company."}},
-    {"@type":"Question","name":"Can I resign during probation in Saudi Arabia?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can resign during probation with as little as 24 hours notice (under 2025 amendments — check your contract). Before 2025, the notice requirement was unclear. You do NOT receive EOS gratuity if you resign during probation."}},
-    {"@type":"Question","name":"Do I get End of Service (EOS) if terminated during probation?","acceptedAnswer":{"@type":"Answer","text":"No. Employees terminated during the probation period are not entitled to EOS gratuity. However, you are entitled to all accrued leave encashment for any leave days earned during probation. Notice period rules also apply."}}
-  ]
-}
-</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;background:#f8f9fa;color:#333;line-height:1.6}
-
 nav a{color:#fff;text-decoration:none;font-size:.9rem;opacity:.85}
 nav a:hover{opacity:1}
-nav .logo{font-size:1.1rem;font-weight:700;color:#fff;opacity:1}
 .hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:#fff;padding:3rem 2rem;text-align:center}
-.hero h1{font-size:2rem;margin-bottom:.8rem;line-height:1.3}
-.hero p{font-size:1.05rem;opacity:.9;max-width:680px;margin:0 auto}
+.hero h1{font-size:1.9rem;margin-bottom:.8rem;line-height:1.3}
+.hero p{font-size:1.05rem;opacity:.9;max-width:700px;margin:0 auto}
 .badges{display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-top:1rem}
 .badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:.3rem .8rem;font-size:.8rem}
 .container{max-width:900px;margin:0 auto;padding:2rem 1rem}
 .card{background:#fff;border-radius:12px;padding:1.8rem;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.08)}
 h2{color:#1a1a2e;margin-bottom:1rem;font-size:1.25rem}
-h3{color:#1a1a2e;margin-bottom:.5rem;font-size:1rem}
+h3{color:#1a1a2e;margin:1rem 0 .5rem;font-size:1.02rem}
 label{display:block;font-weight:600;margin-bottom:.4rem;font-size:.9rem;color:#374151}
-input,select{width:100%;padding:.7rem .9rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;margin-bottom:1.2rem;background:#fff;transition:border-color .2s}
-input:focus,select:focus{outline:none;border-color:#0f3460}
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+input{width:100%;padding:.7rem .9rem;border:1.5px solid #d1d5db;border-radius:8px;font-size:.95rem;background:#fff;transition:border-color .2s}
+input:focus{outline:none;border-color:#0f3460}
+.field{margin-bottom:1.2rem}
+.field.has-error input{border-color:#dc2626;background:#fef2f2}
+.field-error{display:none;color:#b91c1c;font-size:.8rem;margin-top:.35rem;font-weight:600}
+.field-error.visible{display:block}
+.field-hint{font-size:.78rem;color:#9ca3af;margin-top:.35rem}
+.form-error-summary{display:none;background:#fef2f2;border:1.5px solid #dc2626;border-radius:8px;padding:1rem 1.2rem;margin-bottom:1.2rem}
+.form-error-summary.visible{display:block}
+.form-error-summary h3{color:#b91c1c;font-size:.95rem;margin:0 0 .5rem}
+.form-error-summary ul{margin:0;padding-left:1.2rem;font-size:.85rem;color:#b91c1c}
+.form-error-summary a{color:#b91c1c;text-decoration:underline}
+.checkbox-row{display:flex;align-items:flex-start;gap:.6rem;margin-bottom:1.2rem;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;padding:.8rem 1rem}
+.checkbox-row input{width:auto;margin-top:.2rem}
+.checkbox-row label{margin-bottom:.15rem}
+.checkbox-row .field-hint{margin-top:0}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:0 1.2rem}
 @media(max-width:600px){.grid-2{grid-template-columns:1fr}}
 .calc-btn{width:100%;padding:1rem;background:linear-gradient(135deg,#0f3460,#1a1a2e);color:#fff;border:none;border-radius:10px;font-size:1.05rem;font-weight:700;cursor:pointer;transition:opacity .2s;margin-top:.5rem}
 .calc-btn:hover{opacity:.9}
+.reset-btn{background:none;border:1px solid #d1d5db;color:#6b7280;padding:.5rem 1rem;border-radius:8px;cursor:pointer;font-size:.85rem;margin-top:.5rem}
 .results{display:none}
 .results.show{display:block}
-.timeline-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-bottom:1.5rem}
-.tl-box{border-radius:10px;padding:1.2rem;text-align:center;border:1px solid #e5e7eb}
-.tl-box .tl-date{font-size:1rem;font-weight:700;color:#1a1a2e;margin-bottom:.2rem}
-.tl-box .tl-label{font-size:.75rem;color:#6b7280}
-.tl-box.today-box{background:#eff6ff;border-color:#bfdbfe}
-.tl-box.end-box{background:#fef9c3;border-color:#fde68a}
-.tl-box.safe-box{background:#f0fdf4;border-color:#bbf7d0}
 .info-box{background:#eff6ff;border-left:4px solid #3b82f6;border-radius:0 8px 8px 0;padding:.9rem 1.1rem;margin:1rem 0;font-size:.88rem}
 .warn-box{background:#fef9c3;border-left:4px solid #eab308;border-radius:0 8px 8px 0;padding:.9rem 1.1rem;margin:1rem 0;font-size:.88rem}
-.danger-box{background:#fef2f2;border-left:4px solid #ef4444;border-radius:0 8px 8px 0;padding:.9rem 1.1rem;margin:1rem 0;font-size:.88rem}
 .success-box{background:#f0fdf4;border-left:4px solid #22c55e;border-radius:0 8px 8px 0;padding:.9rem 1.1rem;margin:1rem 0;font-size:.88rem}
+.review-box{background:#f3f4f6;border-left:4px solid #6b7280;border-radius:0 8px 8px 0;padding:.9rem 1.1rem;margin:1rem 0;font-size:.85rem;color:#374151}
+.result-row{display:flex;justify-content:space-between;align-items:baseline;padding:.55rem 0;border-bottom:1px solid #eee;font-size:.92rem;gap:1rem}
+.result-row:last-child{border-bottom:none}
+.result-row .r-label{color:#374151}
+.result-row .r-value{font-weight:700;color:#1a1a2e;text-align:right}
+.status-hero{border-radius:12px;padding:1.5rem;text-align:center;margin-bottom:1.2rem}
+.status-hero.in-prob{background:#fef9c3;border:1px solid #fde68a}
+.status-hero.ended{background:#f0fdf4;border:1px solid #bbf7d0}
+.status-hero.none{background:#eff6ff;border:1px solid #bfdbfe}
+.status-hero .label{font-size:.9rem;color:#6b7280;margin-bottom:.3rem}
+.status-hero .amount{font-size:1.5rem;font-weight:700;color:#1a1a2e}
 .rights-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:1rem}
-.right-card{border-radius:10px;padding:1.2rem;border:1px solid}
-.right-card.yes{background:#f0fdf4;border-color:#86efac}
-.right-card.no{background:#fef2f2;border-color:#fca5a5}
-.right-card h4{margin-bottom:.4rem;font-size:.92rem}
-.right-card.yes h4{color:#166534}
-.right-card.no h4{color:#991b1b}
+.right-card{border-radius:10px;padding:1.2rem;border:1px solid #e5e7eb}
+.right-card h4{margin-bottom:.4rem;font-size:.92rem;color:#1a1a2e}
 .right-card p{font-size:.82rem;color:#555}
+.right-card .cite{font-size:.7rem;color:#9ca3af;margin-top:.4rem}
 .rule-table{width:100%;border-collapse:collapse;font-size:.85rem}
 .rule-table th{background:#1a1a2e;color:#fff;padding:.65rem .8rem;text-align:left}
 .rule-table td{padding:.65rem .8rem;border-bottom:1px solid #eee;vertical-align:top}
 .rule-table tr:nth-child(even) td{background:#f9fafb}
-.result-row{background:#f8f9fa;border-radius:10px;padding:1.2rem;margin-bottom:.8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem}
-.result-row .rr-label{color:#6b7280;font-size:.88rem}
-.result-row .rr-value{font-weight:700;color:#1a1a2e;font-size:1.05rem}
-.result-row.highlight{background:#eff6ff}
-.result-row.warning{background:#fef9c3}
-.result-row.danger{background:#fef2f2}
-.result-row.success{background:#f0fdf4}
+.example-card{border:1px solid #e5e7eb;border-radius:10px;padding:1.1rem 1.2rem;margin-bottom:1rem}
+.example-card h4{color:#0f3460;font-size:.92rem;margin-bottom:.4rem}
+.example-card p{font-size:.85rem;color:#444;margin:.2rem 0}
 .faq-item{border-bottom:1px solid #eee;padding:.9rem 0}
 .faq-item:last-child{border-bottom:none}
 .faq-q{font-weight:600;color:#1a1a2e;margin-bottom:.3rem;font-size:.9rem}
@@ -94,13 +81,15 @@ input:focus,select:focus{outline:none;border-color:#0f3460}
 .rel-card .icon{font-size:1.4rem;margin-bottom:.3rem}
 .rel-card h4{color:#1a1a2e;font-size:.88rem;margin-bottom:.2rem}
 .rel-card p{font-size:.75rem;color:#666}
+.source-list{font-size:.85rem;color:#444}
+.source-list li{margin-bottom:.6rem}
+.source-list .tier{font-size:.72rem;color:#9ca3af}
 footer{background:#1a1a2e;color:#aaa;text-align:center;padding:2rem;font-size:.85rem;margin-top:3rem}
 footer a{color:#60a5fa;text-decoration:none}
-.reset-btn{background:none;border:1px solid #d1d5db;color:#6b7280;padding:.5rem 1rem;border-radius:8px;cursor:pointer;font-size:.85rem;margin-top:.5rem}
 </style>
 <!-- Google AdSense Auto Ads -->
 <script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5391037132181133"></script>
-<!-- Google Analytics GA4 - REPLACE G-MX4J28KBE6 with your real ID -->
+<!-- Google Analytics GA4 -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MX4J28KBE6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -115,21 +104,21 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 .nav-links{display:flex;align-items:center;gap:2px;flex-wrap:wrap;flex:1}
 .nav-links a{color:rgba(255,255,255,.85);font-size:.78rem;padding:6px 8px;border-radius:4px;white-space:nowrap;text-decoration:none;transition:background .15s,color .15s}
 .nav-links a:hover,.nav-links a.active{background:rgba(255,255,255,.12);color:#fff}
-.nav-ar{color:#f0a500 !important;font-weight:600}
 @media(max-width:600px){.nav-links{gap:1px}.nav-links a{font-size:.72rem;padding:5px 5px}}
 </style>
 <meta content="https://www.saudiutilityhub.com/og-image.png" property="og:image"/>
 <meta content="https://www.saudiutilityhub.com/og-image.png" name="twitter:image"/>
 <meta content="https://www.saudiutilityhub.com/probation-calculator.html" property="og:url"/>
-<script data-suh-schema="auto" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.saudiutilityhub.com/"},{"@type":"ListItem","position":2,"name":"Probation Period Calculator Saudi Arabia 2026","item":"https://www.saudiutilityhub.com/probation-calculator.html"}]}</script>
-<script data-suh-schema="auto" type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Probation Period Calculator Saudi Arabia 2026","description":"Saudi probation period calculator — 90-day end date, notice rights &amp; EOS impact for new employees. 2026 Labour Law rules.","url":"https://www.saudiutilityhub.com/probation-calculator.html","inLanguage":"en","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"isAccessibleForFree":true,"creator":{"@type":"Organization","name":"Saudi Utility Hub","url":"https://www.saudiutilityhub.com/"}}</script>
-<meta content="Probation Period Calculator Saudi Arabia 2026" property="og:title"/>
-<meta content="Saudi probation period calculator — 90-day end date, notice rights &amp; EOS impact for new employees. 2026 Labour Law rules." property="og:description"/>
+<script data-suh-schema="auto" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.saudiutilityhub.com/"},{"@type":"ListItem","position":2,"name":"Probation End-Date Estimator Saudi Arabia | Labour Law Article 53/54","item":"https://www.saudiutilityhub.com/probation-calculator.html"}]}</script>
+<script data-suh-schema="auto" type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Saudi Probation End-Date Estimator","description":"Estimates the probable end date of a Saudi employment probation period from the duration stated in the employment contract, per Labour Law Article 53. Explains excluded days, repeat-probation rules and termination treatment without deciding whether any particular termination is lawful.","url":"https://www.saudiutilityhub.com/probation-calculator.html","inLanguage":"en","applicationCategory":"BusinessApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"SAR"},"isAccessibleForFree":true,"creator":{"@type":"Organization","name":"Saudi Utility Hub","url":"https://www.saudiutilityhub.com/"}}</script>
+<meta content="Probation End-Date Estimator Saudi Arabia | Labour Law Article 53/54" property="og:title"/>
+<meta content="Estimate your Saudi employment probation end date from your contract-stated duration. Explains Article 53/54 rules — no legal determination made." property="og:description"/>
 <meta content="website" property="og:type"/>
 <meta content="Saudi Utility Hub" property="og:site_name"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Probation Period Calculator Saudi Arabia 2026" name="twitter:title"/>
-<meta content="Saudi probation period calculator — 90-day end date, notice rights &amp; EOS impact for new employees. 2026 Labour Law rules." name="twitter:description"/>
+<meta content="Probation End-Date Estimator Saudi Arabia | Labour Law Article 53/54" name="twitter:title"/>
+<meta content="Estimate your Saudi employment probation end date from your contract-stated duration. Explains Article 53/54 rules — no legal determination made." name="twitter:description"/>
+<script data-suh-schema="auto" type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How long can a Saudi probation period last?", "acceptedAnswer": {"@type": "Answer", "text": "Article 53 requires the probation period to be explicitly stated in the employment contract with a clear duration. The total probation period — including any written extension agreed by both parties — cannot exceed 180 days. There is no fixed \"standard\" length below that cap; the actual duration is whatever your contract states, up to the 180-day maximum."}}, {"@type": "Question", "name": "Do public holidays or sick leave count toward my probation period?", "acceptedAnswer": {"@type": "Answer", "text": "No, for three specific categories. Article 53 excludes Eid Al-Fitr leave, Eid Al-Adha leave, and sick leave from the probation-period count — these days extend your effective probation end date rather than counting toward it. We did not find a provision excluding other categories of absence."}}, {"@type": "Question", "name": "Can my employer end my contract during probation without giving a reason?", "acceptedAnswer": {"@type": "Answer", "text": "Under Article 53, either party may end the contract during probation if they find the other unsuitable, without owing compensation, unless your contract restricts this right to only one party. This is not the same as saying dismissal can be arbitrary or discriminatory — whether a specific termination is lawful is a case-specific legal question this estimator does not decide."}}, {"@type": "Question", "name": "Do I get end-of-service gratuity if my contract ends during probation?", "acceptedAnswer": {"@type": "Answer", "text": "No. Article 54 states that if the contract is ended during probation, neither party owes compensation and the worker is not entitled to end-of-service gratuity. Our EOS Gratuity Calculator can help you estimate entitlements for employment that continues beyond probation."}}, {"@type": "Question", "name": "Can the same employer put me on probation more than once?", "acceptedAnswer": {"@type": "Answer", "text": "Generally no. Article 54 prohibits placing a worker under probation more than once with the same employer, except by written agreement between both parties, and only if either (a) the new role is a different profession or job, or (b) at least six months have passed since the end of the worker's previous relationship with that employer."}}, {"@type": "Question", "name": "Is a notice period legally required to end a contract during probation?", "acceptedAnswer": {"@type": "Answer", "text": "We did not find a specific statutory default notice period (such as 24 hours) for ending a contract during probation in current primary sources, so this estimator does not assume one. If your contract states a notice period for probation, that contractual term applies — check your contract directly."}}, {"@type": "Question", "name": "Where can I get help if I have a probation-related dispute?", "acceptedAnswer": {"@type": "Answer", "text": "File a complaint through the Qiwa portal (qiwa.sa). HRSD will attempt mediation first; unresolved disputes can be escalated to the Labour Courts. This estimator only calculates dates — it cannot review your contract or decide whether a specific action was lawful."}}]}</script>
 </head>
 <body>
 <nav>
@@ -140,340 +129,452 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <a href="https://www.saudiutilityhub.com/salary-calculator.html">Salary</a>
 <a href="https://www.saudiutilityhub.com/gosi-calculator.html">GOSI</a>
 <a href="https://www.saudiutilityhub.com/ksa-eos-calculator.html">EOS</a>
-
+<a href="https://www.saudiutilityhub.com/working-hours-calculator.html">Working Hours</a>
+<a href="https://www.saudiutilityhub.com/leave-calculator.html">Leave</a>
 <a href="https://www.saudiutilityhub.com/iqama-expiry-calculator.html">Iqama</a>
 <a href="https://www.saudiutilityhub.com/final-settlement-calculator.html">Settlement</a>
 <a href="https://www.saudiutilityhub.com/nitaqat-saudization-guide.html">Nitaqat</a>
-
-
-
-<a href="https://www.saudiutilityhub.com/family-visit-visa-guide.html">Family Visa</a>
 <a href="https://www.saudiutilityhub.com/blog/">Blog</a>
 </div>
 </div>
 </nav>
 <div class="hero">
-<h1>⏱️ Saudi Probation Period Calculator 2026</h1>
-<p>Calculate your probation end date, notice requirements, and understand your rights during probation — <strong>updated for Saudi Labour Law 2025 amendments</strong>.</p>
+<h1>⏱️ Saudi Probation End-Date Estimator</h1>
+<p>Estimate the probable end date of your probation period from the duration <strong>written in your employment contract</strong>, and understand the verified Article 53/54 rules — this tool cannot verify your contract or decide whether any specific termination is lawful.</p>
 <div class="badges">
-<span class="badge">📅 2025 Labour Law</span>
-<span class="badge">⏱️ 90 / 180 days</span>
-<span class="badge">📋 Notice period rules</span>
+<span class="badge">📅 Article 53 &amp; 54</span>
+<span class="badge">📆 Contract-based duration</span>
 <span class="badge">🔒 No login</span>
 </div>
 </div>
 <div class="container">
-<!-- Calculator -->
+<!-- Calculator input -->
 <div class="card">
-<h2>⚙️ Calculate Your Probation Status</h2>
+<h2>⚙️ Estimate Your Probation Dates</h2>
+<div class="info-box">This estimator only calculates dates from the numbers you enter. It cannot read or verify your actual employment contract — always check your signed contract for the exact terms that apply to you.</div>
+<div class="form-error-summary" id="errorSummary" role="alert">
+<h3>Please fix the following before calculating:</h3>
+<ul id="errorList"></ul>
+</div>
 <div class="grid-2">
-<div>
-<label>Employment Start Date</label>
+<div class="field" id="field-startDate">
+<label for="startDate">Employment start date</label>
 <input id="startDate" type="date"/>
+<div class="field-hint">This is counted as Day 1 of probation (see note below results).</div>
+<div class="field-error" id="startDate-error" role="alert"></div>
 </div>
+<div class="field" id="field-checkDate">
+<label for="checkDate">Check status as of (date)</label>
+<input id="checkDate" type="date"/>
+<div class="field-hint">Defaults to today. Change it to check a past or future date.</div>
+<div class="field-error" id="checkDate-error" role="alert"></div>
+</div>
+</div>
+<div class="checkbox-row">
+<input id="noProbation" type="checkbox"/>
 <div>
-<label>Probation Length in Contract</label>
-<select id="probationLength">
-<option value="90">90 days (3 months) — Standard</option>
-<option value="180">180 days (6 months) — Extended (with agreement)</option>
-<option value="0">No probation stated</option>
-</select>
+<label for="noProbation">No probation period is stated in my contract</label>
+<div class="field-hint">Article 53 requires probation to be explicitly stated in the contract with a clear duration. If your contract is silent, this tool treats no probation as applying.</div>
 </div>
 </div>
-<div class="grid-2">
-<div>
-<label>Today's Date (check-in date)</label>
-<input id="todayDate" type="date"/>
+<div class="field" id="field-duration">
+<label for="duration">Probation duration written in contract (whole days)</label>
+<input id="duration" inputmode="numeric" min="1" placeholder="e.g. 90" step="1" type="number"/>
+<div class="field-hint">Enter the exact number of days your contract states — not necessarily 90 or 180. Maximum allowed by law is 180 days total (Article 53).</div>
+<div class="field-error" id="duration-error" role="alert"></div>
 </div>
-<div>
-<label>Basic Monthly Salary (SAR)</label>
-<input id="salary" min="0" placeholder="e.g. 5000" type="number"/>
+<div class="field" id="field-excludedDays">
+<label for="excludedDays">Verified excluded days during probation (Eid Al-Fitr + Eid Al-Adha + sick leave taken)</label>
+<input id="excludedDays" inputmode="numeric" min="0" placeholder="e.g. 0" step="1" type="number" value="0"/>
+<div class="field-hint">Only these three categories are confirmed by Article 53 as not counting toward probation. Leave at 0 if none applied, or if unsure.</div>
+<div class="field-error" id="excludedDays-error" role="alert"></div>
 </div>
-</div>
-<div class="grid-2">
-<div>
-<label>Notice Period in Contract (days)</label>
-<input id="contractNotice" min="0" placeholder="e.g. 30" type="number" value="30"/>
-</div>
-<div>
-<label>Are you still in probation?</label>
-<select id="probStatus">
-<option value="auto">Auto-detect from dates</option>
-<option value="yes">Yes, I am in probation</option>
-<option value="no">No, probation ended</option>
-</select>
-</div>
-</div>
-<button class="calc-btn" onclick="calculate()">⏱️ Calculate Probation Status</button>
+<button class="calc-btn" onclick="calculateProbation()">🧮 Estimate My Probation Dates</button>
+<button class="reset-btn" onclick="resetProbationForm()" type="button">🔄 Reset</button>
 </div>
 <!-- Results -->
 <div class="results" id="results">
 <div class="card">
-<h2>📊 Your Probation Status</h2>
+<h2>📊 Your Probation Estimate</h2>
+<div id="statusHero"></div>
 <div id="resultRows"></div>
-<div id="statusBox" style="margin-top:1rem"></div>
-<button class="reset-btn" onclick="resetCalc()">🔄 Reset</button>
 </div>
 </div>
-<!-- Rights during probation -->
+<!-- Worked examples -->
 <div class="card">
-<h2>⚖️ Your Rights During Probation — 2025 Rules</h2>
+<h2>📐 Worked Examples</h2>
+<p style="font-size:.85rem;color:#666;margin-bottom:.8rem">All examples treat the start date as Day 1 of probation and count calendar days.</p>
+<div class="example-card">
+<h4>1. Shorter contract-stated probation</h4>
+<p>Start date <strong>1 June 2026</strong>, contract states <strong>60 days</strong>, no excluded days. Estimated last probation day: <strong>30 July 2026</strong> (day 60). First post-probation day: <strong>31 July 2026</strong>.</p>
+</div>
+<div class="example-card">
+<h4>2. Verified maximum duration (180 days)</h4>
+<p>Start date <strong>1 January 2026</strong>, contract states the full <strong>180 days</strong> permitted under Article 53. Estimated last probation day: <strong>29 June 2026</strong>. This is the statutory ceiling — a contract cannot lawfully state more than 180 days total.</p>
+</div>
+<div class="example-card">
+<h4>3. No written probation clause</h4>
+<p>Contract does not mention probation at all. Article 53 requires probation to be stated explicitly with a clear duration — with no such clause, this tool treats no contractual probation period as applying, and no end date is estimated.</p>
+</div>
+<div class="example-card">
+<h4>4. Check date exactly on the estimated final day</h4>
+<p>Same as example 1 (60 days from 1 June 2026). Checking status as of <strong>30 July 2026</strong> shows: still within the estimated probation window (day 60 of 60), 0 days remaining after today, status "last estimated day."</p>
+</div>
+<div class="example-card">
+<h4>5. Check date after probation has ended</h4>
+<p>Same contract, checking status as of <strong>15 August 2026</strong> — well past 30 July 2026. Status shows probation has ended, with the number of days that have elapsed since.</p>
+</div>
+<div class="example-card">
+<h4>6. Repeat probation with the same employer</h4>
+<p>A worker completed probation and later left this employer entirely. If more than 6 months have passed since that relationship ended, Article 54 permits a new written probation agreement for a new contract with the same employer. If less than 6 months have passed and the new role is not a different profession or job, Article 54 does not permit it. Whether a specific situation qualifies is a contract- and fact-specific question this tool does not decide.</p>
+</div>
+<div class="example-card">
+<h4>7. Excluded-day example (officially supported)</h4>
+<p>Start date <strong>1 March 2026</strong>, contract states <strong>90 days</strong>, worker takes <strong>4 days</strong> of verified sick leave during probation and the period includes the <strong>4-day</strong> Eid Al-Fitr holiday (8 excluded days total). Estimated last probation day shifts 8 days later than a simple 90-day count, to day 98 from the start date.</p>
+</div>
+</div>
+<!-- Statutory rules -->
+<div class="card">
+<h2>⚖️ Verified Statutory Rules (Article 53 &amp; 54)</h2>
 <div class="rights-grid">
-<div class="right-card yes">
-<h4>✅ Annual Leave Accrues</h4>
-<p>You earn annual leave from day 1 of employment, including during probation. However, your employer may require you to wait until probation ends before taking leave.</p>
+<div class="right-card">
+<h4>📏 Maximum duration: 180 days total</h4>
+<p>Probation must be stated explicitly in the contract with a clear duration. The total period — including any written extension agreed by both parties — cannot exceed 180 days. There is no separate "standard" 90-day default; the contract's own stated duration governs, up to this ceiling.</p>
+<div class="cite">Labour Law Article 53</div>
 </div>
-<div class="right-card yes">
-<h4>✅ Salary Must Be Paid</h4>
-<p>Full salary as per contract must be paid during probation. Withholding probation salary is illegal under Saudi Labour Law.</p>
+<div class="right-card">
+<h4>🗓️ Excluded days</h4>
+<p>Eid Al-Fitr leave, Eid Al-Adha leave, and sick leave do not count toward the probation period — they extend the effective end date rather than being absorbed into it.</p>
+<div class="cite">Labour Law Article 53</div>
 </div>
-<div class="right-card yes">
-<h4>✅ Leave Encashment on Exit</h4>
-<p>Any accrued but unused annual leave must be paid out even if you leave during probation.</p>
+<div class="right-card">
+<h4>🤝 Termination during probation</h4>
+<p>Either party may end the contract during probation if they find the other party unsuitable, without owing compensation — unless the contract itself restricts this right to only one party. This does not mean termination can be arbitrary or discriminatory; whether a specific termination is lawful is a separate legal question.</p>
+<div class="cite">Labour Law Article 53</div>
 </div>
-<div class="right-card yes">
-<h4>✅ GOSI Coverage (Saudis)</h4>
-<p>Saudi national employees are covered by GOSI from day 1. Expats are not covered by GOSI regardless.</p>
+<div class="right-card">
+<h4>💰 No compensation, no EOS</h4>
+<p>If the contract ends during probation, neither party owes the other compensation, and the worker is not entitled to end-of-service gratuity.</p>
+<div class="cite">Labour Law Article 54</div>
 </div>
-<div class="right-card no">
-<h4>❌ No EOS Gratuity</h4>
-<p>You are NOT entitled to End of Service gratuity if you leave during probation — whether you resign or are terminated. EOS requires completing the full probation.</p>
+<div class="right-card">
+<h4>🔁 Repeat probation — limited exceptions</h4>
+<p>A worker generally cannot be placed under probation more than once with the same employer. An exception applies only by written agreement, and only if either the new role is a different profession/job, or at least 6 months have passed since the prior relationship with that employer ended.</p>
+<div class="cite">Labour Law Article 54</div>
 </div>
-<div class="right-card no">
-<h4>❌ No Termination Reason Required</h4>
-<p>During probation, an employer can terminate you without giving a reason and without it being considered arbitrary dismissal. After probation, they must have valid grounds.</p>
+<div class="right-card">
+<h4>🏦 GOSI registration</h4>
+<p>Multiple independent legal-guidance sources state employers must register eligible employees with GOSI from the first day of work, regardless of probation status. We could not independently confirm this against a gosi.gov.sa page directly in this review, so treat it as well-supported but not certified.</p>
+<div class="cite">Secondary sources — medium confidence</div>
 </div>
 </div>
-</div>
-<!-- Notice period during probation -->
-<div class="card">
-<h2>📋 Notice Periods — During vs After Probation</h2>
-<table class="rule-table">
-<thead><tr><th>Situation</th><th>Notice Required</th><th>Pay During Notice</th><th>EOS Payable?</th></tr></thead>
-<tbody>
-<tr>
-<td><strong>Employee resigns during probation</strong></td>
-<td>As per contract (2025: minimum 24 hours if contract is silent)</td>
-<td>Normal salary for notice days</td>
-<td>❌ No</td>
-</tr>
-<tr>
-<td><strong>Employer terminates during probation</strong></td>
-<td>As per contract (or 24–30 days if contract is silent)</td>
-<td>Normal salary for notice days</td>
-<td>❌ No (but leave encashment: ✅)</td>
-</tr>
-<tr>
-<td><strong>Employee resigns after probation (under 2 yrs)</strong></td>
-<td>Contract notice period (typically 30–60 days)</td>
-<td>Normal salary</td>
-<td>❌ No (under 2 years service)</td>
-</tr>
-<tr>
-<td><strong>Employee resigns after probation (2–5 yrs)</strong></td>
-<td>Contract notice (30–60 days)</td>
-<td>Normal salary</td>
-<td>✅ 1/3 of full EOS</td>
-</tr>
-<tr>
-<td><strong>Employer terminates after probation</strong></td>
-<td>Minimum 30 days (2025: 60 days recommended)</td>
-<td>Normal salary + compensation if notice not given</td>
-<td>✅ Full EOS</td>
-</tr>
-</tbody>
-</table>
-</div>
-<!-- Key 2025 changes -->
-<div class="card">
-<h2>🆕 Key 2025 Saudi Labour Law Changes — Probation</h2>
-<div class="success-box">
-<strong>February 2025 amendments</strong> — biggest reform since 2015. Key changes affecting probation:
-    </div>
-<table class="rule-table" style="margin-top:.8rem">
-<thead><tr><th>Topic</th><th>Before 2025</th><th>After 2025 (Current)</th></tr></thead>
-<tbody>
-<tr><td>Probation length</td><td>Max 90 days (180 with agreement)</td><td>Same — 90 days standard, 180 days with written mutual agreement</td></tr>
-<tr><td>Notice during probation</td><td>Ambiguous in many contracts</td><td>Minimum 24 hours if contract is silent — clearer rule</td></tr>
-<tr><td>Re-probation same company</td><td>Possible after re-hire</td><td>Only ONE probation period per employee per company is allowed</td></tr>
-<tr><td>Extended probation</td><td>Sometimes imposed unilaterally</td><td>Must be mutually agreed in writing before start of employment</td></tr>
-<tr><td>Termination during probation</td><td>No specific minimum notice</td><td>Contract terms apply; 24-hour minimum if silent</td></tr>
-</tbody>
-</table>
-<div class="warn-box" style="margin-top:.8rem">
-<strong>⚠️ Verbal probation extensions are illegal.</strong> If your employer says "we're extending your probation" but there's no written agreement, the extension is not valid under Saudi Labour Law. After 90 days (or 180 with written agreement), you are automatically a confirmed employee.
-    </div>
+<div class="review-box">⚠️ <strong>Not covered by primary sources found in this review:</strong> a specific statutory default notice period for ending a contract during probation (so this tool does not calculate notice pay); and annual-leave accrual specifically during probation (general leave-accrual rules likely apply proportionally to time worked — use the <a href="https://www.saudiutilityhub.com/leave-calculator.html">Leave Calculator</a> for that estimate rather than relying on a figure here). If either point matters to a real decision, confirm with HRSD/Qiwa or a licensed Saudi employment-law professional.</div>
 </div>
 <!-- FAQ -->
 <div class="card">
 <h2>❓ Frequently Asked Questions</h2>
 <div class="faq-item">
-<div class="faq-q">What is the probation period in Saudi Arabia 2025?</div>
-<div class="faq-a">The standard probation period is 90 days. It can be extended to 180 days only with a written mutual agreement signed before the start of employment. Only one probation period is allowed per employee per company under the 2025 amendments.</div>
+<div class="faq-q">How long can a Saudi probation period last?</div>
+<div class="faq-a">Article 53 requires the probation period to be explicitly stated in the employment contract with a clear duration. The total probation period — including any written extension agreed by both parties — cannot exceed 180 days. There is no fixed "standard" length below that cap; the actual duration is whatever your contract states, up to the 180-day maximum.</div>
 </div>
 <div class="faq-item">
-<div class="faq-q">Can I resign during probation in Saudi Arabia?</div>
-<div class="faq-a">Yes. Under the 2025 Labour Law amendments, you can resign during probation. The notice period is whatever is stated in your contract — if nothing is stated, the minimum is 24 hours. You will not receive EOS but you are entitled to leave encashment for any accrued leave days.</div>
+<div class="faq-q">Do public holidays or sick leave count toward my probation period?</div>
+<div class="faq-a">No, for three specific categories. Article 53 excludes Eid Al-Fitr leave, Eid Al-Adha leave, and sick leave from the probation-period count — these days extend your effective probation end date rather than counting toward it. We did not find a provision excluding other categories of absence.</div>
 </div>
 <div class="faq-item">
-<div class="faq-q">Does GOSI apply during probation?</div>
-<div class="faq-a">Yes. Employers must register new employees with GOSI and start contributions from day one of employment, including during probation — this is not optional.</div>
+<div class="faq-q">Can my employer end my contract during probation without giving a reason?</div>
+<div class="faq-a">Under Article 53, either party may end the contract during probation if they find the other unsuitable, without owing compensation, unless your contract restricts this right to only one party. This is not the same as saying dismissal can be arbitrary or discriminatory — whether a specific termination is lawful is a case-specific legal question this estimator does not decide.</div>
 </div>
 <div class="faq-item">
-<div class="faq-q">Do I get EOS if terminated during probation?</div>
-<div class="faq-a">No. EOS gratuity is not payable if you are terminated during probation. However, your employer must pay out any accrued annual leave days (leave encashment) and your full salary up to the last working day.</div>
+<div class="faq-q">Do I get end-of-service gratuity if my contract ends during probation?</div>
+<div class="faq-a">No. Article 54 states that if the contract is ended during probation, neither party owes compensation and the worker is not entitled to end-of-service gratuity. Our <a href="https://www.saudiutilityhub.com/ksa-eos-calculator.html">EOS Gratuity Calculator</a> can help you estimate entitlements for employment that continues beyond probation.</div>
 </div>
 <div class="faq-item">
-<div class="faq-q">Can my employer keep me on probation for more than 6 months?</div>
-<div class="faq-a">No. The maximum probation period under Saudi Labour Law is 180 days (6 months), and this maximum is only possible with a written agreement signed before employment starts. After 180 days, you are legally a confirmed employee with full employment rights regardless of what your employer says.</div>
+<div class="faq-q">Can the same employer put me on probation more than once?</div>
+<div class="faq-a">Generally no. Article 54 prohibits placing a worker under probation more than once with the same employer, except by written agreement between both parties, and only if either (a) the new role is a different profession or job, or (b) at least six months have passed since the end of the worker's previous relationship with that employer.</div>
 </div>
 <div class="faq-item">
-<div class="faq-q">What happens if my employer terminates me just before probation ends?</div>
-<div class="faq-a">This is legally permitted — the employer can terminate without specific reason during probation. However, if you believe the timing is designed to avoid EOS payments (e.g. terminating after 9 years and re-hiring with a new probation), that would be considered illegal circumvention of the law and you can file a complaint with HRSD.</div>
+<div class="faq-q">Is a notice period legally required to end a contract during probation?</div>
+<div class="faq-a">We did not find a specific statutory default notice period (such as 24 hours) for ending a contract during probation in current primary sources, so this estimator does not assume one. If your contract states a notice period for probation, that contractual term applies — check your contract directly.</div>
 </div>
+<div class="faq-item">
+<div class="faq-q">Where can I get help if I have a probation-related dispute?</div>
+<div class="faq-a">File a complaint through the <a href="https://www.qiwa.sa" rel="noopener" target="_blank">Qiwa portal</a> (qiwa.sa). HRSD will attempt mediation first; unresolved disputes can be escalated to the Labour Courts. This estimator only calculates dates — it cannot review your contract or decide whether a specific action was lawful.</div>
+</div>
+</div>
+<!-- Official sources -->
+<div class="card">
+<h2>📖 Official Sources &amp; Legal Articles</h2>
+<ul class="source-list">
+<li><strong>Article 53</strong> — probation must be stated explicitly in the contract with a clear duration; total duration (including any written extension) capped at 180 days; Eid Al-Fitr, Eid Al-Adha and sick leave excluded from the count; either party may end the contract during probation without compensation unless the contract restricts this to one party. <span class="tier">Confidence: high (article text quoted consistently across independent legal-commentary sources)</span></li>
+<li><strong>Article 54</strong> — no compensation or EOS gratuity owed if the contract ends during probation; a worker generally cannot be placed under probation more than once with the same employer except by written agreement combined with either a different profession/job or a 6-month gap since the prior relationship ended. <span class="tier">Confidence: high</span></li>
+<li><strong>Royal Decree M/44 (8/2/1446H, ≈ August 2024)</strong> — amendment affecting the probation-duration mechanics described above. <span class="tier">Confidence: medium — sources describe the amendment's effect somewhat differently; we did not independently re-derive the exact pre/post wording from the gazette text in this review</span></li>
+<li>GOSI first-day registration during probation — reported consistently by independent legal-guidance sources. <span class="tier">Confidence: medium — not independently confirmed on gosi.gov.sa directly in this review</span></li>
+<li><a href="https://www.hrsd.gov.sa" rel="noopener" target="_blank">hrsd.gov.sa</a> — Ministry of Human Resources and Social Development, primary regulator for the Labour Law.</li>
+<li><a href="https://www.qiwa.sa" rel="noopener" target="_blank">qiwa.sa</a> — official portal for labour complaints, contract verification and mediation requests.</li>
+<li><a href="https://www.gosi.gov.sa" rel="noopener" target="_blank">gosi.gov.sa</a> — General Organization for Social Insurance, for registration obligations.</li>
+</ul>
+<div class="review-box">⚠️ <strong>For qualified review:</strong> the precise procedural mechanics of how a 180-day probation is agreed (an upfront single agreement versus an initial period plus a later written extension), whether a notice period is legally required for probation termination, and how repeat-probation exceptions apply to a specific employment history are not fully settled by the sources reviewed here. If official Arabic and English contract or policy text differ, the Arabic Labour Law text governs — confirm any of these points with HRSD, Qiwa, or a licensed Saudi employment-law professional before relying on them for a real decision.</div>
 </div>
 <div class="card">
 <h2>🔧 Related Tools</h2>
 <div class="related-grid">
-<a class="rel-card" href="https://www.saudiutilityhub.com/final-settlement-calculator.html">
-<div class="icon">🧾</div>
-<h4>Final Settlement Calculator</h4>
-<p>EOS + leave + notice pay after probation ends</p>
-</a>
 <a class="rel-card" href="https://www.saudiutilityhub.com/ksa-eos-calculator.html">
 <div class="icon">🤝</div>
-<h4>EOS Calculator</h4>
-<p>Full Article 84 calculation after probation</p>
+<h4>EOS Gratuity Calculator</h4>
+<p>Estimate end-of-service gratuity for employment beyond probation</p>
 </a>
 <a class="rel-card" href="https://www.saudiutilityhub.com/leave-calculator.html">
 <div class="icon">🏖️</div>
-<h4>Leave Calculator</h4>
-<p>Leave entitlement and encashment</p>
+<h4>Annual Leave Calculator</h4>
+<p>Estimate leave accrual and unused-leave payout</p>
 </a>
-<a class="rel-card" href="https://www.saudiutilityhub.com/salary-calculator.html">
-<div class="icon">💼</div>
-<h4>Salary Calculator</h4>
-<p>Net take-home pay with GOSI</p>
+<a class="rel-card" href="https://www.saudiutilityhub.com/final-settlement-calculator.html">
+<div class="icon">🧾</div>
+<h4>Final Settlement Calculator</h4>
+<p>Combined EOS + leave + notice-period estimate</p>
+</a>
+<a class="rel-card" href="https://www.saudiutilityhub.com/working-hours-calculator.html">
+<div class="icon">⏱️</div>
+<h4>Working Hours &amp; Overtime</h4>
+<p>Article 98/107 hours limits and overtime pay</p>
 </a>
 </div>
 </div>
 </div>
-<p style="font-size:.78rem;color:#6b7280;text-align:center;max-width:900px;margin:14px auto 0;padding:0 20px">Sources: Saudi Labor Law (Royal Decree M/51) probation period provisions, MHRSD guidance. Figures and rules are set by the issuing authority and may change — verify current details on the official portal before relying on them. Last reviewed: June 2026.</p>
-<div style="max-width:900px;margin:0 auto;padding:0 20px 28px;"><p style="font-size:12px;color:#666;background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;margin:0;">⚠️ <strong>Disclaimer:</strong> All results are estimates based on publicly available Saudi government regulations and rates. Always verify important financial or legal decisions with your employer, bank, or the relevant Saudi authority (Ministry of Human Resources, GOSI, ZATCA, Jawazat, or SAMA).</p></div>
+<p style="font-size:.78rem;color:#6b7280;text-align:center;max-width:900px;margin:14px auto 0;padding:0 20px">Sources: Saudi Labour Law (Royal Decree M/51, as amended by M/44) Articles 53–54, HRSD official guidance. Figures and rules are set by the issuing authority and may change — verify current details on the official portal before relying on them. Last reviewed: July 2026.</p>
+<div style="max-width:900px;margin:0 auto;padding:0 20px 28px;"><p style="font-size:12px;color:#666;background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;margin:0;">⚠️ <strong>Disclaimer:</strong> This tool produces an unofficial date estimate only — it is not a legal-status calculator and cannot read, verify, or interpret your actual employment contract. It does not decide whether any specific termination, extension, or repeat-probation arrangement is lawful. Always verify your situation with your employer, HRSD, Qiwa, or a licensed Saudi employment-law professional.</p></div>
 <footer>
 <p>© 2026 <a href="https://www.saudiutilityhub.com/">Saudi Utility Hub</a> · Free expat tools for Saudi Arabia · <a href="https://www.saudiutilityhub.com/privacy.html">Privacy</a></p>
-<p style="margin-top:.5rem;font-size:.8rem;opacity:.7">Based on Saudi Labour Law 2025 amendments. Verify with <a href="https://hrsd.gov.sa" target="_blank">hrsd.gov.sa</a>.</p>
+<p style="margin-top:.5rem;font-size:.8rem;opacity:.7">Based on Saudi Labour Law. Verify with <a href="https://hrsd.gov.sa" target="_blank">hrsd.gov.sa</a>.</p>
 </footer>
 <script>
-function calculate(){
-  const startStr = document.getElementById('startDate').value;
-  const todayStr = document.getElementById('todayDate').value;
-  const probDays = parseInt(document.getElementById('probationLength').value);
-  const salary = parseFloat(document.getElementById('salary').value)||0;
-  const noticeDays = parseInt(document.getElementById('contractNotice').value)||30;
+/* ---------- constants (disclosed conventions, not asserted statutory formulas) ---------- */
+var MAX_DURATION_DAYS = 180;   // Article 53 verified statutory maximum, total including extension
+var MAX_EXCLUDED_DAYS = 60;    // sanity cap for excluded-day input
+var MIN_START_YEAR = 1970;     // sanity floor for start date
+var MAX_SPAN_YEARS = 20;       // sanity cap on span between start date and check date
 
-  if(!startStr){alert('Please enter your employment start date.');return;}
+var probationCalcData = {};
 
-  const today = todayStr ? new Date(todayStr) : new Date();
-  const start = new Date(startStr);
-  const probEnd = new Date(start);
-  probEnd.setDate(probEnd.getDate() + probDays);
+/* ---------- helpers ---------- */
+function parseDateInput(id){
+  var v = document.getElementById(id).value;
+  if(!v) return null;
+  var d = new Date(v+'T00:00:00');
+  if(isNaN(d.getTime())) return null;
+  return d;
+}
+function daysBetween(d1,d2){ return Math.round((d2.getTime()-d1.getTime())/86400000); }
+function addDays(d, n){ var r = new Date(d.getTime()); r.setDate(r.getDate()+n); return r; }
+function todayDate(){
+  var t = new Date();
+  return new Date(t.getFullYear(), t.getMonth(), t.getDate());
+}
+function fmtDate(d){
+  if(!d) return '—';
+  return d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
+}
+function isIntegerString(raw){
+  return /^-?\d+$/.test(String(raw).trim());
+}
 
-  const daysWorked = Math.floor((today - start) / (1000*60*60*24));
-  const daysIntoProb = Math.min(daysWorked, probDays);
-  const daysLeftInProb = Math.max(0, probDays - daysWorked);
-  const isInProbation = probDays > 0 && daysWorked < probDays;
-
-  const dailyRate = salary / 30;
-  const noticePay = dailyRate * noticeDays;
-
-  // Annual leave accrued during probation (prorated)
-  const annualEntitlement = 21; // standard
-  const leaveAccrued = (daysWorked / 365) * annualEntitlement;
-
-  const rows = document.getElementById('resultRows');
-  let html = '';
-
-  html += `<div class="result-row ${isInProbation?'warning':'success'}">
-    <span class="rr-label">Current Status</span>
-    <span class="rr-value">${isInProbation ? '⏱️ Still in Probation' : '✅ Probation Completed'}</span>
-  </div>`;
-  html += `<div class="result-row highlight">
-    <span class="rr-label">Employment Start Date</span>
-    <span class="rr-value">${start.toLocaleDateString('en-SA',{day:'numeric',month:'long',year:'numeric'})}</span>
-  </div>`;
-  if(probDays > 0){
-    html += `<div class="result-row">
-      <span class="rr-label">Probation Period</span>
-      <span class="rr-value">${probDays} days</span>
-    </div>`;
-    html += `<div class="result-row ${isInProbation?'warning':'success'}">
-      <span class="rr-label">Probation End Date</span>
-      <span class="rr-value">${probEnd.toLocaleDateString('en-SA',{day:'numeric',month:'long',year:'numeric'})}</span>
-    </div>`;
-  }
-  html += `<div class="result-row">
-    <span class="rr-label">Days Worked So Far</span>
-    <span class="rr-value">${daysWorked.toLocaleString()} days</span>
-  </div>`;
-  if(isInProbation){
-    html += `<div class="result-row warning">
-      <span class="rr-label">Days Remaining in Probation</span>
-      <span class="rr-value">${daysLeftInProb} days left</span>
-    </div>`;
-  }
-  if(salary > 0){
-    html += `<div class="result-row">
-      <span class="rr-label">Daily Salary Rate</span>
-      <span class="rr-value">SAR ${dailyRate.toFixed(2)}</span>
-    </div>`;
-    html += `<div class="result-row">
-      <span class="rr-label">Notice Period Pay (if employer skips notice)</span>
-      <span class="rr-value">SAR ${noticePay.toFixed(2)} (${noticeDays} days)</span>
-    </div>`;
-    html += `<div class="result-row">
-      <span class="rr-label">Annual Leave Accrued During Probation</span>
-      <span class="rr-value">${leaveAccrued.toFixed(1)} days</span>
-    </div>`;
-  }
-  html += `<div class="result-row danger">
-    <span class="rr-label">EOS Gratuity During Probation</span>
-    <span class="rr-value">❌ SAR 0 — Not entitled</span>
-  </div>`;
-
-  rows.innerHTML = html;
-
-  const statusBox = document.getElementById('statusBox');
-  if(isInProbation){
-    statusBox.innerHTML = `<div class="warn-box"><strong>⏱️ You are currently in probation.</strong> You have ${daysLeftInProb} days remaining. You are not entitled to EOS gratuity if you leave now. However, you will receive any accrued leave encashment (approximately ${salary>0?'SAR '+(leaveAccrued*dailyRate).toFixed(2):'based on your salary'}).</div>`;
+/* ---------- accessible field-error helpers ---------- */
+function setFieldError(id, message){
+  var wrap = document.getElementById('field-'+id);
+  var err = document.getElementById(id+'-error');
+  var input = document.getElementById(id);
+  if(message){
+    if(wrap) wrap.classList.add('has-error');
+    if(err){ err.textContent = message; err.classList.add('visible'); }
+    if(input) input.setAttribute('aria-invalid','true');
+    return false;
   } else {
-    const yearsWorked = daysWorked / 365;
-    let eosNote = '';
-    if(yearsWorked < 2) eosNote = 'Under 2 years service — no EOS on resignation.';
-    else if(yearsWorked < 5) eosNote = `${yearsWorked.toFixed(1)} years — entitled to 1/3 EOS on resignation.`;
-    else if(yearsWorked < 10) eosNote = `${yearsWorked.toFixed(1)} years — entitled to 2/3 EOS on resignation.`;
-    else eosNote = `${yearsWorked.toFixed(1)} years — entitled to FULL EOS on resignation.`;
-    statusBox.innerHTML = `<div class="success-box"><strong>✅ Probation completed.</strong> You are a confirmed employee with full rights under Saudi Labour Law.<br><br>📌 ${eosNote}<br>📌 Use our <a href="https://www.saudiutilityhub.com/final-settlement-calculator.html">Final Settlement Calculator</a> to calculate your full entitlement.</div>`;
+    if(wrap) wrap.classList.remove('has-error');
+    if(err){ err.textContent=''; err.classList.remove('visible'); }
+    if(input) input.removeAttribute('aria-invalid');
+    return true;
   }
+}
+function showErrorSummary(messages){
+  var summary = document.getElementById('errorSummary');
+  var list = document.getElementById('errorList');
+  if(messages.length===0){ summary.classList.remove('visible'); list.innerHTML=''; return; }
+  list.innerHTML = messages.map(function(m){ return '<li><a href="#field-'+m.id+'">'+m.text+'</a></li>'; }).join('');
+  summary.classList.add('visible');
+}
+
+/* ---------- validation ---------- */
+function validateProbationForm(){
+  var errors = [];
+  var startDate = parseDateInput('startDate');
+  var checkDate = parseDateInput('checkDate');
+  var noProbation = document.getElementById('noProbation').checked;
+  var durationRaw = document.getElementById('duration').value;
+  var excludedRaw = document.getElementById('excludedDays').value;
+
+  setFieldError('startDate', null);
+  setFieldError('checkDate', null);
+  setFieldError('duration', null);
+  setFieldError('excludedDays', null);
+
+  // Start date
+  if(!startDate){
+    setFieldError('startDate','Enter your employment start date.');
+    errors.push({id:'startDate', text:'Employment start date is required.'});
+  } else if(startDate.getFullYear() < MIN_START_YEAR){
+    setFieldError('startDate','Please enter a realistic start date (after '+MIN_START_YEAR+').');
+    errors.push({id:'startDate', text:'Start date is unrealistically far in the past.'});
+  }
+
+  // Check date
+  if(!checkDate){
+    setFieldError('checkDate','Enter the date to check status as of.');
+    errors.push({id:'checkDate', text:'Check date is required.'});
+  } else if(startDate && checkDate.getTime() < startDate.getTime()){
+    setFieldError('checkDate','This date cannot be before your employment start date.');
+    errors.push({id:'checkDate', text:'Check date cannot be before the start date.'});
+  } else if(startDate){
+    var spanYears = (checkDate.getTime()-startDate.getTime())/(86400000*365.25);
+    if(spanYears > MAX_SPAN_YEARS){
+      setFieldError('checkDate','That is more than '+MAX_SPAN_YEARS+' years after your start date — please check the dates.');
+      errors.push({id:'checkDate', text:'Check date is unrealistically far from the start date.'});
+    }
+  }
+
+  // Duration (only required/validated when a probation is stated)
+  var duration = null;
+  if(!noProbation){
+    if(durationRaw === '' || durationRaw === null){
+      setFieldError('duration','Enter the probation duration from your contract, or check "no probation stated."');
+      errors.push({id:'duration', text:'Probation duration is required unless you select "no probation stated."'});
+    } else if(!isIntegerString(durationRaw)){
+      setFieldError('duration','Enter a whole number of days (decimals are not valid contract durations).');
+      errors.push({id:'duration', text:'Probation duration must be a whole number of days.'});
+    } else {
+      duration = parseInt(durationRaw, 10);
+      if(duration < 0){
+        setFieldError('duration','Duration cannot be negative.');
+        errors.push({id:'duration', text:'Probation duration cannot be negative.'});
+      } else if(duration > MAX_DURATION_DAYS){
+        setFieldError('duration','The statutory maximum is '+MAX_DURATION_DAYS+' days (Article 53). Enter a value up to '+MAX_DURATION_DAYS+'.');
+        errors.push({id:'duration', text:'Probation duration exceeds the 180-day legal maximum.'});
+      }
+    }
+  }
+
+  // Excluded days
+  var excludedDays = excludedRaw === '' ? 0 : parseFloat(excludedRaw);
+  if(excludedRaw !== '' && (!isIntegerString(excludedRaw))){
+    setFieldError('excludedDays','Enter a whole number of days, or leave it as 0.');
+    errors.push({id:'excludedDays', text:'Excluded days must be a whole number.'});
+  } else if(isNaN(excludedDays) || !isFinite(excludedDays)){
+    setFieldError('excludedDays','Enter a valid number of days.');
+    errors.push({id:'excludedDays', text:'Excluded days must be a valid number.'});
+  } else if(excludedDays < 0){
+    setFieldError('excludedDays','Excluded days cannot be negative.');
+    errors.push({id:'excludedDays', text:'Excluded days cannot be negative.'});
+  } else if(excludedDays > MAX_EXCLUDED_DAYS){
+    setFieldError('excludedDays','That number of days looks unrealistic for a probation period — please check it.');
+    errors.push({id:'excludedDays', text:'Excluded days value is unrealistically large.'});
+  }
+
+  showErrorSummary(errors);
+
+  if(errors.length){
+    document.getElementById('results').classList.remove('show');
+    return null;
+  }
+  return {
+    startDate: startDate, checkDate: checkDate, noProbation: noProbation,
+    duration: noProbation ? 0 : duration,
+    excludedDays: excludedDays
+  };
+}
+
+/* ---------- main calculate ---------- */
+function calculateProbation(){
+  var input = validateProbationForm();
+  if(!input) return;
+
+  var statusHero = document.getElementById('statusHero');
+  var rowsEl = document.getElementById('resultRows');
+
+  if(input.noProbation || input.duration === 0){
+    statusHero.innerHTML = '<div class="status-hero none"><div class="label">📄 No contractual probation period</div><div class="amount">Not applicable</div></div>';
+    rowsEl.innerHTML =
+      '<div class="result-row"><span class="r-label">Start date</span><span class="r-value">'+fmtDate(input.startDate)+'</span></div>'+
+      '<div class="result-row"><span class="r-label">Checked as of</span><span class="r-value">'+fmtDate(input.checkDate)+'</span></div>'+
+      '<div class="result-row"><span class="r-label">Contract-stated duration</span><span class="r-value">None stated</span></div>';
+    probationCalcData = { noProbation: true, startDate: input.startDate, checkDate: input.checkDate };
+    document.getElementById('results').classList.add('show');
+    document.getElementById('results').scrollIntoView({behavior:'smooth', block:'start'});
+    return;
+  }
+
+  var totalEffectiveDays = input.duration + input.excludedDays; // excluded days push the end date later
+  var lastProbationDay = addDays(input.startDate, totalEffectiveDays - 1); // start date = day 1
+  var firstPostProbationDay = addDays(input.startDate, totalEffectiveDays);
+  var daysElapsed = daysBetween(input.startDate, input.checkDate) + 1; // inclusive of start day
+  var hasEnded = input.checkDate.getTime() > lastProbationDay.getTime();
+  var daysRemaining = hasEnded ? 0 : Math.max(0, totalEffectiveDays - daysElapsed);
+  var daysSinceEnded = hasEnded ? daysBetween(lastProbationDay, input.checkDate) : 0;
+
+  var heroClass = hasEnded ? 'ended' : 'in-prob';
+  var heroLabel = hasEnded ? '✅ Probation period has ended (estimate)' : '⏱️ Still within estimated probation window';
+  var heroValue = hasEnded
+    ? (daysSinceEnded===0 ? 'Ended today (last estimated day)' : daysSinceEnded+' day(s) since estimated end')
+    : daysRemaining+' day(s) remaining (estimate)';
+  statusHero.innerHTML = '<div class="status-hero '+heroClass+'"><div class="label">'+heroLabel+'</div><div class="amount">'+heroValue+'</div></div>';
+
+  var rows = '';
+  rows += '<div class="result-row"><span class="r-label">Start date (counted as Day 1)</span><span class="r-value">'+fmtDate(input.startDate)+'</span></div>';
+  rows += '<div class="result-row"><span class="r-label">Contract-stated duration</span><span class="r-value">'+input.duration+' day(s)</span></div>';
+  rows += '<div class="result-row"><span class="r-label">Verified excluded days added</span><span class="r-value">'+input.excludedDays+' day(s)</span></div>';
+  rows += '<div class="result-row"><span class="r-label">Estimated last probation day</span><span class="r-value">'+fmtDate(lastProbationDay)+'</span></div>';
+  rows += '<div class="result-row"><span class="r-label">Estimated first post-probation day</span><span class="r-value">'+fmtDate(firstPostProbationDay)+'</span></div>';
+  rows += '<div class="result-row"><span class="r-label">Checked as of</span><span class="r-value">'+fmtDate(input.checkDate)+'</span></div>';
+  rows += '<div class="result-row"><span class="r-label">Days elapsed since start (inclusive)</span><span class="r-value">'+Math.max(0,daysElapsed)+'</span></div>';
+  rows += '<div class="result-row"><span class="r-label"><strong>Days remaining in probation</strong></span><span class="r-value"><strong>'+daysRemaining+'</strong></span></div>';
+  rowsEl.innerHTML = rows;
+
+  probationCalcData = {
+    noProbation: false, startDate: input.startDate, checkDate: input.checkDate,
+    duration: input.duration, excludedDays: input.excludedDays,
+    totalEffectiveDays: totalEffectiveDays, lastProbationDay: lastProbationDay,
+    firstPostProbationDay: firstPostProbationDay, daysElapsed: daysElapsed,
+    daysRemaining: daysRemaining, hasEnded: hasEnded, daysSinceEnded: daysSinceEnded
+  };
 
   document.getElementById('results').classList.add('show');
-  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'start'});
+  document.getElementById('results').scrollIntoView({behavior:'smooth', block:'start'});
 }
 
-function resetCalc(){
+/* ---------- reset ---------- */
+function resetProbationForm(){
   document.getElementById('results').classList.remove('show');
-  document.getElementById('startDate').value='';
-  document.getElementById('todayDate').value='';
-  document.getElementById('salary').value='';
-  window.scrollTo({top:0,behavior:'smooth'});
+  document.getElementById('startDate').value = '';
+  document.getElementById('checkDate').value = todayDate().toISOString().slice(0,10);
+  document.getElementById('noProbation').checked = false;
+  document.getElementById('duration').value = '';
+  document.getElementById('excludedDays').value = '0';
+  ['startDate','checkDate','duration','excludedDays'].forEach(function(id){ setFieldError(id, null); });
+  showErrorSummary([]);
+  window.scrollTo({top:0, behavior:'smooth'});
 }
 
-// Default today's date
-document.addEventListener('DOMContentLoaded',()=>{
-  const t = new Date();
-  const y = t.getFullYear(), m=String(t.getMonth()+1).padStart(2,'0'), d=String(t.getDate()).padStart(2,'0');
-  document.getElementById('todayDate').value = `${y}-${m}-${d}`;
+/* ---------- keyboard submission ---------- */
+['startDate','checkDate','duration','excludedDays'].forEach(function(id){
+  var el = document.getElementById(id);
+  if(el){
+    el.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); calculateProbation(); }
+    });
+  }
 });
+
+/* ---------- default check date to today ---------- */
+document.getElementById('checkDate').value = todayDate().toISOString().slice(0,10);
 </script>
 </body>
 </html>
