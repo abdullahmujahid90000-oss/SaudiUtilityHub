@@ -20,13 +20,7 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Dependent Levy Estimator — Saudi Arabia" name="twitter:title"/>
 <meta content="Estimate your monthly dependent levy for a sponsored spouse or child under 18 in Saudi Arabia. Domestic workers are not included — see why." name="twitter:description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/></noscript>
 <!-- AdSense / Analytics -->
-<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5391037132181133"></script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MX4J28KBE6"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MX4J28KBE6');</script>
 <!-- Structured Data -->
 <script type="application/ld+json">
   {
@@ -265,18 +259,6 @@
       color: #1e3a5f;
     }
     .scope-box strong { color: #1e40af; }
-    .ad-slot {
-      text-align: center;
-      margin: 2rem 0;
-      min-height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f8fafc;
-      border: 1px dashed #cbd5e1;
-      color: var(--gray);
-      font-size: 0.875rem;
-    }
     .calculator-card {
       background: white;
       border: 1px solid var(--border);
@@ -488,36 +470,6 @@
       font-size: 0.9rem;
       color: #94a3b8;
     }
-    .cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: white;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
-    .cookie-text {
-      max-width: 800px;
-      font-size: 0.9rem;
-      color: var(--gray);
-    }
-    .cookie-btns {
-      display: flex;
-      gap: 0.75rem;
-    }
-    .cookie-btn {
-      padding: 0.5rem 1rem;
-      border-radius: 0.375rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-    }
-    .accept { background: var(--primary); color: white; border: none; }
-    .decline { background: #f1f5f9; color: var(--gray); border: 1px solid var(--border); }
 
     @media (max-width: 768px) {
       .header-inner { flex-direction: column; gap: 1rem; }
@@ -683,9 +635,6 @@
 </tr>
 </tbody>
 </table>
-<div class="ad-slot">
-<ins class="adsbygoogle" data-ad-client="ca-pub-5391037132181133" data-ad-format="auto" data-ad-slot="2626150601" data-full-width-responsive="true" style="display:block"></ins>
-</div>
 <div class="editorial-note">
 <strong>How this page was built:</strong> the SAR 400/month rate and its collection timing are sourced from official Saudi government reporting (see Official Sources below), not from a fixed review schedule. Several practical points below — the exact employer/employee liability split, the current full exemption list, non-payment penalties beyond a blocked renewal, and refund treatment — are commonly reported but were not independently confirmed against a primary source for this page, so they are flagged as unresolved rather than stated as fact. <a href="/about.html">Read more about how we build and check our tools</a>.
     </div>
@@ -794,19 +743,7 @@
       © 2026 Saudi Utility Hub · Riyadh, Saudi Arabia · Calculations are estimates only. Verify with official sources.
     </div>
 </footer>
-<div class="cookie-banner" id="cookieBanner">
-<div class="cookie-text">
-      🍪 We use cookies for ads and analytics. By clicking "Accept", you consent to our use of cookies.
-      <a href="/privacy.html" style="color:var(--primary);">Privacy Policy</a>
-</div>
-<div class="cookie-btns">
-<button class="cookie-btn accept" onclick="acceptCookies()">Accept</button>
-<button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
-</div>
-</div>
 <script>
-    function acceptCookies() { document.getElementById('cookieBanner').style.display = 'none'; }
-    function declineCookies() { document.getElementById('cookieBanner').style.display = 'none'; }
 
     var LEVY_RATE = 400;
     var MAX_CHILDREN = 20;
@@ -926,13 +863,6 @@
       });
     });
 
-    window.addEventListener('load', function () {
-      if (typeof adsbygoogle !== 'undefined') {
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (e) {}
-      }
-    });
   </script>
 </body>
 </html>

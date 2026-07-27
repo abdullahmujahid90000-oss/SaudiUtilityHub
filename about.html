@@ -19,12 +19,6 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="About Saudi Utility Hub" name="twitter:title"/>
 <meta content="Who operates Saudi Utility Hub and how our free employment/payroll and Iqama/visa tools for Saudi Arabia are built." name="twitter:description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/></noscript>
-<!-- Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MX4J28KBE6"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MX4J28KBE6');</script>
 <!-- Structured Data -->
 <script type="application/ld+json">
   {
@@ -356,23 +350,6 @@
       font-size: 0.875rem;
       color: #94a3b8;
     }
-    .cookie-banner {
-      position: fixed;
-      bottom: 0; left: 0; right: 0;
-      background: white;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-      gap: 1rem;
-    }
-    .cookie-text { font-size: 0.9rem; color: var(--gray); }
-    .cookie-btns { display: flex; gap: 0.75rem; flex-shrink: 0; }
-    .cookie-btn { padding: 0.5rem 1rem; border-radius: 0.375rem; font-size: 0.9rem; cursor: pointer; }
-    .accept { background: var(--primary); color: white; border: none; }
-    .decline { background: #f1f5f9; color: var(--gray); border: 1px solid var(--border); }
     @media (max-width: 768px) {
       .header-inner { flex-direction: column; gap: 1rem; }
       nav ul { flex-wrap: wrap; justify-content: center; }
@@ -545,28 +522,7 @@
       © 2026 Saudi Utility Hub · Independently operated · Free tools for Saudi employment/payroll and Iqama/visa procedures.
     </div>
 </footer>
-<div class="cookie-banner" id="cookieBanner">
-<div class="cookie-text">
-      🍪 We use cookies for ads and analytics. By clicking "Accept", you consent to our use of cookies.
-      <a href="/privacy.html" style="color:var(--primary);">Privacy Policy</a>
-</div>
-<div class="cookie-btns">
-<button class="cookie-btn accept" onclick="acceptCookies()">Accept</button>
-<button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
-</div>
-</div>
 <script>
-    function acceptCookies() {
-      localStorage.setItem('cookieConsent', 'accepted');
-      document.getElementById('cookieBanner').style.display = 'none';
-    }
-    function declineCookies() {
-      localStorage.setItem('cookieConsent', 'declined');
-      document.getElementById('cookieBanner').style.display = 'none';
-    }
-    if (localStorage.getItem('cookieConsent')) {
-      document.getElementById('cookieBanner').style.display = 'none';
-    }
   </script>
 </body>
 </html>

@@ -5,13 +5,11 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Privacy Policy — Saudi Utility Hub</title>
-<meta content="Learn how Saudi Utility Hub collects, uses, and protects your data. Cookie policy, Google AdSense, and user rights explained." name="description"/>
-<meta content="privacy policy saudi utility hub, cookie policy ksa, adsense data collection, gdpr compliance saudi, user data protection" name="keywords"/>
+<meta content="Plain-language privacy policy for Saudi Utility Hub: what information is processed when you visit, how calculator inputs are handled, cookie and analytics status, and how to send a privacy inquiry." name="description"/>
 <link href="https://www.saudiutilityhub.com/privacy.html" rel="canonical"/>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
-<!-- Open Graph / Twitter -->
 <meta content="Privacy Policy — Saudi Utility Hub" property="og:title"/>
-<meta content="Your privacy matters. Learn how we handle your data, cookies, and AdSense analytics on our Saudi calculators." property="og:description"/>
+<meta content="Plain-language privacy policy for Saudi Utility Hub: what information is processed when you visit, how calculator inputs are handled, and how to send a privacy inquiry." property="og:description"/>
 <meta content="https://www.saudiutilityhub.com/privacy.html" property="og:url"/>
 <meta content="website" property="og:type"/>
 <meta content="https://www.saudiutilityhub.com/og-image.png" property="og:image"/>
@@ -19,13 +17,9 @@
 <meta content="https://www.saudiutilityhub.com/og-image.png" property="twitter:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Privacy Policy — Saudi Utility Hub" name="twitter:title"/>
-<meta content="Transparent privacy policy for Saudi Utility Hub users. Updated June 2026." name="twitter:description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/></noscript>
-<!-- AdSense -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MX4J28KBE6"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MX4J28KBE6');</script>
+<meta content="Plain-language privacy policy: what information is processed when you visit, how calculator inputs are handled, and how to send a privacy inquiry." name="twitter:description"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.saudiutilityhub.com/"},{"@type":"ListItem","position":2,"name":"Privacy Policy","item":"https://www.saudiutilityhub.com/privacy.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Privacy Policy — Saudi Utility Hub","url":"https://www.saudiutilityhub.com/privacy.html","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"Saudi Utility Hub","url":"https://www.saudiutilityhub.com/"}}</script>
 <style>
     :root {
       --primary: #065a2d;
@@ -37,11 +31,13 @@
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
       line-height: 1.6;
       color: #1e293b;
       background-color: #fff;
     }
+    a { color: var(--secondary); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--secondary); outline-offset: 2px; }
     header {
       background: #1a1a2e;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
@@ -56,20 +52,17 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
     }
     .logo {
-      font-family: 'Montserrat', 'Inter', sans-serif;
       font-size: 1.5rem;
       font-weight: 800;
       color: #fff;
       text-decoration: none;
     }
     .logo span { color: var(--gold-bright); }
-    nav ul {
-      display: flex;
-      list-style: none;
-      gap: 1.25rem;
-    }
+    nav ul { display: flex; list-style: none; gap: 1.25rem; flex-wrap: wrap; }
     nav a {
       text-decoration: none;
       color: rgba(255,255,255,0.82);
@@ -79,248 +72,247 @@
       border-bottom: 2px solid transparent;
       transition: color 0.15s;
     }
-    nav a:hover, nav a.active {
-      color: #fff;
-      border-bottom-color: var(--gold-bright);
-    }
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
-    }
-    .breadcrumb {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--gray);
-      font-size: 0.9rem;
-    }
-    .breadcrumb a {
-      color: var(--secondary);
-      text-decoration: none;
-    }
-    h1 {
-      font-size: 2.25rem;
-      font-weight: 700;
-      color: var(--primary);
-      margin-bottom: 1.5rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin: 2rem 0 1rem;
-      color: var(--secondary);
-    }
-    p {
-      margin-bottom: 1.25rem;
-    }
-    ol, ul {
-      margin-left: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    li {
-      margin-bottom: 0.75rem;
-    }
-    .policy-card {
-      background: #f8fafc;
-      border-radius: 1rem;
-      padding: 2rem;
-      margin: 2rem 0;
+    nav a:hover, nav a.active { color: #fff; border-bottom-color: var(--gold-bright); }
+    .container { max-width: 820px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+    .breadcrumb { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; color: var(--gray); font-size: 0.9rem; }
+    .breadcrumb a { text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    h1 { font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 0.4rem; }
+    .page-meta { color: var(--gray); font-size: 0.85rem; margin-bottom: 1.75rem; }
+    h2 { font-size: 1.25rem; font-weight: 700; margin: 2.1rem 0 0.8rem; color: var(--primary); padding-bottom: 0.35rem; border-bottom: 2px solid var(--border); }
+    h3 { font-size: 1rem; font-weight: 700; margin: 1rem 0 0.4rem; }
+    p { margin-bottom: 1rem; color: #334155; font-size: 0.95rem; }
+    ul, ol { margin: 0 0 1rem 1.4rem; color: #334155; font-size: 0.95rem; }
+    li { margin-bottom: 0.4rem; }
+    .status-box {
+      background: #f0fdf4;
       border-left: 4px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 1.1rem 1.4rem;
+      margin: 1.25rem 0;
+      font-size: 0.92rem;
     }
-    footer {
-      background: var(--primary);
-      color: white;
-      padding: 3rem 1.5rem 1.5rem;
-      margin-top: 3rem;
+    .warn-box {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-radius: 0.75rem;
+      padding: 1.1rem 1.4rem;
+      margin: 1.25rem 0;
+      font-size: 0.92rem;
+      color: #7c2d12;
     }
-    .footer-grid {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-    .footer-col h3 {
-      color: white;
-      margin-bottom: 1.25rem;
-      font-size: 1.125rem;
-    }
-    .footer-col ul {
-      list-style: none;
-      margin-left: 0;
-    }
-    .footer-col a {
-      color: #cbd5e1;
-      text-decoration: none;
-      font-size: 0.95rem;
-    }
-    .footer-col a:hover {
-      color: white;
-    }
-    .copyright {
-      text-align: center;
-      padding-top: 1.5rem;
-      border-top: 1px solid rgba(255,255,255,0.1);
+    .warn-box strong { color: #9a3412; }
+    .gap-box {
+      background: #f3f4f6;
+      border-left: 4px solid #6b7280;
+      border-radius: 0 8px 8px 0;
+      padding: 1.1rem 1.4rem;
+      margin: 1.25rem 0;
       font-size: 0.9rem;
-      color: #94a3b8;
+      color: #374151;
     }
-    .cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: white;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
+    .gap-box strong { color: #1f2937; }
+    .future-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 0.75rem;
+      padding: 1.1rem 1.4rem;
+      margin: 1.25rem 0;
+      font-size: 0.92rem;
+      color: #1e3a5f;
     }
-    .cookie-text {
-      max-width: 800px;
-      font-size: 0.9rem;
-      color: var(--gray);
-    }
-    .cookie-btns { display: flex; gap: 0.75rem; }
-    .cookie-btn {
-      padding: 0.5rem 1rem;
-      border-radius: 0.375rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-    }
-    .accept { background: var(--primary); color: white; border: none; }
-    .decline { background: #f1f5f9; color: var(--gray); border: 1px solid var(--border); }
-
-    @media (max-width: 768px) {
-      .header-inner { flex-direction: column; gap: 1rem; }
-      nav ul { flex-wrap: wrap; justify-content: center; }
-      h1 { font-size: 1.75rem; }
-    }
+    .future-box strong { color: #1e40af; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.85rem; }
+    th { background: var(--light); color: var(--primary); text-align: left; padding: 0.55rem 0.7rem; border: 1px solid var(--border); }
+    td { padding: 0.55rem 0.7rem; border: 1px solid var(--border); vertical-align: top; }
+    footer { background: var(--primary); color: white; padding: 2.5rem 1.5rem 1.5rem; margin-top: 3rem; }
+    .footer-grid { max-width: 1200px; margin: 0 auto 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; }
+    .footer-col h3 { color: white; margin-bottom: 0.75rem; font-size: 0.95rem; font-weight: 600; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; margin-left: 0; }
+    .footer-col a { color: #cbd5e1; text-decoration: none; font-size: 0.9rem; }
+    .footer-col a:hover { color: white; }
+    .copyright { max-width: 1200px; margin: 0 auto; text-align: center; padding-top: 1.25rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.85rem; color: #94a3b8; }
+    @media (max-width: 640px) { h1 { font-size: 1.5rem; } }
   </style>
 </head>
 <body>
 <header>
 <div class="header-inner">
 <a class="logo" href="https://www.saudiutilityhub.com/">Saudi<span>Utility</span>Hub</a>
-<nav>
+<nav aria-label="Main">
 <ul>
-<li><a href="https://www.saudiutilityhub.com/salary-calculator.html">Salary</a></li>
-<li><a href="https://www.saudiutilityhub.com/gosi-calculator.html">GOSI</a></li>
-<li><a href="https://www.saudiutilityhub.com/ksa-eos-calculator.html">EOS</a></li>
-
-<li><a href="https://www.saudiutilityhub.com/iqama-expiry-calculator.html">Iqama</a></li>
-<li><a href="https://www.saudiutilityhub.com/blog/">Blog</a></li>
+<li><a href="https://www.saudiutilityhub.com/">Home</a></li>
+<li><a href="https://www.saudiutilityhub.com/about.html">About</a></li>
+<li><a href="https://www.saudiutilityhub.com/contact.html">Contact</a></li>
+<li><a class="active" href="https://www.saudiutilityhub.com/privacy.html">Privacy</a></li>
+<li><a href="https://www.saudiutilityhub.com/terms.html">Terms</a></li>
 </ul>
 </nav>
 </div>
 </header>
 <div class="container">
 <nav aria-label="Breadcrumb" class="breadcrumb">
-<a href="https://www.saudiutilityhub.com/">Home</a> › 
-      <span>Privacy Policy</span>
+<a href="https://www.saudiutilityhub.com/">Home</a> › <span>Privacy Policy</span>
 </nav>
-<h1>🔒 Privacy Policy</h1>
-<p><em>Last updated: June 2, 2026</em></p>
-<p>Saudi Utility Hub ("we", "us", or "our") operates https://www.saudiutilityhub.com (the "Site"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our Site.</p>
-<p>Please read this Privacy Policy carefully. If you do not agree with the terms, please do not access the Site.</p>
-<h2>1. Information We Collect</h2>
-<p>We do NOT collect personal information through our calculators. All calculations run entirely in your browser — no data is sent to our servers.</p>
-<p>However, we do use third-party services that may collect limited data:</p>
-<ul>
-<li><strong>Google AdSense</strong>: Collects non-personal data (IP address, browser type, device info) for ad targeting</li>
-<li><strong>Google Analytics</strong>: Tracks page views, session duration, and traffic sources (anonymized)</li>
-<li><strong>Cookies</strong>: Store consent preferences and ad performance data</li>
-</ul>
-<h2>2. How We Use Your Information</h2>
-<p>We use collected data only for:</p>
-<ul>
-<li>Providing and maintaining our calculators</li>
-<li>Displaying relevant advertisements through Google AdSense</li>
-<li>Analyzing site traffic to improve user experience</li>
-<li>Complying with legal obligations</li>
-</ul>
-<h2>3. Cookies and Tracking Technologies</h2>
-<p>We use cookies to:</p>
-<ul>
-<li>Remember your cookie consent preferences</li>
-<li>Measure ad performance and analytics</li>
-<li>Ensure site functionality</li>
-</ul>
-<p>You can manage cookie preferences through our cookie banner. Declining cookies will disable ads and analytics but won't affect calculator functionality.</p>
-<h2>4. Google AdSense Disclosure</h2>
-<p>We use Google AdSense to display ads on our Site. Google's use of advertising cookies enables it to serve ads based on your visit to our Site and other sites on the Internet.</p>
-<p>Google's privacy policy is available at: <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">https://policies.google.com/technologies/ads</a></p>
-<h2>5. Data Security</h2>
-<p>Since we don't collect personal data through calculators, there's minimal risk to your privacy. Third-party services (Google) implement industry-standard security measures to protect collected data.</p>
-<h2>6. Your Rights</h2>
-<p>Under applicable data protection laws, you have the right to:</p>
-<ul>
-<li>Access any personal data we hold about you (though we hold none from calculators)</li>
-<li>Request deletion of your data</li>
-<li>Opt out of data collection by declining cookies</li>
-<li>Contact us with privacy concerns</li>
-</ul>
-<h2>7. Changes to This Policy</h2>
-<p>We may update this Privacy Policy from time to time. The "Last updated" date at the top will reflect changes. Continued use after updates constitutes acceptance.</p>
-<h2>8. Contact Us</h2>
-<p>If you have questions about this Privacy Policy, please contact us:</p>
-<p>Email: <a href="mailto:info@saudiutilityhub.com">info@saudiutilityhub.com</a><br/>
-    Location: Riyadh, Saudi Arabia</p>
-<div class="policy-card">
-<h2>🍪 Cookie Consent Notice</h2>
-<p>By clicking "Accept" on our cookie banner, you consent to our use of cookies for ads and analytics as described in this policy. You can withdraw consent at any time by clearing cookies or contacting us.</p>
+<h1>Privacy Policy</h1>
+<p class="page-meta">Last updated: 28 July 2026</p>
+
+<div class="status-box">
+This page describes the Saudi Utility Hub website as it currently runs — a pre-advertising-approval build with no analytics and no active advertising code. It is written to match what the code actually does, not what a typical privacy policy template says. If something on this page ever stops matching the live site, please <a href="https://www.saudiutilityhub.com/contact.html">tell us</a>.
 </div>
+
+<h2>1. Scope of This Policy</h2>
+<p>This policy covers the website at <a href="https://www.saudiutilityhub.com/">https://www.saudiutilityhub.com/</a> — its pages, calculators, and guides. It does not cover any other website you may reach by clicking an outbound link, including official government sites such as Absher, Muqeem, Qiwa, GOSI, or HRSD, or general links to Google's own services. This policy was last updated 28 July 2026, reflecting the technical state of the site at that time.</p>
+
+<h2>2. Who Operates This Site</h2>
+<p>Saudi Utility Hub is independently operated. It is not a Saudi government service and is not affiliated with, endorsed by, or acting for GOSI, HRSD, MOI, Jawazat, Absher, Muqeem, or Qiwa.</p>
+<div class="gap-box">
+<strong>Transparency note:</strong> Saudi Utility Hub has not currently published a named owner, a registered company or legal entity name, a commercial registration number, a VAT number, a data-protection officer or representative, a telephone number, or a physical office address. Until that information is published, the only confirmed operator identity is the website itself and the contact email below. This gap is flagged here for qualified compliance review — see Section 15.
+</div>
+
+<h2>3. Contact Information</h2>
+<p>Email: <a href="mailto:info@saudiutilityhub.com">info@saudiutilityhub.com</a>. This is currently the only published contact method for this site — see our <a href="https://www.saudiutilityhub.com/contact.html">Contact page</a> for what to include in a message and what never to send.</p>
+
+<h2>4. Information Processed When Visiting the Site</h2>
+<p>Saudi Utility Hub does not require an account, login, or registration to use any calculator or guide. Ordinary web browsing generates some technical information as a byproduct of how the internet works — see Section 5 for what the hosting infrastructure may see. Beyond that, the pages themselves do not collect information about you unless you choose to email us (Section 8) or enter values into a calculator that runs in your own browser (Section 6).</p>
+
+<h2>5. Hosting and Technical Logs</h2>
+<p>This site's repository is configured for deployment on Vercel (a <code>vercel.json</code> configuration file is present), but we have not independently verified the live production hosting arrangement, account-level logging settings, or data-retention configuration in Vercel's dashboard as part of this review. If Vercel is the active host, hosting infrastructure of this kind typically processes ordinary request and security information as a normal part of serving any web page, which may include:</p>
+<ul>
+<li>Your IP address</li>
+<li>The URL you requested</li>
+<li>Date and time of the request</li>
+<li>Browser or user-agent information</li>
+<li>Response and error information</li>
+<li>Security or abuse-prevention signals</li>
+</ul>
+<p>We do not state an exact retention period, storage location, anonymization method, or deletion process for these logs, because we have not verified current Vercel account settings against current Vercel documentation. This is flagged as an owner action in Section 15. Separately, this site does not use Vercel Web Analytics or any other analytics product — see Section 10.</p>
+
+<h2>6. Calculator and Worksheet Inputs</h2>
+<p>We reviewed the calculators and interactive worksheets on this site as part of this update. Based on that review:</p>
+<ul>
+<li>Calculator inputs (such as a salary figure, a date, or a checklist answer) are processed in your own browser using JavaScript.</li>
+<li>This site does not intentionally transmit those values to Saudi Utility Hub or to any server.</li>
+<li>This site does not maintain user accounts or store calculator results in any database.</li>
+<li>Refreshing or closing a page normally clears whatever you typed, because the values live only in the page's memory while it is open.</li>
+<li>You should avoid entering identity numbers (such as an Iqama or passport number), passwords, or other secrets into any calculator — even though this site does not collect them, it is a good general habit, and some fields exist only to let you record a figure you already have from an official source.</li>
+</ul>
+<p>No calculator or worksheet on the approval-stage site was found to write calculator input values to <code>localStorage</code>, <code>sessionStorage</code>, cookies, or any external request. A small number of pages contain text in their own FAQ sections making the same point about a specific tool.</p>
+
+<h2>7. Locally Generated PDF Files</h2>
+<p>Some pages (currently the final settlement worksheet, the annual leave calculator, and the family residence preparation guide) offer a button to generate a PDF summary of what you entered. This uses a JavaScript library called jsPDF, which is now loaded from a local copy hosted on this site rather than from a third-party content-delivery network. PDF generation happens entirely in your browser; the library does not intentionally upload the values you entered anywhere. Once the PDF is downloaded to your device, its security and further handling are outside this site's control — we do not guarantee the security of any file after it reaches your computer or phone.</p>
+
+<h2>8. Email Communications</h2>
+<p>If you email <a href="mailto:info@saudiutilityhub.com">info@saudiutilityhub.com</a>:</p>
+<ul>
+<li>You choose what information to include in your message.</li>
+<li>Your email address, the message content, associated metadata, and any attachments may be processed by the email service that handles this inbox. We have not independently confirmed and are not naming a specific email provider in this policy.</li>
+<li>Messages may be kept for as long as needed to correspond with you, investigate a correction, maintain security, or keep reasonable records — we do not state one fixed retention period for email, because this depends on the nature of the message and has not been formally set as a documented policy.</li>
+<li>We do not claim email is encrypted end-to-end. Treat ordinary email as we would treat any other unencrypted communication channel.</li>
+</ul>
+<div class="warn-box">
+⚠️ Do not send passwords, OTP or verification codes, Iqama or passport numbers, full identity-document images, banking or card data, or other unnecessary sensitive information by email. See our <a href="https://www.saudiutilityhub.com/contact.html">Contact page</a> for the full list of what never to send.
+</div>
+
+<h2>9. Cookies and Browser Storage</h2>
+<p>As currently built, the approval-stage version of this site does not intentionally set advertising or analytics cookies. There is no cookie-consent banner shown on any page, because there are currently no optional advertising or analytics tags active that would require one — showing a banner with nothing behind it would be misleading, so we removed it rather than keep it for appearance. Basic calculator operation does not require any cookie.</p>
+<p>We do not claim this site uses no cookies or storage under any circumstances — browser behavior, hosting infrastructure, or any site you click through to may set their own cookies or storage outside our control, and this could change if a future version of the site adds a service that needs one (see Section 21).</p>
+
+<h2>10. Analytics Status</h2>
+<p>Google Analytics is not active in the current approval-stage website code. No replacement analytics product (such as Plausible, Matomo, or Vercel Web Analytics) has been added in its place. If analytics is introduced in a future version of this site, this policy will be updated first to describe what is collected and why.</p>
+
+<h2>11. Advertising and AdSense Status</h2>
+<p>Saudi Utility Hub is currently seeking or preparing for Google AdSense advertising approval. As of this update:</p>
+<ul>
+<li>Advertisements are <strong>not</strong> currently served by the approval-stage code — no AdSense script and no ad slot is present on any page.</li>
+<li>The site's <code>ads.txt</code> file and a publisher-account meta tag on the homepage identify the Google AdSense publisher account this site intends to use.</li>
+<li>Those two mechanisms exist to connect and verify the site with Google; on their own, they do not display advertisements or load any advertising script.</li>
+<li>AdSense advertising code will not be activated until the site is approved and a certified consent-management setup is configured and tested (see Section 21).</li>
+<li>This Privacy Policy will be updated again before any advertising is activated.</li>
+</ul>
+<p>We do not currently say "we use Google AdSense" as a present fact, because the AdSense script is not loaded. We also do not claim Google is currently collecting data through AdSense on this site, since no AdSense script is present to do so.</p>
+
+<h2>12. Third-Party and Official External Links</h2>
+<p>This site links to official Saudi government resources (such as Absher, Muqeem, Qiwa, GOSI, HRSD, and my.gov.sa) and other external references. Clicking one of these links takes you to that organization's own website, which has its own privacy practices outside our control. Displaying a normal link to an external site does not itself send your calculator inputs, checklist answers, or any other data to that destination — the link only activates if and when you click it.</p>
+
+<h2>13. Service Providers</h2>
+<p>We have not documented a confirmed, current list of third-party service providers for this site beyond the hosting arrangement described in Section 5 and the email handling described in Section 8. If a specific provider (such as a hosting company, email service, or future consent-management platform) is confirmed, this section will be updated to name it and describe its role.</p>
+
+<h2>14. International or Cross-Border Processing</h2>
+<p>Because hosting and email infrastructure can operate from data centers in different countries, information described in Sections 5 and 8 may be processed outside Saudi Arabia. We have not independently confirmed specific server locations for this review. If you are in the Kingdom of Saudi Arabia, cross-border processing of personal data can raise questions under the Saudi Personal Data Protection Law (PDPL) — see Section 15 for what this means and what still needs qualified review.</p>
+
+<h2>15. Retention</h2>
+<p>Retention is not the same for every kind of information this policy discusses:</p>
+<ul>
+<li><strong>In-memory calculator values</strong> — cleared automatically when you refresh or close the page; not stored by us at all.</li>
+<li><strong>Downloaded PDF files</strong> — stored on your own device once you save them; retention is entirely up to you.</li>
+<li><strong>Hosting/security logs</strong> — retention period not currently verified against Vercel's live configuration (owner action needed).</li>
+<li><strong>Email correspondence</strong> — kept as needed for correspondence, correction review, security, and reasonable recordkeeping; no single fixed period has been documented.</li>
+<li><strong>Future consent records</strong> — do not yet exist, because no consent-management platform is active (see Section 21).</li>
+</ul>
+<p>We are not inventing a single retention period to cover all of the above, because it would not be accurate.</p>
+
+<h2>16. Security Limitations</h2>
+<p>We do not claim "industry-standard security" or guarantee that any information is fully protected. What we can point to are a few structural choices that reduce risk by minimizing what this site collects in the first place:</p>
+<ul>
+<li>No user accounts or login system</li>
+<li>No contact form on this site — the only contact route is a plain <code>mailto:</code> link</li>
+<li>Calculators run in your browser rather than on a server</li>
+<li>No active Analytics or advertising tracking tags at this stage</li>
+<li>The PDF-generation library is hosted locally rather than loaded from a third-party CDN</li>
+</ul>
+<p>Internet transmission and email cannot be guaranteed to be completely secure, no matter what precautions are taken. Treat any information you send to us the same way you would treat any other unencrypted message.</p>
+
+<h2>17. Privacy Choices and Possible Legal Rights</h2>
+<p>Depending on the law applicable to you and to Saudi Utility Hub, you may have rights concerning access, correction, deletion, restriction, objection, withdrawal of consent, or complaint regarding your personal data. We do not claim that the Saudi PDPL, the EU/UK GDPR, US state privacy laws, or any other specific privacy law applies to every visitor of this site, and we do not claim compliance with all privacy laws everywhere.</p>
+<p>To ask about your information or exercise a right you believe applies to you, email <a href="mailto:info@saudiutilityhub.com">info@saudiutilityhub.com</a> with the subject "Privacy request" and describe what you're asking for. We do not promise a specific response deadline (such as 30 or 45 days) on this page, because we have not had qualified legal review confirm which deadline would apply to a given request and confirm that we can currently meet it — see Section 15 of this policy and Section 15 of our final report process. We will not ask for more identity documentation than is reasonably necessary to respond to your request.</p>
+
+<h2>18. Children's Information</h2>
+<p>This site is intended for general adult informational use and does not require children to create an account (no accounts exist on this site at all). We do not have a reliable way to verify a visitor's age, so we do not claim we can determine whether a visitor is a child. If you are a parent or guardian and believe a child has sent us sensitive information by email, please do not send that information in the first place, and contact us so we can address it.</p>
+
+<h2>19. Policy Changes</h2>
+<p>We may update this policy as the site's technical setup or legal understanding changes — most notably before any future AdSense activation (see Section 21). The "Last updated" date at the top of this page reflects the most recent revision. We do not maintain a version history publicly at this time.</p>
+
+<h2>20. How to Submit a Privacy Inquiry</h2>
+<p>Email <a href="mailto:info@saudiutilityhub.com">info@saudiutilityhub.com</a> with the subject "Privacy request." Describe what you're asking about — for example, a question about this policy, a request to know what information we hold about you, or a correction request. See our <a href="https://www.saudiutilityhub.com/contact.html">Contact page</a> for what information is helpful to include and what you should never send us.</p>
+
+<h2>21. Future Advertising/CMP Activation Notice</h2>
+<div class="future-box">
+<strong>This describes intended future steps, not something that has already happened.</strong> Before activating AdSense advertising on this site, we intend to:
+<ul style="margin-top:0.6rem">
+<li>Configure a consent-management platform (CMP) certified by Google</li>
+<li>Use the Google/IAB Transparency and Consent Framework (TCF) version required by Google at the time of activation</li>
+<li>Provide appropriate consent, refusal, and "manage options" choices where legally required</li>
+<li>Provide a way to revisit or withdraw a previously made choice</li>
+<li>Update this Privacy Policy to describe the actual advertising vendors, purposes, data storage, and choices in place at that time</li>
+<li>Test consent behavior for visitors in the EEA, UK, Switzerland, and any other region where it is required</li>
+<li>Assess Saudi PDPL and any other applicable requirements before and after activation</li>
+</ul>
+<p style="margin:0.6rem 0 0">No consent-management platform is active on this site today. No advertising is currently served.</p>
+</div>
+
 </div>
 <footer>
 <div class="footer-grid">
 <div class="footer-col">
-<h3>💼 Finance Tools</h3>
+<h3>Site</h3>
 <ul>
-<li><a href="https://www.saudiutilityhub.com/salary-calculator.html">Salary Calculator</a></li>
-<li><a href="https://www.saudiutilityhub.com/gosi-calculator.html">GOSI Calculator</a></li>
-<li><a href="https://www.saudiutilityhub.com/ksa-eos-calculator.html">EOS Gratuity</a></li>
-
-</ul>
-</div>
-<div class="footer-col">
-<h3>🪪 Expat Tools</h3>
-<ul>
-<li><a href="https://www.saudiutilityhub.com/iqama-expiry-calculator.html">Iqama Tracker</a></li>
-<li><a href="https://www.saudiutilityhub.com/iqama-transfer-calculator.html">Iqama Transfer</a></li>
-<li><a href="https://www.saudiutilityhub.com/family-visit-visa-guide.html">Family Visit Visa</a></li>
-
-</ul>
-</div>
-
-<div class="footer-col">
-<h3>ℹ️ About</h3>
-<ul>
-<li><a href="https://www.saudiutilityhub.com/about.html">About Us</a></li>
+<li><a href="https://www.saudiutilityhub.com/">Home</a></li>
+<li><a href="https://www.saudiutilityhub.com/about.html">About</a></li>
 <li><a href="https://www.saudiutilityhub.com/contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h3>Policies</h3>
+<ul>
 <li><a href="https://www.saudiutilityhub.com/privacy.html">Privacy Policy</a></li>
 <li><a href="https://www.saudiutilityhub.com/terms.html">Terms of Use</a></li>
 </ul>
 </div>
 </div>
 <div class="copyright">
-      © 2026 Saudi Utility Hub · Riyadh, Saudi Arabia · Last updated: June 2, 2026
+      © 2026 Saudi Utility Hub · Independently operated · Not affiliated with any Saudi government entity.
     </div>
 </footer>
-<div class="cookie-banner" id="cookieBanner">
-<div class="cookie-text">
-      🍪 We use cookies for ads and analytics. By clicking "Accept", you consent to our use of cookies.
-      <a href="/privacy.html" style="color:var(--primary);">Privacy Policy</a>
-</div>
-<div class="cookie-btns">
-<button class="cookie-btn accept" onclick="acceptCookies()">Accept</button>
-<button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
-</div>
-</div>
-<script>
-    function acceptCookies() { document.getElementById('cookieBanner').style.display = 'none'; }
-    function declineCookies() { document.getElementById('cookieBanner').style.display = 'none'; }
-  </script>
 </body>
 </html>

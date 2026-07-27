@@ -22,13 +22,6 @@
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Saudi Salary Calculator 2026" name="twitter:title"/>
 <meta content="Estimate your net pay in KSA after employee GOSI deductions, with citations to official GOSI sources." name="twitter:description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/></noscript>
-<!-- Analytics -->
-<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5391037132181133"></script>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MX4J28KBE6"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MX4J28KBE6');</script>
 <!-- Structured Data -->
 <script type="application/ld+json">
   {
@@ -303,18 +296,6 @@
       font-size: 0.9rem;
       color: #664d03;
     }
-    .ad-slot {
-      text-align: center;
-      margin: 2rem 0;
-      min-height: 100px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #f8fafc;
-      border: 1px dashed #cbd5e1;
-      color: var(--gray);
-      font-size: 0.875rem;
-    }
     .calculator-card {
       background: white;
       border: 1px solid var(--border);
@@ -537,36 +518,6 @@
       text-decoration: none;
       font-size: 0.9rem;
     }
-    .cookie-banner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: white;
-      padding: 1rem 1.5rem;
-      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 1000;
-    }
-    .cookie-text {
-      max-width: 800px;
-      font-size: 0.9rem;
-      color: var(--gray);
-    }
-    .cookie-btns {
-      display: flex;
-      gap: 0.75rem;
-    }
-    .cookie-btn {
-      padding: 0.5rem 1rem;
-      border-radius: 0.375rem;
-      font-size: 0.9rem;
-      cursor: pointer;
-    }
-    .accept { background: var(--primary); color: white; border: none; }
-    .decline { background: #f1f5f9; color: var(--gray); border: 1px solid var(--border); }
 
     @media (max-width: 768px) {
       .header-inner { flex-direction: column; gap: 1rem; }
@@ -861,10 +812,6 @@
 <div class="faq-question">Are there other deductions besides GOSI that could affect my take-home pay?</div>
 <div>Yes. Loan or salary-advance repayments, voluntary insurance premiums, penalties, or other employer-specific deductions can all reduce your actual take-home pay beyond GOSI. This calculator lets you enter a single optional "other deductions" figure to approximate these, but your actual payslip may include items this tool does not model.</div>
 </div>
-<!-- Ad Slot -->
-<div class="ad-slot">
-<ins class="adsbygoogle" data-ad-client="ca-pub-5391037132181133" data-ad-format="auto" data-ad-slot="2626150601" data-full-width-responsive="true" style="display:block"></ins>
-</div>
 <!-- Related Tools -->
 <h2>🔗 Related Free Tools</h2>
 <div class="related-grid">
@@ -940,19 +887,7 @@
       © 2026 Saudi Utility Hub · Independently operated · Free tools for Saudi employment/payroll and Iqama/visa procedures.
     </div>
 </footer>
-<div class="cookie-banner" id="cookieBanner">
-<div class="cookie-text">
-      🍪 We use cookies for ads and analytics. By clicking "Accept", you consent to our use of cookies.
-      <a href="/privacy.html" style="color:var(--primary);">Privacy Policy</a>
-</div>
-<div class="cookie-btns">
-<button class="cookie-btn accept" onclick="acceptCookies()">Accept</button>
-<button class="cookie-btn decline" onclick="declineCookies()">Decline</button>
-</div>
-</div>
 <script>
-    function acceptCookies() { document.getElementById('cookieBanner').style.display = 'none'; }
-    function declineCookies() { document.getElementById('cookieBanner').style.display = 'none'; }
 
     const SAL_MAX_VALUE = 10000000;   // sanity ceiling in SAR/month for any single field
     const GOSI_CAP = 45000;
@@ -1121,11 +1056,6 @@
     toggleSalaryEntrantType();
 
     window.addEventListener('load', () => {
-      if (typeof adsbygoogle !== 'undefined') {
-        try {
-          (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (e) {}
-      }
       ['gross', 'basic', 'housing', 'transport', 'other-deductions'].forEach(function (id) {
         const el = document.getElementById(id);
         el.addEventListener('keydown', function (e) {
