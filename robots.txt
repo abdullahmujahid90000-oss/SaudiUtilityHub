@@ -6,6 +6,7 @@ Allow: /
 
 # Internal/admin
 Disallow: /cdn-cgi/
+Disallow: /_internal/
 
 # Sitemap
 Sitemap: https://www.saudiutilityhub.com/sitemap.xml

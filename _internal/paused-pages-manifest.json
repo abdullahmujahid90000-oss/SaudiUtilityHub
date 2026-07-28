@@ -1,6 +1,6 @@
 {
   "generated": "2026-07-26",
-  "count": 41,
+  "count": 61,
   "pages": [
     {
       "filename": "bangladesh-remittance.html",
@@ -370,6 +370,226 @@
       "related_replacement_page": null,
       "restore_requirements": "1) `git checkout pre-restructure-full-site-2026-07-26 -- <path>` (or restore from branch backup/full-site-pre-restructure-2026-07-26) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Remove the corresponding 410/404 handling rule for that path if one was added. 6) Have a human re-verify all facts, rates, and legal/financial claims on the page before republishing, since Saudi rules may have changed since the page was paused. 7) Re-deploy.",
       "recovery_source": "git tag pre-restructure-full-site-2026-07-26 / git branch backup/full-site-pre-restructure-2026-07-26"
+    },
+    {
+      "filename": "experience-letter-generator.html",
+      "url": "https://www.saudiutilityhub.com/experience-letter-generator.html",
+      "paused_date": "2026-07-28",
+      "reason": "Workplace-document generator tool; outside the site's two approved AdSense-release subject areas (Saudi employment/payroll/HR calculators and residency/Iqama/visa preparation guides). Document-generation tools carry a separate authenticity/misuse risk class not yet reviewed for this release.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page covers generating an experience letter.",
+      "backlink_evidence_status": "Unknown - no verified Search Console/Ahrefs/Semrush export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "family-visa-cost-calculator.html",
+      "url": "https://www.saudiutilityhub.com/family-visa-cost-calculator.html",
+      "paused_date": "2026-07-28",
+      "reason": "Narrows release to the approved 20-page minimal set. Fee/levy/insurance cost-total figures need a fresh accuracy pass before re-publication.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404 (family-residence-visa.html was reviewed as a candidate and declined: it explicitly does not restate a levy figure or a total cost, so it does not deliver the removed page's central cost-calculation intent).",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "musaned-calculator.html",
+      "url": "https://www.saudiutilityhub.com/musaned-calculator.html",
+      "paused_date": "2026-07-28",
+      "reason": "Domestic-worker/Musaned-platform subject matter; not part of the two approved release subject areas.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page addresses Musaned or domestic-worker employment.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "nitaqat-saudization-guide.html",
+      "url": "https://www.saudiutilityhub.com/nitaqat-saudization-guide.html",
+      "paused_date": "2026-07-28",
+      "reason": "Employer-facing Nitaqat/Saudization compliance topic; different audience (employer/HR compliance) than the individual-employee-facing tools retained for this release, and outside the approved scope.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page covers Nitaqat/Saudization quota rules.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "noc-letter-generator.html",
+      "url": "https://www.saudiutilityhub.com/noc-letter-generator.html",
+      "paused_date": "2026-07-28",
+      "reason": "Workplace-document generator tool, same risk class as experience-letter-generator.html.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. Existing vercel.json rule /blog/noc-letter-saudi-arabia-2026.html -> /noc-letter-generator.html removed since its destination no longer exists.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) If a 301 redirect was pointed at this URL while it was paused, remove or update that redirect rule in vercel.json so it does not conflict with the restored page. 9) Re-deploy."
+    },
+    {
+      "filename": "salary-certificate.html",
+      "url": "https://www.saudiutilityhub.com/salary-certificate.html",
+      "paused_date": "2026-07-28",
+      "reason": "Workplace-document generator tool, same risk class as experience-letter-generator.html.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. Existing vercel.json rule /blog/salary-certificate-guide-2026.html -> /salary-certificate.html removed since its destination no longer exists.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) If a 301 redirect was pointed at this URL while it was paused, remove or update that redirect rule in vercel.json so it does not conflict with the restored page. 9) Re-deploy."
+    },
+    {
+      "filename": "salary-slip-generator.html",
+      "url": "https://www.saudiutilityhub.com/salary-slip-generator.html",
+      "paused_date": "2026-07-28",
+      "reason": "Workplace-document generator tool, same risk class as experience-letter-generator.html.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page generates a payslip document.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "saudi-work-visa-types-2026.html",
+      "url": "https://www.saudiutilityhub.com/saudi-work-visa-types-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "General work-visa-types explainer, broader than the site's residency/Iqama/visa preparation focus; needs its own accuracy pass. Existing vercel.json rule /blog/saudi-work-visa-types-2026.html -> /saudi-work-visa-types-2026.html removed since its destination no longer exists.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page substantially covers the full work-visa-category taxonomy this page addressed.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) If a 301 redirect was pointed at this URL while it was paused, remove or update that redirect rule in vercel.json so it does not conflict with the restored page. 9) Re-deploy."
+    },
+    {
+      "filename": "visit-visa-to-iqama.html",
+      "url": "https://www.saudiutilityhub.com/visit-visa-to-iqama.html",
+      "paused_date": "2026-07-28",
+      "reason": "Narrows release to the approved 20-page minimal set. Central conversion-eligibility claim needs a fresh accuracy pass before re-publication.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404 (family-residence-visa.html was reviewed as a candidate and declined: it explicitly states it could not confirm in-country visit-visa-to-residence conversion and does not reproduce the removed page's comparison table, cost calculator, or Jawazat office list).",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/index.html",
+      "url": "https://www.saudiutilityhub.com/blog/index.html",
+      "paused_date": "2026-07-28",
+      "reason": "The Blog section (index + 10 posts) is removed entirely from this release; the site is narrowed to calculators and preparation guides only, with no blog/article archive.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. A blog index has no single-page equivalent among the retained pages.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/absher-guide-expats-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/absher-guide-expats-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal. Existing vercel.json rule /absher-guide-expats-2026.html -> /blog/absher-guide-expats-2026.html removed since its destination no longer exists.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. Retained pages link to Absher as an external official destination but contain no general 'how Absher works' explainer.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) If a 301 redirect was pointed at this URL while it was paused, remove or update that redirect rule in vercel.json so it does not conflict with the restored page. 9) Re-deploy."
+    },
+    {
+      "filename": "blog/driving-license-guide-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/driving-license-guide-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal; driving-license topic is outside both approved subject areas.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page covers driving licenses.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/how-to-file-labour-complaint-qiwa-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/how-to-file-labour-complaint-qiwa-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal; labour-dispute/complaint-filing procedure, adjacent to but distinct from the retained employment calculators.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page explains how to file a Qiwa labour complaint.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/iqama-renewal-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/iqama-renewal-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal. Also carried specific renewal-fee/late-penalty figures (SAR 650 / SAR 500) not independently reconfirmed for this release.",
+      "related_replacement_page": "iqama-expiry-calculator.html",
+      "redirect_decision": "301 (permanent) -> https://www.saudiutilityhub.com/iqama-expiry-calculator.html. Reviewed directly: the destination's FAQ substantially answers the same central question (Iqama renewal cost/process), honestly explaining that fee figures were found inconsistent across sources, and links to Absher/Muqeem/my.gov.sa for authoritative figures, plus a working reminder planner. This corrects rather than repeats the blog's unverified figures.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/mudad-wps-wage-protection-guide-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/mudad-wps-wage-protection-guide-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal; Wage Protection System/Mudad platform explainer not duplicated by any retained calculator.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page covers WPS/Mudad.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/qiwa-portal-guide.html",
+      "url": "https://www.saudiutilityhub.com/blog/qiwa-portal-guide.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal; general Qiwa-platform explainer.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. Retained pages link to Qiwa as an external official destination but contain no general 'how Qiwa works' explainer.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/saned-unemployment-insurance-guide-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/saned-unemployment-insurance-guide-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal; SANED unemployment-insurance topic not covered by any retained calculator.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No retained page covers SANED.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/saudi-salary-deduction-rules-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/saudi-salary-deduction-rules-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404 (salary-calculator.html was reviewed as a candidate and declined: it contains no content on deduction legality/Article 91/reclaiming unlawful deductions, only gross-to-net GOSI math - a genuinely different intent, not a detail-level gap).",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/sick-leave-saudi-arabia-2026.html",
+      "url": "https://www.saudiutilityhub.com/blog/sick-leave-saudi-arabia-2026.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404 (leave-calculator.html was reviewed as a candidate and declined: it cites the core Article 117 pay schedule only as a page-authors'-labeled 'Reference Only - Not Part of This Calculator' item, and does not cover the removed page's primary procedural intent - how to apply, required documents, employer refusal, probation/termination/EOS interaction, or domestic-worker rules).",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
+    },
+    {
+      "filename": "blog/worker-rights.html",
+      "url": "https://www.saudiutilityhub.com/blog/worker-rights.html",
+      "paused_date": "2026-07-28",
+      "reason": "Blog-archive removal; general worker-rights overview article, broader than any single retained calculator's scope.",
+      "related_replacement_page": null,
+      "redirect_decision": "None - returns 404. No single retained page substitutes for a general worker-rights overview.",
+      "backlink_evidence_status": "Unknown - no verified export supplied.",
+      "recovery_source": "git tag pre-final-adsense-prune-2026-07-28 / git branch backup/pre-final-adsense-prune-2026-07-28",
+      "restore_requirements": "1) `git checkout pre-final-adsense-prune-2026-07-28 -- <path>` (or restore from branch backup/pre-final-adsense-prune-2026-07-28) to bring the file back into the working tree. 2) Re-add it to sitemap.xml. 3) Re-add nav/footer/homepage/related-content links where appropriate. 4) Re-add any AdSense placements only after confirming the page meets current AdSense content-quality requirements. 5) Have a human re-verify all facts, rates, fees, and legal/procedural claims on the page before republishing, since Saudi rules and this site's own risk-reduction standards may have changed since the page was paused. 6) Confirm the page contains no Google Analytics, AdSense JavaScript, cookie banner, or Google Fonts code, consistent with the current privacy-hardened build. 7) Confirm the restored page does not contradict the current Privacy Policy or Terms of Use. 8) Re-deploy."
     }
   ]
 }

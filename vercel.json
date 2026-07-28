@@ -9,19 +9,16 @@
     { "source": "/iqama-transfer.html",         "destination": "/iqama-transfer-calculator.html",  "permanent": true },
     { "source": "/blog/family-visit-visa-guide.html",                   "destination": "/family-visit-visa-guide.html",                   "permanent": true },
     { "source": "/blog/iqama-expiry-calculator.html",                   "destination": "/iqama-expiry-calculator.html",                   "permanent": true },
-    { "source": "/blog/saudi-work-visa-types-2026.html",                "destination": "/saudi-work-visa-types-2026.html",                "permanent": true },
-    { "source": "/absher-guide-expats-2026.html",                      "destination": "/blog/absher-guide-expats-2026.html",            "permanent": true },
     { "source": "/income-tax-calculator.html",                        "destination": "/salary-calculator.html",                        "permanent": true },
 
     { "source": "/blog/dependent-levy-guide-2026.html",                 "destination": "/dependent-levy-calculator.html",                 "permanent": true },
     { "source": "/blog/eos-guide-2026.html",                            "destination": "/ksa-eos-calculator.html",                        "permanent": true },
     { "source": "/blog/gosi-guide-2026.html",                           "destination": "/gosi-calculator.html",                           "permanent": true },
     { "source": "/blog/saudi-5-year-resident-id-explained-2026.html",   "destination": "/5-year-resident-id-guide-2026.html",             "permanent": true },
-    { "source": "/blog/salary-certificate-guide-2026.html",             "destination": "/salary-certificate.html",                        "permanent": true },
     { "source": "/blog/saudi-annual-leave-rules-2026.html",             "destination": "/leave-calculator.html",                          "permanent": true },
     { "source": "/blog/saudi-overtime-pay-calculation-2026.html",       "destination": "/working-hours-calculator.html",                  "permanent": true },
     { "source": "/blog/saudi-probation-period-rules-2026.html",         "destination": "/probation-calculator.html",                      "permanent": true },
-    { "source": "/blog/noc-letter-saudi-arabia-2026.html",              "destination": "/noc-letter-generator.html",                      "permanent": true }
+    { "source": "/blog/iqama-renewal-2026.html",                        "destination": "/iqama-expiry-calculator.html",                   "permanent": true }
   ],
   "headers": [
     {

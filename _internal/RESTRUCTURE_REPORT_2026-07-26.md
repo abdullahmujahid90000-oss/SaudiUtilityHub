@@ -284,3 +284,20 @@ The cookie banner's Accept/Decline buttons and the homepage's contact/outbound l
 
 Covers only the two topics; zero paused-page references (confirmed programmatically, not just visually); links to all 33 retained content pages (confirmed via crawl, not just link-counting); nav matches the sitewide header pattern; no unsupported update-schedule claim (rewritten in the original session, re-confirmed absent here); no ad before main content (re-confirmed correctly, see above); "Who runs this site, and how is it reviewed?" section makes no unsupported claims. Mobile: viewport meta tag and one `768px` responsive breakpoint are present in the CSS — **not visually confirmed**, per the browser-testing limitation above.
 
+
+---
+
+## Addendum — 2026-07-28: Minimal 20-page AdSense release candidate
+
+Following privacy hardening (commit `6c49014`) and a rebuilt Terms of Use (commit `ef8daec`), the site was narrowed further from 39 retained pages to exactly **20 public, indexable URLs plus 404.html**, to produce a tightly focused minimal release candidate for eventual AdSense review.
+
+**New recovery checkpoint:**
+- Annotated tag: `pre-final-adsense-prune-2026-07-28`
+- Backup branch: `backup/pre-final-adsense-prune-2026-07-28`
+- Both point to commit `ef8daec` (state immediately before this pass). Not pushed — local only, same as all prior checkpoints.
+
+**20 additional pages paused** (workplace-document generators, Nitaqat, Musaned, the full Blog archive of 10 posts + index, and two visa-cost/conversion pages needing an accuracy re-pass). Full list, reasoning, and the 5-candidate redirect review is in `_internal/FINAL_PAUSE_DECISIONS_2026-07-28.md`. One 301 was approved (`blog/iqama-renewal-2026.html` → `iqama-expiry-calculator.html`); the other four candidates were reviewed directly and declined as genuine intent mismatches, returning 404 instead. `_internal/paused-pages-manifest.json` now records 61 paused pages total (41 + 20); `_internal/PAUSED_PAGES.md` was appended with the same 20, and this report is the third document updated per the task's Phase 4 requirement.
+
+**Final release set (20 URLs):** the homepage, 8 employment/payroll calculators, 7 residency/Iqama/visa guides, and the 4 trust pages (About, Contact, Privacy, Terms). See `sitemap.xml` and `_internal/FINAL_RELEASE_CANDIDATE_REPORT_2026-07-28.md` for the complete audit trail, test results, and go/no-go decision for this pass.
+
+**Still not done, unchanged from the 2026-07-27 status above:** independent fact-checking of legal/financial figures on the 20 retained pages, a certified consent-management platform, and real interactive browser/mobile testing (this environment still cannot point a rendering browser at the sandboxed site — see the 2026-07-28 release-candidate report for how this was substituted with jsdom/static checks). Nothing has been pushed, deployed, or submitted for AdSense review in this pass either.
