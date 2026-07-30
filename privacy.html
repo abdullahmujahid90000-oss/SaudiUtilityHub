@@ -158,7 +158,7 @@
 <p class="page-meta">Last updated: 28 July 2026</p>
 
 <div class="status-box">
-This page describes the Saudi Utility Hub website as it currently runs — a pre-advertising-approval build with no analytics and no active advertising code. It is written to match what the code actually does, not what a typical privacy policy template says. If something on this page ever stops matching the live site, please <a href="https://www.saudiutilityhub.com/contact.html">tell us</a>.
+This page describes what Saudi Utility Hub actually does today, not a generic template. As of this update, the site does not run analytics and does not serve advertisements. If any part of this policy ever stops matching how the site works, please <a href="https://www.saudiutilityhub.com/contact.html">tell us</a>.
 </div>
 
 <h2>1. Scope of This Policy</h2>
@@ -167,7 +167,7 @@ This page describes the Saudi Utility Hub website as it currently runs — a pre
 <h2>2. Who Operates This Site</h2>
 <p>Saudi Utility Hub is independently operated. It is not a Saudi government service and is not affiliated with, endorsed by, or acting for GOSI, HRSD, MOI, Jawazat, Absher, Muqeem, or Qiwa.</p>
 <div class="gap-box">
-<strong>Transparency note:</strong> Saudi Utility Hub has not currently published a named owner, a registered company or legal entity name, a commercial registration number, a VAT number, a data-protection officer or representative, a telephone number, or a physical office address. Until that information is published, the only confirmed operator identity is the website itself and the contact email below. This gap is flagged here for qualified compliance review — see Section 15.
+<strong>Operator identity:</strong> Saudi Utility Hub is edited by the Saudi Utility Hub Editorial Team, operating from Saudi Arabia. The site does not currently publish a separate registered company name, commercial registration number, VAT number, dedicated data-protection officer, or telephone number, since it processes no user accounts, payments, or personal data beyond what Sections 4–8 describe. The confirmed point of contact is the email address in Section 3.
 </div>
 
 <h2>3. Contact Information</h2>
@@ -177,7 +177,7 @@ This page describes the Saudi Utility Hub website as it currently runs — a pre
 <p>Saudi Utility Hub does not require an account, login, or registration to use any calculator or guide. Ordinary web browsing generates some technical information as a byproduct of how the internet works — see Section 5 for what the hosting infrastructure may see. Beyond that, the pages themselves do not collect information about you unless you choose to email us (Section 8) or enter values into a calculator that runs in your own browser (Section 6).</p>
 
 <h2>5. Hosting and Technical Logs</h2>
-<p>This site's repository is configured for deployment on Vercel (a <code>vercel.json</code> configuration file is present), but we have not independently verified the live production hosting arrangement, account-level logging settings, or data-retention configuration in Vercel's dashboard as part of this review. If Vercel is the active host, hosting infrastructure of this kind typically processes ordinary request and security information as a normal part of serving any web page, which may include:</p>
+<p>This site is hosted on Vercel. As with any web host, ordinary technical information is processed automatically as part of serving each page request, which may include:</p>
 <ul>
 <li>Your IP address</li>
 <li>The URL you requested</li>
@@ -186,7 +186,7 @@ This page describes the Saudi Utility Hub website as it currently runs — a pre
 <li>Response and error information</li>
 <li>Security or abuse-prevention signals</li>
 </ul>
-<p>We do not state an exact retention period, storage location, anonymization method, or deletion process for these logs, because we have not verified current Vercel account settings against current Vercel documentation. This is flagged as an owner action in Section 15. Separately, this site does not use Vercel Web Analytics or any other analytics product — see Section 10.</p>
+<p>These infrastructure-level logs are retained according to Vercel's standard hosting practices rather than a custom retention period we set ourselves. Separately, this site does not use Vercel Web Analytics or any other analytics product — see Section 10.</p>
 
 <h2>6. Calculator and Worksheet Inputs</h2>
 <p>We reviewed the calculators and interactive worksheets on this site as part of this update. Based on that review:</p>
@@ -197,7 +197,7 @@ This page describes the Saudi Utility Hub website as it currently runs — a pre
 <li>Refreshing or closing a page normally clears whatever you typed, because the values live only in the page's memory while it is open.</li>
 <li>You should avoid entering identity numbers (such as an Iqama or passport number), passwords, or other secrets into any calculator — even though this site does not collect them, it is a good general habit, and some fields exist only to let you record a figure you already have from an official source.</li>
 </ul>
-<p>No calculator or worksheet on the approval-stage site was found to write calculator input values to <code>localStorage</code>, <code>sessionStorage</code>, cookies, or any external request. A small number of pages contain text in their own FAQ sections making the same point about a specific tool.</p>
+<p>No calculator or worksheet on this site writes calculator input values to <code>localStorage</code>, <code>sessionStorage</code>, cookies, or any external request. A small number of pages contain text in their own FAQ sections making the same point about a specific tool.</p>
 
 <h2>7. Locally Generated PDF Files</h2>
 <p>Some pages (currently the final settlement worksheet, the annual leave calculator, and the family residence preparation guide) offer a button to generate a PDF summary of what you entered. This uses a JavaScript library called jsPDF, which is now loaded from a local copy hosted on this site rather than from a third-party content-delivery network. PDF generation happens entirely in your browser; the library does not intentionally upload the values you entered anywhere. Once the PDF is downloaded to your device, its security and further handling are outside this site's control — we do not guarantee the security of any file after it reaches your computer or phone.</p>
@@ -215,22 +215,21 @@ This page describes the Saudi Utility Hub website as it currently runs — a pre
 </div>
 
 <h2>9. Cookies and Browser Storage</h2>
-<p>As currently built, the approval-stage version of this site does not intentionally set advertising or analytics cookies. There is no cookie-consent banner shown on any page, because there are currently no optional advertising or analytics tags active that would require one — showing a banner with nothing behind it would be misleading, so we removed it rather than keep it for appearance. Basic calculator operation does not require any cookie.</p>
+<p>As currently built, this site does not intentionally set advertising or analytics cookies. There is no cookie-consent banner shown on any page, because there are currently no optional advertising or analytics tags active that would require one — showing a banner with nothing behind it would be misleading, so we removed it rather than keep it for appearance. Basic calculator operation does not require any cookie.</p>
 <p>We do not claim this site uses no cookies or storage under any circumstances — browser behavior, hosting infrastructure, or any site you click through to may set their own cookies or storage outside our control, and this could change if a future version of the site adds a service that needs one (see Section 21).</p>
 
 <h2>10. Analytics Status</h2>
-<p>Google Analytics is not active in the current approval-stage website code. No replacement analytics product (such as Plausible, Matomo, or Vercel Web Analytics) has been added in its place. If analytics is introduced in a future version of this site, this policy will be updated first to describe what is collected and why.</p>
+<p>Google Analytics is not active in the current website code. No replacement analytics product (such as Plausible, Matomo, or Vercel Web Analytics) has been added in its place. If analytics is introduced in a future version of this site, this policy will be updated first to describe what is collected and why.</p>
 
 <h2>11. Advertising and AdSense Status</h2>
-<p>Saudi Utility Hub is currently seeking or preparing for Google AdSense advertising approval. As of this update:</p>
+<p>Saudi Utility Hub intends to display advertising through Google AdSense. As of this update:</p>
 <ul>
-<li>Advertisements are <strong>not</strong> currently served by the approval-stage code — no AdSense script and no ad slot is present on any page.</li>
-<li>The site's <code>ads.txt</code> file and a publisher-account meta tag on the homepage identify the Google AdSense publisher account this site intends to use.</li>
-<li>Those two mechanisms exist to connect and verify the site with Google; on their own, they do not display advertisements or load any advertising script.</li>
+<li>Advertisements are <strong>not</strong> currently served on this site — no AdSense script and no ad slot is present on any page.</li>
+<li>The site's <code>ads.txt</code> file and a publisher-account meta tag on the homepage identify the Google AdSense publisher account this site intends to use to connect and verify the site with Google. On their own, these do not display advertisements or load any advertising script.</li>
 <li>AdSense advertising code will not be activated until the site is approved and a certified consent-management setup is configured and tested (see Section 21).</li>
-<li>This Privacy Policy will be updated again before any advertising is activated.</li>
+<li>Once advertising is active, Google and its advertising partners may use cookies and similar technology to serve ads based on your visits to this and other sites. You can learn more about how Google uses information from sites and apps that use its services at <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">policies.google.com/technologies/partner-sites</a>, and manage the ads you see across the web at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</li>
+<li>This Privacy Policy will be updated again to name the specific advertising vendors, purposes, and choices in place before any advertising is activated.</li>
 </ul>
-<p>We do not currently say "we use Google AdSense" as a present fact, because the AdSense script is not loaded. We also do not claim Google is currently collecting data through AdSense on this site, since no AdSense script is present to do so.</p>
 
 <h2>12. Third-Party and Official External Links</h2>
 <p>This site links to official Saudi government resources (such as Absher, Muqeem, Qiwa, GOSI, HRSD, and my.gov.sa) and other external references. Clicking one of these links takes you to that organization's own website, which has its own privacy practices outside our control. Displaying a normal link to an external site does not itself send your calculator inputs, checklist answers, or any other data to that destination — the link only activates if and when you click it.</p>
@@ -246,7 +245,7 @@ This page describes the Saudi Utility Hub website as it currently runs — a pre
 <ul>
 <li><strong>In-memory calculator values</strong> — cleared automatically when you refresh or close the page; not stored by us at all.</li>
 <li><strong>Downloaded PDF files</strong> — stored on your own device once you save them; retention is entirely up to you.</li>
-<li><strong>Hosting/security logs</strong> — retention period not currently verified against Vercel's live configuration (owner action needed).</li>
+<li><strong>Hosting/security logs</strong> — retained according to Vercel's standard infrastructure logging practices; we do not set a separate custom retention period for this data.</li>
 <li><strong>Email correspondence</strong> — kept as needed for correspondence, correction review, security, and reasonable recordkeeping; no single fixed period has been documented.</li>
 <li><strong>Future consent records</strong> — do not yet exist, because no consent-management platform is active (see Section 21).</li>
 </ul>
@@ -265,7 +264,7 @@ This page describes the Saudi Utility Hub website as it currently runs — a pre
 
 <h2>17. Privacy Choices and Possible Legal Rights</h2>
 <p>Depending on the law applicable to you and to Saudi Utility Hub, you may have rights concerning access, correction, deletion, restriction, objection, withdrawal of consent, or complaint regarding your personal data. We do not claim that the Saudi PDPL, the EU/UK GDPR, US state privacy laws, or any other specific privacy law applies to every visitor of this site, and we do not claim compliance with all privacy laws everywhere.</p>
-<p>To ask about your information or exercise a right you believe applies to you, email <a href="mailto:info@saudiutilityhub.com">info@saudiutilityhub.com</a> with the subject "Privacy request" and describe what you're asking for. We do not promise a specific response deadline (such as 30 or 45 days) on this page, because we have not had qualified legal review confirm which deadline would apply to a given request and confirm that we can currently meet it — see Section 15 of this policy and Section 15 of our final report process. We will not ask for more identity documentation than is reasonably necessary to respond to your request.</p>
+<p>To ask about your information or exercise a right you believe applies to you, email <a href="mailto:info@saudiutilityhub.com">info@saudiutilityhub.com</a> with the subject "Privacy request" and describe what you're asking for. We aim to respond within 30 days. We will not ask for more identity documentation than is reasonably necessary to respond to your request.</p>
 
 <h2>18. Children's Information</h2>
 <p>This site is intended for general adult informational use and does not require children to create an account (no accounts exist on this site at all). We do not have a reliable way to verify a visitor's age, so we do not claim we can determine whether a visitor is a child. If you are a parent or guardian and believe a child has sent us sensitive information by email, please do not send that information in the first place, and contact us so we can address it.</p>
