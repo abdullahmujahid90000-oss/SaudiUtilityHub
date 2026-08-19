@@ -88,99 +88,131 @@
   </script>
 <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the overtime pay formula under Saudi Labour Law?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Article 107 of the Saudi Labour Law, as published by HRSD, states that the employer must pay the worker additional wage for overtime hours equal to the (actual) hourly wage plus 50% of the worker's basic hourly wage. This is not a flat 1.5x of a single wage figure — it combines the full hourly wage with an extra half of the basic hourly wage, which can produce a different result than a simple 150% multiplier when actual wage and basic wage differ (for example, when allowances are included in actual wage)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are \"basic wage\" and \"actual wage\" under the Labour Law?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Article 2 of the Labour Law defines basic wage as whatever is paid to the worker under the employment contract for their work, plus periodic allowances. Actual wage is defined as basic wage plus other amounts due to the worker — for example commission, cost-of-living increases, effort or hazard allowances, and customary bonuses that have become an established part of pay. Where the Law uses the word \"wage\" without qualification, it means actual wage by default."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What are the normal working-hour limits in Saudi Arabia?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Article 98 states a worker may not actually work more than 8 hours in a day (if the employer applies a daily standard) or more than 48 hours in a week (if a weekly standard applies). Article 99 allows this to be extended to 9 hours/day for certain worker categories or industries where work isn't continuous, or reduced to 7 hours/day for hazardous or harmful industries, with the categories set by ministerial decision. Article 100 allows employers, with Ministry approval, to extend hours for rotational-shift establishments, provided the average over up to three weeks doesn't exceed 8 hours/day or 48 hours/week."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does Ramadan affect working hours?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Article 98 states that actual working hours during Ramadan are reduced for Muslim employees specifically, to no more than 6 hours a day or 36 hours a week. This changes when hours start counting as overtime for Muslim employees during Ramadan (the threshold drops from 8 to 6 hours), but it does not create a separate overtime pay rate — hours worked beyond the applicable Ramadan standard are paid using the same Article 107 formula as any other overtime."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is Friday always the weekly rest day, and is Saturday overtime?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Friday is described as the default weekly rest day for workers, but the employer may substitute it with any other day of the week for certain types of work, after notifying the competent labour office. This means an individual employee's actual designated rest day can depend on their specific work arrangement, and Saturday is not automatically an overtime day for every worker — it depends on which day is that worker's actual weekly rest day. Article 107 states that all hours worked on a worker's rest day or on Eid/holiday days count as overtime hours, paid at the same hourly-wage-plus-50%-of-basic-wage rate."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are there daily or annual limits on overtime hours?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Article 101 states a worker may not work more than 5 consecutive hours without a rest break of at least half an hour, and that a worker must not remain at the workplace for more than 12 hours in a day. That 12-hour figure is a limit on time present at the workplace (including rest breaks), not a separately stated cap on \"regular plus overtime hours worked.\" We could not directly confirm a specific numeric daily or annual overtime-hours cap from a primary HRSD source; if you've seen a specific limit cited elsewhere, treat it as a matter for confirmation with HRSD or a qualified employment-law professional."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does this estimator use the same formula for regular, Ramadan, weekly-rest-day and public-holiday overtime?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Article 107's formula (hourly wage plus 50% of basic wage) applies the same way regardless of when the overtime hours were worked. What differs by period is only when hours start counting as overtime in the first place — for example, a lower daily threshold during Ramadan for Muslim employees, or the fact that all hours on a rest day or holiday count as overtime. Because the pay formula itself doesn't change, this estimator does not use a work-period selector that changes the calculation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is the hourly wage calculated from a monthly salary?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "This estimator converts a monthly wage to an hourly figure using a 30-day month and an 8-hour day (monthly wage ÷ 30 ÷ 8), which is a commonly used convention. Article 107's own text does not spell out this divisor, so treat the hourly conversion as an estimate rather than a figure taken verbatim from the law. If your employment contract or payslip states a different hourly-wage methodology, use that instead."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Are any employees excluded from these working-hour rules?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Article 7 of the Labour Law exempts several categories from the Law entirely, including the employer's own family members living with them, sports club players and coaches, domestic workers and those in a similar position, agricultural and grazing workers and those in a similar position, and non-Saudi workers brought in for a specific task not exceeding two months. We did not find a primary-confirmed general exemption for managerial or supervisory staff specifically from the working-hours and overtime provisions  — if that applies to your role, confirm it with HRSD or a qualified employment-law professional."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What can I do if my employer doesn't pay overtime?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can file a complaint directly with HRSD through its official complaint service, or through the Saudi national digital-complaint service on my.gov.sa. Keep records of your hours worked, payslips, and any instructions to work overtime. We did not find a primary-confirmed processing-time guarantee (such as a fixed number of days) for these complaints, so we do not state one here."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does this estimator show my take-home pay?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. This page estimates only the overtime payment itself under Article 107. It does not add that figure to your salary or account for GOSI deductions or other items — for an estimate of overall take-home pay, use our separate Salary Calculator."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the overtime pay formula under Saudi Labour Law?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Article 107 of the Saudi Labour Law, as published by HRSD, states that the employer must pay the worker additional wage for overtime hours equal to the (actual) hourly wage plus 50% of the worker's basic hourly wage. This is not a flat 1.5x of a single wage figure — it combines the full hourly wage with an extra half of the basic hourly wage, which can produce a different result than a simple 150% multiplier when actual wage and basic wage differ (for example, when allowances are included in actual wage)."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "What are \"basic wage\" and \"actual wage\" under the Labour Law?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Article 2 of the Labour Law defines basic wage as whatever is paid to the worker under the employment contract for their work, plus periodic allowances. Actual wage is defined as basic wage plus other amounts due to the worker — for example commission, cost-of-living increases, effort or hazard allowances, and customary bonuses that have become an established part of pay. Where the Law uses the word \"wage\" without qualification, it means actual wage by default."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the normal working-hour limits in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Article 98 states a worker may not actually work more than 8 hours in a day (if the employer applies a daily standard) or more than 48 hours in a week (if a weekly standard applies). Article 99 allows this to be extended to 9 hours/day for certain worker categories or industries where work isn't continuous, or reduced to 7 hours/day for hazardous or harmful industries, with the categories set by ministerial decision. Article 100 allows employers, with Ministry approval, to extend hours for rotational-shift establishments, provided the average over up to three weeks doesn't exceed 8 hours/day or 48 hours/week."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Ramadan affect working hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Article 98 states that actual working hours during Ramadan are reduced for Muslim employees specifically, to no more than 6 hours a day or 36 hours a week. This changes when hours start counting as overtime for Muslim employees during Ramadan (the threshold drops from 8 to 6 hours), but it does not create a separate overtime pay rate — hours worked beyond the applicable Ramadan standard are paid using the same Article 107 formula as any other overtime."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Friday always the weekly rest day, and is Saturday overtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Friday is described as the default weekly rest day for workers, but the employer may substitute it with any other day of the week for certain types of work, after notifying the competent labour office. This means an individual employee's actual designated rest day can depend on their specific work arrangement, and Saturday is not automatically an overtime day for every worker — it depends on which day is that worker's actual weekly rest day. Article 107 states that all hours worked on a worker's rest day or on Eid/holiday days count as overtime hours, paid at the same hourly-wage-plus-50%-of-basic-wage rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there daily or annual limits on overtime hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Article 101 states a worker may not work more than 5 consecutive hours without a rest break of at least half an hour, and that a worker must not remain at the workplace for more than 12 hours in a day. That 12-hour figure is a limit on time present at the workplace (including rest breaks), not a separately stated cap on \"regular plus overtime hours worked.\" We could not directly confirm a specific numeric daily or annual overtime-hours cap from a primary HRSD source; if you've seen a specific limit cited elsewhere, treat it as a matter for confirmation with HRSD or a qualified employment-law professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this estimator use the same formula for regular, Ramadan, weekly-rest-day and public-holiday overtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Article 107's formula (hourly wage plus 50% of basic wage) applies the same way regardless of when the overtime hours were worked. What differs by period is only when hours start counting as overtime in the first place — for example, a lower daily threshold during Ramadan for Muslim employees, or the fact that all hours on a rest day or holiday count as overtime. Because the pay formula itself doesn't change, this estimator does not use a work-period selector that changes the calculation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the hourly wage calculated from a monthly salary?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This estimator converts a monthly wage to an hourly figure using a 30-day month and an 8-hour day (monthly wage ÷ 30 ÷ 8), which is a commonly used convention. Article 107's own text does not spell out this divisor, so treat the hourly conversion as an estimate rather than a figure taken verbatim from the law. If your employment contract or payslip states a different hourly-wage methodology, use that instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are any employees excluded from these working-hour rules?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Article 7 of the Labour Law exempts several categories from the Law entirely, including the employer's own family members living with them, sports club players and coaches, domestic workers and those in a similar position, agricultural and grazing workers and those in a similar position, and non-Saudi workers brought in for a specific task not exceeding two months. We did not find a primary-confirmed general exemption for managerial or supervisory staff specifically from the working-hours and overtime provisions  — if that applies to your role, confirm it with HRSD or a qualified employment-law professional."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What can I do if my employer doesn't pay overtime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can file a complaint directly with HRSD through its official complaint service, or through the Saudi national digital-complaint service on my.gov.sa. Keep records of your hours worked, payslips, and any instructions to work overtime. We did not find a primary-confirmed processing-time guarantee (such as a fixed number of days) for these complaints, so we do not state one here."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this estimator show my take-home pay?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This page estimates only the overtime payment itself under Article 107. It does not add that figure to your salary or account for GOSI deductions or other items — for an estimate of overall take-home pay, use our separate Salary Calculator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the legal working hours in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The standard limit is eight hours a day or 48 hours a week, reduced to six hours a day or 36 hours a week during Ramadan for Muslim workers. Some sectors and roles have their own regimes, so compare the figure this tool produces with your contract and any sector-specific ministerial decision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is overtime pay calculated in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Overtime is paid at the hourly wage plus a 50% premium, based on the wage used for the relevant period. This calculator applies that premium to the hours you enter above the standard limit; it does not model GOSI or other payslip deductions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are Friday and weekly rest days paid in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The weekly rest day is a paid rest day and is normally Friday unless the nature of the work requires another day, in which case the contract or work regulations should say so. Working on a rest day is treated as overtime under the rules described above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do working hours include break times in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rest and prayer breaks are generally not counted as working hours, and workers should not remain at the workplace for more than a stated maximum total of working plus break time per day. Enter only actual working hours here so the overtime estimate is not inflated."
+      }
+    }
+  ]
+}
   </script>
 <style>
     :root {
@@ -787,6 +819,22 @@
 <p>Estimate overall net take-home pay after GOSI, housing, and transport allowances.</p>
 <a href="https://www.saudiutilityhub.com/salary-calculator.html">Open Tool →</a>
 </div>
+      <div class="faq-item">
+        <div class="faq-question">What are the legal working hours in Saudi Arabia?</div>
+        <p>The standard limit is eight hours a day or 48 hours a week, reduced to six hours a day or 36 hours a week during Ramadan for Muslim workers. Some sectors and roles have their own regimes, so compare the figure this tool produces with your contract and any sector-specific ministerial decision.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">How is overtime pay calculated in Saudi Arabia?</div>
+        <p>Overtime is paid at the hourly wage plus a 50% premium, based on the wage used for the relevant period. This calculator applies that premium to the hours you enter above the standard limit; it does not model GOSI or other payslip deductions.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Are Friday and weekly rest days paid in Saudi Arabia?</div>
+        <p>The weekly rest day is a paid rest day and is normally Friday unless the nature of the work requires another day, in which case the contract or work regulations should say so. Working on a rest day is treated as overtime under the rules described above.</p>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">Do working hours include break times in Saudi Arabia?</div>
+        <p>Rest and prayer breaks are generally not counted as working hours, and workers should not remain at the workplace for more than a stated maximum total of working plus break time per day. Enter only actual working hours here so the overtime estimate is not inflated.</p>
+      </div>
 <div class="related-card">
 <h3>🏢 GOSI Calculator</h3>
 <p>Estimate social insurance contributions for Saudi and non-Saudi employees.</p>

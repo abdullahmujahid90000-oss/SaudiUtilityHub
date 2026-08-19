@@ -112,11 +112,155 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Iqama Expiry Date Calculator &amp; Renewal Planner 2026" name="twitter:title"/>
 <meta content="Work out your iqama expiry date and plan renewal early. Free private planner that converts Hijri and Gregorian dates and flags your renewal window." name="twitter:description"/>
-<script data-suh-schema="auto" type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does this tool actually calculate?", "acceptedAnswer": {"@type": "Answer", "text": "It takes the official Iqama expiry date you type in and a check date (defaulting to today), then calculates how many days remain or have passed, plus optional reminder dates (30/60/90 days before expiry, or a custom lead time). It does not look up, verify, or confirm your expiry date against any government record — it only does arithmetic on the date you provide."}}, {"@type": "Question", "name": "Where do I find my official Iqama expiry date?", "acceptedAnswer": {"@type": "Answer", "text": "Check Absher (absher.sa) under individual services, or Muqeem/Absher Business if your employer manages your record. These portals typically display the expiry date in both Gregorian and Hijri calendars. Enter the Gregorian date shown in your official record into this planner — we do not convert between calendars ourselves."}}, {"@type": "Question", "name": "Does this tool check Absher, Muqeem, or Jawazat for me?", "acceptedAnswer": {"@type": "Answer", "text": "No. This planner has no connection to any government system and cannot see your actual Iqama record. It only calculates dates from what you type in. For your real, current status, always check Absher, Muqeem, or your employer directly."}}, {"@type": "Question", "name": "How much does Iqama renewal cost, and is there a grace period or late penalty?", "acceptedAnswer": {"@type": "Answer", "text": "We found inconsistent figures across independent sources for renewal fees, grace periods, and late penalties, and no single official fee schedule we could confidently cite as current and universal — these details vary by Iqama category (work, dependant, domestic worker) and can change. This planner does not calculate or display any fee or penalty amount. Confirm current figures on Absher, Muqeem, or with your employer/sponsor before budgeting or making decisions."}}, {"@type": "Question", "name": "How early can I renew before my Iqama expires?", "acceptedAnswer": {"@type": "Answer", "text": "Sources we reviewed disagreed on the exact renewal window, so we do not state a specific number of days as fact. Use the reminder feature in this planner to give yourself lead time, then confirm the exact renewal-eligibility window on Absher or Muqeem when you're ready to act."}}, {"@type": "Question", "name": "What happens if my Iqama expires before I renew?", "acceptedAnswer": {"@type": "Answer", "text": "We cannot tell you, and this planner does not attempt to. It will only tell you that the date you entered has passed and by how many days. Some sources describe consequences such as fines for late renewal; a specific claim about automatic deportation after a fixed number of days could not be confirmed against a primary source in our review and has been removed rather than repeated. Contact your employer/sponsor or check Absher/Muqeem directly if your Iqama has expired."}}, {"@type": "Question", "name": "Do I need a medical test to renew my Iqama?", "acceptedAnswer": {"@type": "Answer", "text": "Valid health insurance and a clean record of resolved fines are commonly listed as general conditions for government transactions in Saudi Arabia, including Iqama renewal. We did not find confirmation that a specific medical test is a universal requirement for every Iqama renewal — this appears to vary by category. Verify the exact requirements for your case on Absher or Muqeem."}}, {"@type": "Question", "name": "Is my Iqama number or personal data stored or sent anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "This tool never asks for your Iqama number, name, or passport number, and it never should — we do not need it to calculate dates. All calculations run in your browser; the dates you enter are not sent to any server or stored anywhere by this tool."}}, {"@type": "Question", "name": "Who is responsible for renewing my Iqama — me or my employer?", "acceptedAnswer": {"@type": "Answer", "text": "For work-visa holders, renewal is often initiated by the employer/sponsor through Muqeem or Absher Business, though individuals can view their own status through Absher. Responsibility can vary by employer and case type, so confirm directly with your employer or sponsor who is expected to act."}}]}</script>
+<script data-suh-schema="auto" type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does this tool actually calculate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It takes the official Iqama expiry date you type in and a check date (defaulting to today), then calculates how many days remain or have passed, plus optional reminder dates (30/60/90 days before expiry, or a custom lead time). It does not look up, verify, or confirm your expiry date against any government record — it only does arithmetic on the date you provide."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I find my official Iqama expiry date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check Absher (absher.sa) under individual services, or Muqeem/Absher Business if your employer manages your record. These portals typically display the expiry date in both Gregorian and Hijri calendars. Enter the Gregorian date shown in your official record into this planner — we do not convert between calendars ourselves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this tool check Absher, Muqeem, or Jawazat for me?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This planner has no connection to any government system and cannot see your actual Iqama record. It only calculates dates from what you type in. For your real, current status, always check Absher, Muqeem, or your employer directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does Iqama renewal cost, and is there a grace period or late penalty?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We found inconsistent figures across independent sources for renewal fees, grace periods, and late penalties, and no single official fee schedule we could confidently cite as current and universal — these details vary by Iqama category (work, dependant, domestic worker) and can change. This planner does not calculate or display any fee or penalty amount. Confirm current figures on Absher, Muqeem, or with your employer/sponsor before budgeting or making decisions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How early can I renew before my Iqama expires?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sources we reviewed disagreed on the exact renewal window, so we do not state a specific number of days as fact. Use the reminder feature in this planner to give yourself lead time, then confirm the exact renewal-eligibility window on Absher or Muqeem when you're ready to act."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my Iqama expires before I renew?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We cannot tell you, and this planner does not attempt to. It will only tell you that the date you entered has passed and by how many days. Some sources describe consequences such as fines for late renewal; a specific claim about automatic deportation after a fixed number of days could not be confirmed against a primary source in our review and has been removed rather than repeated. Contact your employer/sponsor or check Absher/Muqeem directly if your Iqama has expired."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a medical test to renew my Iqama?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Valid health insurance and a clean record of resolved fines are commonly listed as general conditions for government transactions in Saudi Arabia, including Iqama renewal. We did not find confirmation that a specific medical test is a universal requirement for every Iqama renewal — this appears to vary by category. Verify the exact requirements for your case on Absher or Muqeem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my Iqama number or personal data stored or sent anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "This tool never asks for your Iqama number, name, or passport number, and it never should — we do not need it to calculate dates. All calculations run in your browser; the dates you enter are not sent to any server or stored anywhere by this tool."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is responsible for renewing my Iqama — me or my employer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For work-visa holders, renewal is often initiated by the employer/sponsor through Muqeem or Absher Business, though individuals can view their own status through Absher. Responsibility can vary by employer and case type, so confirm directly with your employer or sponsor who is expected to act."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I check my Iqama expiry date online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The authoritative sources are Absher for the individual record and Muqeem for employer-linked records; both show the official Hijri and Gregorian expiry. This planner only converts a date you already hold into renewal reminders — it does not query any government system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many days before expiry can I renew my Iqama?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Renewal is normally done in the period shortly before the expiry date and requires the levy and any dues to be settled first. Because employer processes take time, the reminders here default to starting well before the expiry date so paperwork and payment can be arranged without a last-minute rush."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the fine for an expired Iqama in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Late renewal carries a financial penalty that escalates with repetition, and the responsibility usually sits with the employer or sponsor rather than the worker. Because published penalty amounts change, confirm the current figure on Absher or with Jawazat rather than relying on any third-party page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Iqama expiry date Hijri or Gregorian?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The official record is issued in Hijri and displayed alongside a Gregorian equivalent. A Hijri year is about 11 days shorter than a Gregorian year, so a renewal planned purely from last year's Gregorian date can drift late — always plan from the date shown on the official record."
+      }
+    }
+  ]
+}</script>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
 <link href="https://www.saudiutilityhub.com/iqama-expiry-calculator.html" hreflang="en" rel="alternate"/>
 <link href="https://www.saudiutilityhub.com/iqama-expiry-calculator.html" hreflang="x-default" rel="alternate"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Iqama Expiry Date Calculator &amp; Renewal Planner 2026", "url": "https://www.saudiutilityhub.com/iqama-expiry-calculator.html", "inLanguage": "en", "dateModified": "2026-08-19", "isPartOf": {"@type": "WebSite", "name": "Saudi Utility Hub", "url": "https://www.saudiutilityhub.com/"}, "publisher": {"@type": "Organization", "name": "Saudi Utility Hub", "url": "https://www.saudiutilityhub.com/"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Plan an Iqama Renewal Before Expiry",
+  "description": "Method for converting an official Iqama expiry date into a renewal timeline with reminder milestones.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Find the official expiry date",
+      "text": "Read the expiry from Absher or Muqeem rather than from a photocopy or memory."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter the expiry date",
+      "text": "Type the date exactly as shown on the official record."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Choose your reminder lead time",
+      "text": "Pick how far ahead you want the first reminder, allowing time for employer processing and levy payment."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Review the milestones",
+      "text": "The planner shows days remaining and the dates to start paperwork, pay dues and complete renewal."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Verify before acting",
+      "text": "Confirm the renewal steps and any fees on the official portal, since this planner does not query government systems."
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav>
@@ -315,6 +459,22 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <div class="faq-item">
 <div class="faq-q">Who is responsible for renewing my Iqama — me or my employer?</div>
 <div class="faq-a">For work-visa holders, renewal is often initiated by the employer/sponsor through Muqeem or Absher Business, though individuals can view their own status through Absher. Responsibility can vary by employer and case type, so confirm directly with your employer or sponsor who is expected to act.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">How can I check my Iqama expiry date online?</div>
+<div class="faq-a">The authoritative sources are Absher for the individual record and Muqeem for employer-linked records; both show the official Hijri and Gregorian expiry. This planner only converts a date you already hold into renewal reminders — it does not query any government system.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">How many days before expiry can I renew my Iqama?</div>
+<div class="faq-a">Renewal is normally done in the period shortly before the expiry date and requires the levy and any dues to be settled first. Because employer processes take time, the reminders here default to starting well before the expiry date so paperwork and payment can be arranged without a last-minute rush.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">What is the fine for an expired Iqama in Saudi Arabia?</div>
+<div class="faq-a">Late renewal carries a financial penalty that escalates with repetition, and the responsibility usually sits with the employer or sponsor rather than the worker. Because published penalty amounts change, confirm the current figure on Absher or with Jawazat rather than relying on any third-party page.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Is the Iqama expiry date Hijri or Gregorian?</div>
+<div class="faq-a">The official record is issued in Hijri and displayed alongside a Gregorian equivalent. A Hijri year is about 11 days shorter than a Gregorian year, so a renewal planned purely from last year's Gregorian date can drift late — always plan from the date shown on the official record.</div>
 </div>
 </div>
 <!-- Official sources -->

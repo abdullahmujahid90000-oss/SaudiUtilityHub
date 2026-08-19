@@ -121,11 +121,147 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Annual Leave Calculator Saudi Arabia 2026" name="twitter:title"/>
 <meta content="Free annual leave calculator for Saudi Arabia: 21 or 30 days under Labour Law Article 109, accrued balance, and leave encashment value. Updated 2026." name="twitter:description"/>
-<script data-suh-schema="auto" type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many annual leave days do I get under Saudi Labour Law?", "acceptedAnswer": {"@type": "Answer", "text": "Article 109 sets a minimum of 21 days per year, rising to a minimum of 30 days per year once you have completed 5 consecutive years with the same employer. These are minimums — your contract can offer more, but not less."}}, {"@type": "Question", "name": "Do weekly rest days and public holidays count against my annual leave balance?", "acceptedAnswer": {"@type": "Answer", "text": "Based on converging legal commentary on Article 109 (we could not locate a single official clause stating this explicitly), weekly rest days and official/religious holidays falling within a period of annual leave are not deducted from your annual-leave balance. This point is not from a directly verified gazette clause, so treat it as well-supported but not 100% certain, and confirm with HR for your specific contract."}}, {"@type": "Question", "name": "Can I get paid instead of taking my annual leave?", "acceptedAnswer": {"@type": "Answer", "text": "Not while you remain employed — Article 109 states leave may not be waived or exchanged for a cash allowance during service. You only become entitled to a cash payment for unused leave under Article 111 if you leave your job (resignation, termination, or contract end) before using it."}}, {"@type": "Question", "name": "How is unused annual leave paid out when employment ends?", "acceptedAnswer": {"@type": "Answer", "text": "Under Article 111, the payout is based on your final actual wage (basic wage plus regular allowances such as commissions, hazard pay, cost-of-living increases and customary bonuses — not one-off discretionary bonuses). This calculator converts that monthly wage to a daily rate by dividing by 30, which is a common convention, not a figure we found written into the leave article itself, so we label it an estimate."}}, {"@type": "Question", "name": "Does annual leave accrue proportionally if I haven't completed a full year?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Official HRSD guidance confirms a worker is entitled to leave pay for parts of a year in proportion to time actually worked. This calculator applies that proportionally using your exact employment start date and the date you choose to calculate as of."}}, {"@type": "Question", "name": "Can my employer postpone or carry forward my annual leave?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, within limits. An employer may postpone leave past its due year for up to 90 days if work requires it. Extending the postponement further requires the worker's written consent, and the total postponement cannot extend beyond the end of the year following the year the leave was originally due."}}, {"@type": "Question", "name": "Is sick leave the same as annual leave?", "acceptedAnswer": {"@type": "Answer", "text": "No, they are separate entitlements under different articles. Sick leave (Article 117) provides up to 120 days per illness-year: full pay for the first 30 days, three-quarters pay for the next 60 days, and unpaid for the final 30 days. It is not deducted from your annual leave balance."}}, {"@type": "Question", "name": "Where do I go if my employer disputes my leave balance or payout?", "acceptedAnswer": {"@type": "Answer", "text": "File a complaint through the Qiwa portal (qiwa.sa). HRSD will attempt mediation first; unresolved disputes are escalated to the Labour Courts. Keep written records of your start date, leave requests, approvals and any postponements, since exact accrual and wage-base figures are ultimately confirmed by your employer's payroll records, not by this estimator."}}]}</script>
+<script data-suh-schema="auto" type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many annual leave days do I get under Saudi Labour Law?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Article 109 sets a minimum of 21 days per year, rising to a minimum of 30 days per year once you have completed 5 consecutive years with the same employer. These are minimums — your contract can offer more, but not less."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do weekly rest days and public holidays count against my annual leave balance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Based on converging legal commentary on Article 109 (we could not locate a single official clause stating this explicitly), weekly rest days and official/religious holidays falling within a period of annual leave are not deducted from your annual-leave balance. This point is not from a directly verified gazette clause, so treat it as well-supported but not 100% certain, and confirm with HR for your specific contract."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get paid instead of taking my annual leave?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not while you remain employed — Article 109 states leave may not be waived or exchanged for a cash allowance during service. You only become entitled to a cash payment for unused leave under Article 111 if you leave your job (resignation, termination, or contract end) before using it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is unused annual leave paid out when employment ends?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under Article 111, the payout is based on your final actual wage (basic wage plus regular allowances such as commissions, hazard pay, cost-of-living increases and customary bonuses — not one-off discretionary bonuses). This calculator converts that monthly wage to a daily rate by dividing by 30, which is a common convention, not a figure we found written into the leave article itself, so we label it an estimate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does annual leave accrue proportionally if I haven't completed a full year?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Official HRSD guidance confirms a worker is entitled to leave pay for parts of a year in proportion to time actually worked. This calculator applies that proportionally using your exact employment start date and the date you choose to calculate as of."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my employer postpone or carry forward my annual leave?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, within limits. An employer may postpone leave past its due year for up to 90 days if work requires it. Extending the postponement further requires the worker's written consent, and the total postponement cannot extend beyond the end of the year following the year the leave was originally due."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is sick leave the same as annual leave?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, they are separate entitlements under different articles. Sick leave (Article 117) provides up to 120 days per illness-year: full pay for the first 30 days, three-quarters pay for the next 60 days, and unpaid for the final 30 days. It is not deducted from your annual leave balance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I go if my employer disputes my leave balance or payout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "File a complaint through the Qiwa portal (qiwa.sa). HRSD will attempt mediation first; unresolved disputes are escalated to the Labour Courts. Keep written records of your start date, leave requests, approvals and any postponements, since exact accrual and wage-base figures are ultimately confirmed by your employer's payroll records, not by this estimator."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many annual leave days do I get after 5 years in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Once you complete five consecutive years with the same employer the statutory minimum rises from 21 to 30 days per year. The increase applies from the anniversary date forward, not retroactively, which is why this calculator splits the service period into a pre-anniversary segment at 21 days and a post-anniversary segment at 30 days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my employer refuse my annual leave request?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The employer schedules leave according to work requirements and may postpone it, but leave cannot simply be cancelled indefinitely, and it cannot be exchanged for cash while you remain employed. If leave is repeatedly deferred, ask for the carry-forward balance to be confirmed in writing on your payslip or HR system."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is annual leave paid in advance in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is common practice for the wage covering an annual leave period to be paid before the leave starts, and many contracts state this explicitly. Check your own contract wording, since the timing of the payment is a contractual point rather than something this calculator can confirm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do sick leave and Hajj leave affect my annual leave balance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are separate statutory entitlements with their own rules and are not deducted from the annual leave balance. This tool estimates annual leave only; the other leave types are summarised in the reference section above for context."
+      }
+    }
+  ]
+}</script>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
 <link href="https://www.saudiutilityhub.com/leave-calculator.html" hreflang="en" rel="alternate"/>
 <link href="https://www.saudiutilityhub.com/leave-calculator.html" hreflang="x-default" rel="alternate"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Annual Leave Calculator Saudi Arabia 2026", "url": "https://www.saudiutilityhub.com/leave-calculator.html", "inLanguage": "en", "dateModified": "2026-08-19", "isPartOf": {"@type": "WebSite", "name": "Saudi Utility Hub", "url": "https://www.saudiutilityhub.com/"}, "publisher": {"@type": "Organization", "name": "Saudi Utility Hub", "url": "https://www.saudiutilityhub.com/"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Calculate Annual Leave Balance in Saudi Arabia",
+  "description": "Method for estimating accrued annual leave days under Article 109, including the 21-day and 30-day rates and end-of-service payout.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Enter your joining date",
+      "text": "The service start date determines when the five-year anniversary falls."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Set the calculation date",
+      "text": "Choose the date you want the balance measured as of, usually today or your last working day."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter leave already used",
+      "text": "Subtract days already taken so the balance reflects what remains."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add any verified carry-forward",
+      "text": "Include a carried-forward balance only if HR has confirmed it in writing."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add your wage for payout",
+      "text": "If employment is ending, enter the actual monthly wage so the tool can estimate the cash value of unused days."
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav>
@@ -323,6 +459,22 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <div class="faq-item">
 <div class="faq-q">Where do I go if my employer disputes my leave balance or payout?</div>
 <div class="faq-a">File a complaint through the <a href="https://www.qiwa.sa" rel="noopener" target="_blank">Qiwa portal</a> (qiwa.sa). HRSD will attempt mediation first; unresolved disputes are escalated to the Labour Courts. Keep written records of your start date, leave requests, approvals and any postponements, since exact accrual and wage-base figures are ultimately confirmed by your employer's payroll records, not by this estimator.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">How many annual leave days do I get after 5 years in Saudi Arabia?</div>
+<div class="faq-a">Once you complete five consecutive years with the same employer the statutory minimum rises from 21 to 30 days per year. The increase applies from the anniversary date forward, not retroactively, which is why this calculator splits the service period into a pre-anniversary segment at 21 days and a post-anniversary segment at 30 days.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Can my employer refuse my annual leave request?</div>
+<div class="faq-a">The employer schedules leave according to work requirements and may postpone it, but leave cannot simply be cancelled indefinitely, and it cannot be exchanged for cash while you remain employed. If leave is repeatedly deferred, ask for the carry-forward balance to be confirmed in writing on your payslip or HR system.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Is annual leave paid in advance in Saudi Arabia?</div>
+<div class="faq-a">It is common practice for the wage covering an annual leave period to be paid before the leave starts, and many contracts state this explicitly. Check your own contract wording, since the timing of the payment is a contractual point rather than something this calculator can confirm.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Do sick leave and Hajj leave affect my annual leave balance?</div>
+<div class="faq-a">They are separate statutory entitlements with their own rules and are not deducted from the annual leave balance. This tool estimates annual leave only; the other leave types are summarised in the reference section above for context.</div>
 </div>
 </div>
 <!-- Official sources -->

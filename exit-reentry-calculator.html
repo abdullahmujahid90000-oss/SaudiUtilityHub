@@ -111,11 +111,155 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="Exit Re-Entry Visa Fee Calculator Saudi Arabia 2026" name="twitter:title"/>
 <meta content="Free exit re-entry visa calculator for Saudi Arabia: single and multiple visa fees, extra-month cost, and a return-date planner. Updated for 2026." name="twitter:description"/>
-<script data-suh-schema="auto" type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this tool tell me my visa status or eligibility?", "acceptedAnswer": {"@type": "Answer", "text": "No. It cannot check Absher, Muqeem, Jawazat, or any government system. It only records the fee and dates you enter yourself and does basic arithmetic on them. For your actual visa status, check Absher or Muqeem directly."}}, {"@type": "Question", "name": "Why doesn't this tool show a default fee?", "acceptedAnswer": {"@type": "Answer", "text": "Reported fees vary across sources and by visa type, duration option, and traveller category, and we could not confirm a single current official fee table with confidence. Rather than guess, this worksheet asks you to enter the exact amount shown on your own official Absher/MOI/SADAD screen and confirm that it came from that screen."}}, {"@type": "Question", "name": "Can I extend an exit/re-entry visa?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in at least some cases: the Saudi National Platform (my.gov.sa) lists an official service for extending an exit/re-entry visa for a beneficiary who is outside the Kingdom. This directly contradicts a claim in an earlier version of this page that extension was never possible. Whether extension applies to your specific situation should be confirmed directly through that service or Absher."}}, {"@type": "Question", "name": "Is there a grace period if I return late?", "acceptedAnswer": {"@type": "Answer", "text": "Multiple Saudi service-guide sources attribute a \"no grace period\" rule to Jawazat, consistently enough that we note it here, but we did not independently confirm this against a primary Jawazat or Absher page. Treat the return-before date on your visa as the date to act by, and verify directly if this matters to your plans."}}, {"@type": "Question", "name": "What happens if I don't return before the date on my visa?", "acceptedAnswer": {"@type": "Answer", "text": "We found significantly inconsistent figures across secondary sources for overstay fines and any re-entry restriction — ranging widely and none from a primary source we could confidently cite. This worksheet does not state a specific fine amount or ban duration; contact Absher, Jawazat, or a licensed immigration professional if you are at risk of missing your return-before date."}}, {"@type": "Question", "name": "Do all my dependants pay the same fee?", "acceptedAnswer": {"@type": "Answer", "text": "We did not confirm that every dependant category (spouse, children, domestic workers) is charged an identical fee. This worksheet lets you enter a separate official fee for each traveller rather than multiplying one figure automatically, so it never assumes uniform pricing."}}, {"@type": "Question", "name": "How is exit/re-entry visa validity different from my Iqama validity?", "acceptedAnswer": {"@type": "Answer", "text": "They are related but separate: your Iqama is your residency/work-permit record, while an exit/re-entry visa is a temporary travel authorization layered on top of it. Sources describe the return-before date as needing to fall a number of days before your Iqama's expiry, and overall exit/re-entry validity as capped by your Iqama's remaining validity. This worksheet does not calculate that relationship for you — check both dates directly in Absher/Muqeem, and see our Iqama Expiry Planner for the Iqama side."}}, {"@type": "Question", "name": "Can I get an exit/re-entry visa after a final exit?", "acceptedAnswer": {"@type": "Answer", "text": "Final exit and exit/re-entry are different services. Final exit is generally understood to end your residency/sponsorship record, so a new entry would typically require a fresh visa arranged by an employer or sponsor rather than an exit/re-entry request on a record that no longer exists. Confirm your specific situation with Absher or your sponsor."}}, {"@type": "Question", "name": "Is my information stored or sent anywhere?", "acceptedAnswer": {"@type": "Answer", "text": "No. This worksheet never asks for your Iqama number, passport number, or visa number. All calculations run in your browser; nothing is sent to any server or stored in localStorage."}}]}</script>
+<script data-suh-schema="auto" type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this tool tell me my visa status or eligibility?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It cannot check Absher, Muqeem, Jawazat, or any government system. It only records the fee and dates you enter yourself and does basic arithmetic on them. For your actual visa status, check Absher or Muqeem directly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why doesn't this tool show a default fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Reported fees vary across sources and by visa type, duration option, and traveller category, and we could not confirm a single current official fee table with confidence. Rather than guess, this worksheet asks you to enter the exact amount shown on your own official Absher/MOI/SADAD screen and confirm that it came from that screen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I extend an exit/re-entry visa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in at least some cases: the Saudi National Platform (my.gov.sa) lists an official service for extending an exit/re-entry visa for a beneficiary who is outside the Kingdom. This directly contradicts a claim in an earlier version of this page that extension was never possible. Whether extension applies to your specific situation should be confirmed directly through that service or Absher."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a grace period if I return late?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiple Saudi service-guide sources attribute a \"no grace period\" rule to Jawazat, consistently enough that we note it here, but we did not independently confirm this against a primary Jawazat or Absher page. Treat the return-before date on your visa as the date to act by, and verify directly if this matters to your plans."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I don't return before the date on my visa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We found significantly inconsistent figures across secondary sources for overstay fines and any re-entry restriction — ranging widely and none from a primary source we could confidently cite. This worksheet does not state a specific fine amount or ban duration; contact Absher, Jawazat, or a licensed immigration professional if you are at risk of missing your return-before date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do all my dependants pay the same fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We did not confirm that every dependant category (spouse, children, domestic workers) is charged an identical fee. This worksheet lets you enter a separate official fee for each traveller rather than multiplying one figure automatically, so it never assumes uniform pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is exit/re-entry visa validity different from my Iqama validity?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are related but separate: your Iqama is your residency/work-permit record, while an exit/re-entry visa is a temporary travel authorization layered on top of it. Sources describe the return-before date as needing to fall a number of days before your Iqama's expiry, and overall exit/re-entry validity as capped by your Iqama's remaining validity. This worksheet does not calculate that relationship for you — check both dates directly in Absher/Muqeem, and see our Iqama Expiry Planner for the Iqama side."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get an exit/re-entry visa after a final exit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Final exit and exit/re-entry are different services. Final exit is generally understood to end your residency/sponsorship record, so a new entry would typically require a fresh visa arranged by an employer or sponsor rather than an exit/re-entry request on a record that no longer exists. Confirm your specific situation with Absher or your sponsor."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my information stored or sent anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. This worksheet never asks for your Iqama number, passport number, or visa number. All calculations run in your browser; nothing is sent to any server or stored in localStorage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is a single exit re-entry visa valid in Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single exit re-entry is issued for a defined number of days, and both the departure and the return must fall inside that window. The authoritative figure is the \"return before\" date printed on your visa or shown in Absher — enter that date in Section B above and the planner counts the days remaining and your chosen reminder milestones."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I return after my exit re-entry visa expires?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Returning after expiry can leave the residency status broken and normally requires the sponsor to resolve it, sometimes with a penalty. If the return date is at risk, ask the sponsor about extending the visa through the official channel before it lapses, not after."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an exit re-entry visa be extended from outside Saudi Arabia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Extension from abroad is possible in defined circumstances through the official channels, subject to the Iqama remaining valid and any fees being paid. Because eligibility depends on the visa type and remaining validity, confirm it on Absher or with the sponsor rather than assuming."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between single and multiple exit re-entry visas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single visa permits one departure and one return within its window; a multiple visa permits repeated trips within a longer validity and costs more. This worksheet does not distinguish between them for calculation purposes — the visa type field is a label only, and every date it uses comes from the official \"return before\" date you enter."
+      }
+    }
+  ]
+}</script>
 <meta content="index,follow,max-image-preview:large" name="robots"/>
 <link href="https://www.saudiutilityhub.com/exit-reentry-calculator.html" hreflang="en" rel="alternate"/>
 <link href="https://www.saudiutilityhub.com/exit-reentry-calculator.html" hreflang="x-default" rel="alternate"/>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Exit Re-Entry Visa Fee Calculator Saudi Arabia 2026", "url": "https://www.saudiutilityhub.com/exit-reentry-calculator.html", "inLanguage": "en", "dateModified": "2026-08-19", "isPartOf": {"@type": "WebSite", "name": "Saudi Utility Hub", "url": "https://www.saudiutilityhub.com/"}, "publisher": {"@type": "Organization", "name": "Saudi Utility Hub", "url": "https://www.saudiutilityhub.com/"}}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Plan an Exit Re-entry Return Date in Saudi Arabia",
+  "description": "How to record official exit/re-entry fees and count the days remaining before the official return-before date, using only figures you enter yourself.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Record the official fee",
+      "text": "Type the exit/re-entry amount exactly as shown on your own Absher, MOI or SADAD screen for each traveller. The worksheet never assumes or prefills a fee."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Add any extra official charge",
+      "text": "Enter an additional official charge, such as an extra-month amount, only if an official screen shows it."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Enter the return-before date",
+      "text": "Type the exact 'return before' date printed on your visa or shown in Absher."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Choose reminder lead times",
+      "text": "Tick 30, 60 or 90 days, or enter a custom number of days, to generate reminder milestones before that date."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Build the worksheet",
+      "text": "Review the days remaining, the reminder dates and the fee total as a private planning record; verify status and fees only through official channels."
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav>
@@ -375,6 +519,43 @@ nav{background:#1a1a2e;padding:0;position:sticky;top:0;z-index:999;box-shadow:0 
 <div class="faq-item">
 <div class="faq-q">Is my information stored or sent anywhere?</div>
 <div class="faq-a">No. This worksheet never asks for your Iqama number, passport number, or visa number. All calculations run in your browser; nothing is sent to any server or stored in localStorage.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">How long is a single exit re-entry visa valid in Saudi Arabia?</div>
+<div class="faq-a">A single exit re-entry is issued for a defined number of days, and both the departure and the return must fall inside that window. The authoritative figure is the "return before" date printed on your visa or shown in Absher — enter that date in Section B above and the planner counts the days remaining and your chosen reminder milestones.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">What happens if I return after my exit re-entry visa expires?</div>
+<div class="faq-a">Returning after expiry can leave the residency status broken and normally requires the sponsor to resolve it, sometimes with a penalty. If the return date is at risk, ask the sponsor about extending the visa through the official channel before it lapses, not after.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Can an exit re-entry visa be extended from outside Saudi Arabia?</div>
+<div class="faq-a">Extension from abroad is possible in defined circumstances through the official channels, subject to the Iqama remaining valid and any fees being paid. Because eligibility depends on the visa type and remaining validity, confirm it on Absher or with the sponsor rather than assuming.</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">What is the difference between single and multiple exit re-entry visas?</div>
+<div class="faq-a">A single visa permits one departure and one return within its window; a multiple visa permits repeated trips within a longer validity and costs more. This worksheet does not distinguish between them for calculation purposes — the visa type field is a label only, and every date it uses comes from the official "return before" date you enter.</div>
+</div>
+</div>
+<!-- Worked examples -->
+<div class="card">
+<h2>📐 Worked Examples</h2>
+<p style="font-size:.85rem;color:#666;margin-bottom:.8rem">These examples use only the dates you type into Section B. This worksheet never checks Absher, never assumes a fee, and cannot confirm whether a visa is valid.</p>
+<div class="example-card">
+<h4>1. Trip comfortably inside the return-before date</h4>
+<p>Official "return before" date <strong>30 Oct 2026</strong>, checked against <strong>19 Aug 2026</strong>. The worksheet shows <strong>72 days</strong> remaining, so a trip returning on 5 Oct leaves roughly 25 days of margin before the date printed on the visa.</p>
+</div>
+<div class="example-card">
+<h4>2. Reminder lead times for a short window</h4>
+<p>Return-before date <strong>15 Sep 2026</strong> with the <strong>30-day</strong> reminder ticked. Because only 27 days remain from 19 Aug, the 30-day milestone has already passed — a useful signal to arrange the return, or ask the sponsor about an extension through the official channel, now rather than later.</p>
+</div>
+<div class="example-card">
+<h4>3. Date already passed</h4>
+<p>Return-before date <strong>1 Aug 2026</strong> checked against <strong>19 Aug 2026</strong>. The worksheet reports the date as passed. Only Jawazat, Absher or your sponsor can say what that means for your status — this page cannot assess fines, grace periods or re-entry restrictions.</p>
+</div>
+<div class="example-card">
+<h4>4. Fee worksheet for several travellers</h4>
+<p>Three travellers, each with <strong>SAR 200</strong> recorded from the official SADAD screen and one additional official charge of <strong>SAR 100</strong> typed in. The worksheet totals <strong>SAR 700</strong> — a record of what you entered, not a quoted or verified price.</p>
 </div>
 </div>
 <!-- Official sources -->
