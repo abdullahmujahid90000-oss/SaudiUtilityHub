@@ -248,11 +248,6 @@
       "permanent": true
     },
     {
-      "source": "/working-hours-calculator.html",
-      "destination": "/overtime-calculator.html",
-      "permanent": true
-    },
-    {
       "source": "/blog/saudi-traffic-fines-guide-2026.html",
       "destination": "/traffic-fine-calculator.html",
       "permanent": true
