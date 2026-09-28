@@ -1,19 +1,48 @@
-/* Saudi Utility Hub — cookie consent notice
-   Stores the visitor's choice in localStorage and signals non-personalised
-   ads to Google AdSense when consent is declined. No tracking of its own. */
+/* Saudi Utility Hub — cookie consent notice and Google Analytics loader.
+   Stores the visitor's choice in localStorage, passes it to Google through
+   Consent Mode (Analytics + AdSense), and loads Google Analytics once for the
+   whole site. Loaded with `defer` on every page. */
 (function () {
   var KEY = 'suh-cookie-consent';
+  var GA_ID = 'G-MX4J28KBE6';
+  // EEA, UK and Switzerland: nothing beyond essentials until the visitor accepts.
+  var OPT_IN_REGIONS = ['AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT',
+                        'LU','MT','NL','PL','PT','RO','SK','SI','ES','SE','IS','LI','NO','GB','CH'];
   var choice = null;
   try { choice = window.localStorage.getItem(KEY); } catch (e) { choice = null; }
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = window.gtag || gtag;
+
+  var DENIED = { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' };
+  var GRANTED = { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' };
+  var ESSENTIAL = { ad_storage: 'granted', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' };
+
+  gtag('consent', 'default', Object.assign({ region: OPT_IN_REGIONS, wait_for_update: 500 }, DENIED));
+  gtag('consent', 'default', GRANTED);
 
   function applyChoice(value) {
     if (value === 'declined') {
       window.adsbygoogle = window.adsbygoogle || [];
       window.adsbygoogle.requestNonPersonalizedAds = 1;
+      gtag('consent', 'update', ESSENTIAL);
+    } else if (value === 'accepted') {
+      gtag('consent', 'update', GRANTED);
     }
   }
 
   applyChoice(choice);
+
+  (function loadAnalytics() {
+    if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
+    var ga = document.createElement('script');
+    ga.async = true;
+    ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+    document.head.appendChild(ga);
+    gtag('js', new Date());
+    gtag('config', GA_ID);
+  })();
 
   if (choice === 'accepted' || choice === 'declined') return;
 
@@ -48,8 +77,8 @@
     bar.setAttribute('aria-label', 'Cookie notice');
     var isAr = (document.documentElement.getAttribute('lang') || '').indexOf('ar') === 0;
     var text = isAr
-      ? 'نستخدم ملفات الارتباط لتشغيل الموقع ولإظهار الإعلانات عبر Google AdSense. بيانات الحاسبات تبقى داخل متصفحك ولا تُرسل إلينا. اطلع على <a href="https://www.saudiutilityhub.com/privacy.html">سياسة الخصوصية</a>.'
-      : 'We use cookies for basic site function and, through Google AdSense, for advertising. Calculator inputs stay in your browser and are never sent to us. Choose “Essential only” for non-personalised ads. Read our <a href="https://www.saudiutilityhub.com/privacy.html">Privacy Policy</a>.';
+      ? 'نستخدم ملفات الارتباط لتشغيل الموقع، ولقياس الزيارات عبر Google Analytics، ولإظهار الإعلانات عبر Google AdSense. بيانات الحاسبات تبقى داخل متصفحك ولا تُرسل إلينا. اطلع على <a href="https://www.saudiutilityhub.com/privacy.html">سياسة الخصوصية</a>.'
+      : 'We use cookies for basic site function, for visit statistics (Google Analytics) and for advertising (Google AdSense). Calculator inputs stay in your browser and are never sent to us. Choose “Essential only” to turn off analytics and get non-personalised ads. Read our <a href="https://www.saudiutilityhub.com/privacy.html">Privacy Policy</a>.';
     var accept = isAr ? 'قبول الكل' : 'Accept all';
     var decline = isAr ? 'الضروري فقط' : 'Essential only';
     if (isAr) bar.setAttribute('dir', 'rtl');
