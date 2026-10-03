@@ -25,6 +25,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.saudiutilityhub.com/eos-payouts-by-salary-2026.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.saudiutilityhub.com/final-settlement-calculator.html</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -220,12 +226,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/traffic-fine-calculator.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/saudi-iban-validator.html</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -233,18 +233,6 @@
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/family-visa-cost-calculator.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/premium-residency-cost-calculator.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/musaned-calculator.html</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -290,5 +278,23 @@
     <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.saudiutilityhub.com/traffic-fine-calculator.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.saudiutilityhub.com/premium-residency-cost-calculator.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.saudiutilityhub.com/musaned-calculator.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
