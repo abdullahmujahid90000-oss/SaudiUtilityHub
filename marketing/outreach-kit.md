@@ -39,9 +39,8 @@ Aim for one pitch a week. Track every pitch in a sheet with these columns: date,
 > I'm happy to provide a comment or a custom cut (for example, typical salaries for a specific nationality or sector).
 >
 > Best,
-> [Your name]
-> Founder, Saudi Utility Hub
-> [phone / WhatsApp]
+> The Saudi Utility Hub team
+> info@saudiutilityhub.com
 
 **Follow up once** after 5 working days, with one new angle ("The 10-year cliff is the bigger story for long-serving workers…"), then stop.
 
@@ -56,9 +55,11 @@ Aim for one pitch a week. Track every pitch in a sheet with these columns: date,
 
 ## 2. Qwoted and Featured.com expert profile
 
+> **Use your real name here, or skip this section.** Journalists print the name and title they're given as fact, and both platforms verify sources. "Abdullah Al Kathani" is a pen name: it's fine on the site, but don't use it when you'll be quoted in the press. If you'd rather stay anonymous, skip Qwoted and Featured and rely on the data-study pitches, which go out from the team address and don't need a named expert.
+
 **Sign up:** qwoted.com (choose "Source") and featured.com (choose "Expert"). Set alerts for: Saudi Arabia, GCC, expat, gratuity, end of service, labour law, payroll, iqama, remittance and cost of living.
 
-**Profile headline:** Founder of Saudi Utility Hub. Saudi labour-law, payroll and expat-cost calculators.
+**Profile headline (real name only):** Founder of Saudi Utility Hub. Saudi labour-law, payroll and expat-cost calculators.
 
 **Bio (150 words):**
 
@@ -99,7 +100,7 @@ Also check the blogs of HR software companies that sell into KSA (payroll and HR
 > Here's an example of my work: https://www.saudiutilityhub.com/eos-payouts-by-salary-2026.html
 >
 > Thanks,
-> [Name]
+> Abdullah Al Kathani (pen name), Saudi Utility Hub
 
 ---
 

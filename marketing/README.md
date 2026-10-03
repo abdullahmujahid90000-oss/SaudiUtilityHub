@@ -51,8 +51,8 @@ Every link in these drafts carries a UTM tag such as `?utm_source=reddit&utm_med
 - **New linkable asset:** `/eos-payouts-by-salary-2026.html` with its CSV at `/data/eos-payouts-by-salary-2026.csv`. It's original, calculated data with schema.org `Dataset` markup, the page you pitch to journalists. It links from the EOS calculator and the sitewide footer, and it's in the sitemap.
 - **Arabic pages expanded:** the 4 existing `/ar/` calculators now have worked examples, official sources and more FAQs.
 
-## What still needs you (I can't do these for you)
+## What still needs you
 
-1. **Put your real name on the About page.** Google's quality raters look for a named person behind finance and legal content (the E-E-A-T signals). Send me your name, a one-line bio (for example, "Pakistani expat in Riyadh since 2018, works in payroll / IT / ...") and, if you're comfortable, a LinkedIn URL. I'll add an author box to the About page and to every calculator.
-2. **Create the accounts:** Reddit (age it 2–3 weeks with plain comments before posting any link), Quora, X, LinkedIn, Expat.com, Qwoted and Product Hunt.
-3. **Send a request in Search Console** for the new data page: URL Inspection → Request indexing.
+1. **Posting.** Reddit, Facebook groups and Quora have no connector, and their rules ban automated or ghost-run accounts. Banned domains stay banned. If you don't have time, hire a part-time virtual assistant (about 1 hour a day). Give them this folder and the account rules above, and have them post from accounts in your name, or from their own account with disclosure.
+2. **Scheduling (zero effort after setup).** Connect Typefully (or Metricool) to claude.ai, then ask Claude to load the X and LinkedIn drafts into the queue.
+3. **Arabic spelling of the pen name.** Arabic pages show "Abdullah Al Kathani" in Latin letters until you confirm the Arabic spelling.

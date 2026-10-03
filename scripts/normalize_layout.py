@@ -26,7 +26,25 @@ NOINDEX_NO_ADS = {
     "noc-letter-generator.html",
     "salary-certificate.html",
     "salary-slip-generator.html",
+    # Paused 2026-10-03: its fees and "service centres" could not be matched to
+    # Musaned's own site (which lists contract authentication as free). Kept
+    # reachable but out of search until it is rewritten from primary sources.
+    "musaned-calculator.html",
+    # Paused 2026-10-03: per-violation fines were single figures that do not
+    # match the published min–max ranges (e.g. mobile use is SAR 500–900).
+    "traffic-fine-calculator.html",
+    # Paused 2026-10-03: category fees stated as annual and a broken family
+    # comparison; needs re-verifying against the Premium Residency Center.
+    "premium-residency-cost-calculator.html",
 }
+
+# Pages that carry the founder/author box above the footer. Policy and
+# contact pages are excluded; they already say who runs the site.
+NO_AUTHOR_BOX = NOINDEX_NO_ADS | {
+    "index.html", "about.html", "contact.html", "privacy.html", "terms.html",
+    "editorial-team.html", "404.html",
+}
+AUTHOR_NAME = "Abdullah Al Kathani"
 
 NAV = [
     ("Salary", "/salary-calculator.html"),
@@ -68,7 +86,6 @@ FOOTER_COLUMNS = [
         ("Fuel Cost Calculator", "/fuel-cost-calculator.html"),
         ("Cost of Living Dashboard", "/expat-affordability-dashboard.html"),
         ("Gold Price Calculator", "/gold-prices.html"),
-        ("Traffic Fine Calculator", "/traffic-fine-calculator.html"),
         ("Home Finance Calculator", "/mortgage-calculator.html"),
         ("Islamic Finance Calculator", "/islamic-finance-calculator.html"),
         ("Driving Licence Conversion", "/driving-license-conversion.html"),
@@ -119,6 +136,28 @@ def build_footer():
         f'<p>© 2026 Saudi Utility Hub · <a href="mailto:info@saudiutilityhub.com">info@saudiutilityhub.com</a></p>\n'
         "</div>\n</div>\n<!-- /suh:footer -->"
     )
+
+
+def build_author_box():
+    return (
+        "<!-- suh:author -->\n"
+        '<div class="suh-author" role="complementary" aria-label="About the author">\n'
+        '<div class="suh-wrap">\n'
+        '<div class="suh-author-avatar" aria-hidden="true">AK</div>\n'
+        "<div>\n"
+        f'<p class="suh-author-name">Written and maintained by <a href="{SITE}/about.html#founder">{AUTHOR_NAME}</a>, founder &amp; editor</p>\n'
+        "<p>Expats kept asking Abdullah the same questions about salary, end of service, GOSI and iqama rules, so he built "
+        "Saudi Utility Hub to answer them in one place. Every page is built from the rules published by HRSD, GOSI, Qiwa and "
+        f'Absher. Spotted something out of date? <a href="{SITE}/contact.html">Tell us</a> and we will correct it.</p>\n'
+        "</div>\n</div>\n</div>\n<!-- /suh:author -->"
+    )
+
+
+def replace_author_box(html, page):
+    html = re.sub(r"<!-- suh:author -->[\s\S]*?<!-- /suh:author -->\n?", "", html)
+    if page in NO_AUTHOR_BOX:
+        return html
+    return html.replace("<!-- suh:footer -->", build_author_box() + "\n<!-- suh:footer -->", 1)
 
 
 def balanced_end(html, start, tag):
@@ -222,6 +261,7 @@ def process(path):
 
     html = replace_header(html, page)
     html = replace_footer(html)
+    html = replace_author_box(html, page)
 
     # The /blog/ section no longer exists; its URL only redirects to the homepage.
     html = html.replace(f'href="{SITE}/blog/"', f'href="{SITE}/"')

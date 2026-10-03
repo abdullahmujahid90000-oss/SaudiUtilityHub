@@ -62,12 +62,12 @@
     "@context": "https://schema.org",
     "@type": "HowTo",
     "name": "How to Estimate Your Saudi Dependent Levy",
-    "description": "Steps to estimate the monthly dependent levy for a sponsored spouse and children under 18 in Saudi Arabia.",
+    "description": "Steps to estimate the monthly dependent levy for a sponsored spouse, children and parents in Saudi Arabia.",
     "step": [
       {
         "@type": "HowToStep",
         "name": "Enter your sponsored family dependents",
-        "text": "Select whether a spouse is sponsored and enter the number of children under 18 sponsored on your iqama. Domestic workers are not entered here — see the note on this page."
+        "text": "Select whether a spouse is sponsored and enter the number of children and other family members (such as parents) sponsored on your iqama. Domestic workers are not entered here — see the note on this page."
       },
       {
         "@type": "HowToStep",
@@ -97,7 +97,7 @@
       "name": "What is the Saudi dependent levy and how much is it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The dependent levy (also called the companion fee) is a fee charged for each non-Saudi spouse or child under 18 sponsored on an expatriate's iqama. It has been SAR 400 per dependent per month since July 1, 2020, after being phased in at SAR 100/month (2017), SAR 200/month (2018), and SAR 300/month (2019). Source: Saudi Press Agency reporting on the General Directorate of Passports announcement."
+        "text": "The dependent levy (also called the companion fee) is a fee charged for each family member (spouse, children and parents) sponsored on an expatriate's iqama. It has been SAR 400 per dependent per month since July 1, 2020, after being phased in at SAR 100/month (2017), SAR 200/month (2018), and SAR 300/month (2019). Source: Saudi Press Agency reporting on the General Directorate of Passports announcement."
       }
     },
     {
@@ -545,15 +545,15 @@
 </nav>
 <div class="hero">
 <h1>👨‍👩‍👧 Dependent Fee Calculator Saudi Arabia 2026</h1>
-<p>Estimate the monthly fee for a sponsored spouse or child under 18. Not for domestic workers — see why below.</p>
+<p>Estimate the monthly fee for a sponsored spouse, children or parents. Not for domestic workers — see why below.</p>
 <span class="badge">SAR 400/month per dependent · in effect since July 2020<a class="cite" href="#src-1">[1]</a></span>
 </div>
 <div class="quick-answer">
-      The Saudi dependent levy (companion fee) is SAR 400 per month for each non-Saudi spouse or child under 18 sponsored on your iqama, and has been at that level since July 1, 2020. It does not include domestic workers, who are handled under a separate system — this estimator only covers family dependents.
+      The Saudi dependent levy (companion fee) is SAR 400 per month for each family member sponsored on your iqama — spouse, children (including sons over 18 who remain on your iqama) and parents, and has been at that level since July 1, 2020. It does not include domestic workers, who are handled under a separate system — this estimator only covers family dependents.
     </div>
 <div class="scope-box">
-<strong>Who this estimator covers:</strong> a sponsored spouse and/or children under 18 (the "companions"/"dependents" category under Ministry of Interior rules).<br/>
-<strong>Who it excludes:</strong> domestic workers (drivers, housemaids, etc. — recruited via Musaned/HRSD, a different system with different fees we have not verified here), children 18 and over (who cannot remain as standard dependents), and parents (sponsoring parents follows separate, restrictive rules not covered by this page).
+<strong>Who this estimator covers:</strong> every family member on your iqama — spouse, children of any age, and parents or other companions. Ministry of Interior rules split them into "dependents" (wife and sons under 18) and "companions" (sons over 18, parents and others), but the fee is the same SAR 400/month for both.<br/>
+<strong>Who it excludes:</strong> domestic workers (drivers, housemaids, etc.), who are recruited through Musaned and follow a separate fee system, and holders of Premium Residency, whose family members are exempt.
     </div>
 <!-- Calculator -->
 <div class="calculator-card">
@@ -567,10 +567,16 @@
 </select>
 </div>
 <div class="form-group">
-<label for="children">Children Under 18 Sponsored</label>
+<label for="children">Children Sponsored (any age)</label>
 <input aria-describedby="children-note children-error" id="children" inputmode="numeric" max="20" min="0" step="1" type="number" value="2"/>
-<div class="note" id="children-note">Whole number, 0–20. Only children under 18 can be sponsored as dependents.</div>
+<div class="note" id="children-note">Whole number, 0–20. Sons over 18 and daughters of any age who remain on your iqama are charged too.</div>
 <div class="field-error" id="children-error" role="alert"></div>
+</div>
+<div class="form-group">
+<label for="others">Parents / Other Companions Sponsored</label>
+<input aria-describedby="others-note others-error" id="others" inputmode="numeric" max="10" min="0" step="1" type="number" value="0"/>
+<div class="note" id="others-note">Whole number, 0–10. For example a mother or father on your iqama.</div>
+<div class="field-error" id="others-error" role="alert"></div>
 </div>
 <div class="form-group">
 <label for="months">Payment Period (Months)</label>
@@ -588,8 +594,12 @@
 <span id="row-spouse">0 × SAR 400</span>
 </div>
 <div class="result-row">
-<span>Children under 18</span>
+<span>Children</span>
 <span id="row-children">0 × SAR 400</span>
+</div>
+<div class="result-row">
+<span>Parents / other companions</span>
+<span id="row-others">0 × SAR 400</span>
 </div>
 <div class="result-row">
 <span>Total Sponsored Dependents</span>
@@ -612,11 +622,11 @@
 </div>
 <!-- Ad Slot: placed only after the calculator and core explanation -->
 <h2>📖 How to Use This Estimator</h2>
-<p>This estimator computes the SAR 400/month Saudi dependent levy for a sponsored spouse and/or children under 18. It does not include domestic workers, and it does not connect to Absher, the General Directorate of Passports, or any government record — it only performs the arithmetic below on the numbers you enter.</p>
+<p>This estimator computes the SAR 400/month Saudi dependent levy for a sponsored spouse, children and parents or other companions. It does not include domestic workers, and it does not connect to Absher, the General Directorate of Passports, or any government record — it only performs the arithmetic below on the numbers you enter.</p>
 <ol>
-<li><strong>Enter your sponsored family dependents</strong><br/>Select whether a spouse is sponsored, and enter the number of children under 18 who are sponsored on your iqama.</li>
+<li><strong>Enter your sponsored family dependents</strong><br/>Select whether a spouse is sponsored, then enter the number of children and of parents or other companions on your iqama.</li>
 <li><strong>Enter the payment period</strong><br/>Enter how many months you want to estimate for (1–24). The fee is charged in whole-month units in advance, so round up to the next full month for any partial month.</li>
-<li><strong>Review the breakdown</strong><br/>See the fee broken down by spouse and children, the monthly subtotal, and the total for your chosen period.</li>
+<li><strong>Review the breakdown</strong><br/>See the fee broken down by spouse, children and other companions, the monthly subtotal, and the total for your chosen period.</li>
 <li><strong>Confirm the exact amount before paying</strong><br/>Use Absher to confirm your exact amount due before making any payment.</li>
 </ol>
 <h3>Renewal periods and partial months</h3>
@@ -693,7 +703,7 @@
 <strong>Please read before relying on this estimate:</strong>
 <ul>
 <li>This is an estimator, not an official checker — it does not connect to Absher, the General Directorate of Passports, or any government record.</li>
-<li>It covers only a sponsored spouse and children under 18. It does not cover domestic workers, who follow a separate fee system we have not verified here.</li>
+<li>It covers family members on your iqama (spouse, children, parents). It does not cover domestic workers, who follow a separate fee system we have not verified here.</li>
 <li>The exemption list (GCC nationals, diplomatic staff, certain professions), the employer/employee liability split, non-payment consequences, and refund treatment are commonly reported but not independently verified against a primary source on this page — confirm your own situation with Absher.</li>
 <li>Saudi Utility Hub does not provide legal, financial, immigration, or government services, and nothing on this page is legal advice.</li>
 </ul>
@@ -703,7 +713,7 @@
 <h2>❓ Frequently Asked Questions</h2>
 <div class="faq-item">
 <div class="faq-question">What is the Saudi dependent levy and how much is it?</div>
-<div>The dependent levy (also called the companion fee) is a fee charged for each non-Saudi spouse or child under 18 sponsored on an expatriate's iqama. It has been SAR 400 per dependent per month since July 1, 2020, after being phased in at SAR 100/month (2017), SAR 200/month (2018), and SAR 300/month (2019). Source: Saudi Press Agency reporting on the General Directorate of Passports announcement.</div>
+<div>The dependent levy (also called the companion fee) is a fee charged for each family member (spouse, children and parents) sponsored on an expatriate's iqama. It has been SAR 400 per dependent per month since July 1, 2020, after being phased in at SAR 100/month (2017), SAR 200/month (2018), and SAR 300/month (2019). Source: Saudi Press Agency reporting on the General Directorate of Passports announcement.</div>
 </div>
 <div class="faq-item">
 <div class="faq-question">Does the dependent levy apply to domestic workers?</div>
@@ -768,6 +778,17 @@
 </div>
 <div style="max-width:900px;margin:0 auto;padding:0 20px 28px;"><p style="font-size:12px;color:#666;background:#fff8e1;border:1px solid #ffe082;border-radius:6px;padding:10px 14px;margin:0;">⚠️ <strong>Disclaimer:</strong> All results are estimates based on publicly available Saudi government regulations and rates. Always verify important financial or legal decisions with your employer, bank, or the relevant Saudi authority (Ministry of Human Resources, GOSI, ZATCA, Jawazat, or SAMA).</p></div>
 <div class="suh-updated" style="max-width:1200px;margin:2rem auto 0;padding:0 16px;font-size:.8rem;color:#64748b">Last reviewed and updated: <time datetime="2026-08-19">19 August 2026</time> · Reviewed against official Saudi government sources (HRSD, GOSI, Absher, Muqeem, MOI).</div>
+<!-- suh:author -->
+<div class="suh-author" role="complementary" aria-label="About the author">
+<div class="suh-wrap">
+<div class="suh-author-avatar" aria-hidden="true">AK</div>
+<div>
+<p class="suh-author-name">Written and maintained by <a href="https://www.saudiutilityhub.com/about.html#founder">Abdullah Al Kathani</a>, founder &amp; editor</p>
+<p>Expats kept asking Abdullah the same questions about salary, end of service, GOSI and iqama rules, so he built Saudi Utility Hub to answer them in one place. Every page is built from the rules published by HRSD, GOSI, Qiwa and Absher. Spotted something out of date? <a href="https://www.saudiutilityhub.com/contact.html">Tell us</a> and we will correct it.</p>
+</div>
+</div>
+</div>
+<!-- /suh:author -->
 <!-- suh:footer -->
 <div class="suh-footer" role="contentinfo">
 <div class="suh-wrap suh-fgrid">
@@ -808,7 +829,6 @@
 <li><a href="https://www.saudiutilityhub.com/fuel-cost-calculator.html">Fuel Cost Calculator</a></li>
 <li><a href="https://www.saudiutilityhub.com/expat-affordability-dashboard.html">Cost of Living Dashboard</a></li>
 <li><a href="https://www.saudiutilityhub.com/gold-prices.html">Gold Price Calculator</a></li>
-<li><a href="https://www.saudiutilityhub.com/traffic-fine-calculator.html">Traffic Fine Calculator</a></li>
 <li><a href="https://www.saudiutilityhub.com/mortgage-calculator.html">Home Finance Calculator</a></li>
 <li><a href="https://www.saudiutilityhub.com/islamic-finance-calculator.html">Islamic Finance Calculator</a></li>
 <li><a href="https://www.saudiutilityhub.com/driving-license-conversion.html">Driving Licence Conversion</a></li>
@@ -896,13 +916,15 @@
       var spouse = document.getElementById('spouse').value === '1' ? 1 : 0;
 
       var childrenResult = validateWholeNumber(childrenRaw, 0, MAX_CHILDREN);
+      var othersResult = validateWholeNumber(document.getElementById('others').value, 0, 10);
       var monthsResult = validateWholeNumber(monthsRaw, 1, MAX_MONTHS);
 
       setFieldError('children', 'children-error', childrenResult.valid ? null : errorMessage(childrenResult.error, 'children', 0, MAX_CHILDREN));
+      setFieldError('others', 'others-error', othersResult.valid ? null : errorMessage(othersResult.error, 'parents / other companions', 0, 10));
       setFieldError('months', 'months-error', monthsResult.valid ? null : errorMessage(monthsResult.error, 'months', 1, MAX_MONTHS));
 
       var summary = document.getElementById('form-error-summary');
-      if (!childrenResult.valid || !monthsResult.valid) {
+      if (!childrenResult.valid || !othersResult.valid || !monthsResult.valid) {
         summary.textContent = 'Please fix the highlighted field(s) below — your entered values have been kept.';
         summary.classList.add('visible');
         document.getElementById('levy-results').style.display = 'none';
@@ -913,12 +935,14 @@
 
       var children = childrenResult.value;
       var months = monthsResult.value;
-      var totalDependents = spouse + children;
+      var others = othersResult.value;
+      var totalDependents = spouse + children + others;
       var monthlyFee = totalDependents * LEVY_RATE;
       var totalLevy = monthlyFee * months;
 
       document.getElementById('row-spouse').textContent = spouse + ' × SAR ' + LEVY_RATE;
       document.getElementById('row-children').textContent = children + ' × SAR ' + LEVY_RATE;
+      document.getElementById('row-others').textContent = others + ' × SAR ' + LEVY_RATE;
       document.getElementById('total-dependents').textContent = totalDependents;
       document.getElementById('monthly-fee').textContent = 'SAR ' + monthlyFee.toLocaleString();
       document.getElementById('payment-period').textContent = months + ' month' + (months === 1 ? '' : 's');
@@ -934,6 +958,8 @@
     function resetLevyForm() {
       document.getElementById('spouse').selectedIndex = 1;
       document.getElementById('children').value = '2';
+      document.getElementById('others').value = '0';
+      setFieldError('others', 'others-error', null);
       document.getElementById('months').value = '12';
       setFieldError('children', 'children-error', null);
       setFieldError('months', 'months-error', null);
