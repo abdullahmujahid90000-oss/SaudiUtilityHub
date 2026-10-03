@@ -55,7 +55,7 @@ Aim for one pitch a week. Track every pitch in a sheet with these columns: date,
 
 ## 2. Qwoted and Featured.com expert profile
 
-> **Use your real name here, or skip this section.** Journalists print the name and title they're given as fact, and both platforms verify sources. "Abdullah Al Kathani" is a pen name: it's fine on the site, but don't use it when you'll be quoted in the press. If you'd rather stay anonymous, skip Qwoted and Featured and rely on the data-study pitches, which go out from the team address and don't need a named expert.
+> **Use your real name here, or skip this section.** Journalists print the name and title they're given as fact, and both platforms verify sources. "Abdullah Al-Qahtani" is a pen name: it's fine on the site, but don't use it when you'll be quoted in the press. If you'd rather stay anonymous, skip Qwoted and Featured and rely on the data-study pitches, which go out from the team address and don't need a named expert.
 
 **Sign up:** qwoted.com (choose "Source") and featured.com (choose "Expert"). Set alerts for: Saudi Arabia, GCC, expat, gratuity, end of service, labour law, payroll, iqama, remittance and cost of living.
 
@@ -100,7 +100,7 @@ Also check the blogs of HR software companies that sell into KSA (payroll and HR
 > Here's an example of my work: https://www.saudiutilityhub.com/eos-payouts-by-salary-2026.html
 >
 > Thanks,
-> Abdullah Al Kathani (pen name), Saudi Utility Hub
+> Abdullah Al-Qahtani (pen name), Saudi Utility Hub
 
 ---
 

@@ -3,9 +3,9 @@
 ## Fixed in this commit
 | Issue | Why it mattered | Fix |
 |---|---|---|
-| Musaned page stated fees (SAR 100/200 "verification", SAR 300–500 medical) and walk-in "service centres" that don't match Musaned's own site (contract authentication is free) | Inaccurate YMYL content; false "fact-checked" claim | `noindex`, ads removed, out of sitemap/homepage. URL still works. |
-| Traffic fine calculator used single per-violation fines that don't match published min–max ranges (e.g. mobile use is SAR 500–900, not 200) | Inaccurate YMYL content | Same as above; footer and in-content links removed |
-| Premium Residency calculator: category fees stated as annual, wrong family comparison | Inaccurate YMYL content | Same as above |
+| ~~Paused~~ **Rewritten:** Musaned page stated fees (SAR 100/200 "verification", SAR 300–500 medical) and walk-in "service centres" that don't match Musaned's own site (contract authentication is free) | Inaccurate YMYL content; false "fact-checked" claim | `noindex`, ads removed, out of sitemap/homepage. URL still works. |
+| ~~Paused~~ **Rewritten:** Traffic fine calculator used single per-violation fines that don't match published min–max ranges (e.g. mobile use is SAR 500–900, not 200) | Inaccurate YMYL content | Same as above; footer and in-content links removed |
+| ~~Paused~~ **Rewritten:** Premium Residency calculator: category fees stated as annual, wrong family comparison | Inaccurate YMYL content | Same as above |
 | Dependent levy guide vs calculator contradicted each other (any-age children/parents/domestic workers vs "spouse + under-18 only"); guide said the SAR 400 rate also applied to employees | Contradictory facts | Both now: SAR 400/month per family member (spouse, children of any age, parents); domestic workers excluded; expat worker levy (SAR 800) named as separate. Calculator gained a "parents / other companions" field. |
 | "Related Blog Posts" cards for articles that don't exist (IBAN, traffic, Musaned, letter generators) | Misleading navigation | Removed |
 | "Reviewed by Abdullah Al-Qahtani … Next review: July 1, 2026" blocks (stale, inconsistent name) | Stale/contradictory authorship | Removed; one sitewide author box (scripts/normalize_layout.py) |
@@ -17,4 +17,9 @@
 1. Re-submit `sitemap.xml` in Search Console; request indexing for About, the data page and the levy pages.
 2. AdSense → Privacy & messaging → publish the Google-certified GDPR message (required for EEA/UK visitors).
 3. Wait until Google has recrawled (check URL Inspection shows the new About page) before re-applying.
-4. Paused pages can return once rewritten from primary sources: musaned-calculator, traffic-fine-calculator, premium-residency-cost-calculator.
+
+## Follow-up (same day): the three paused pages were rewritten and re-indexed
+- **traffic-fine-calculator.html:** min–max ranges per violation (MOI schedule), the 25%-of-minimum reduction and instalments (2022 Traffic Law amendments), Absher steps. Speeding and points are described without unverifiable single figures.
+- **premium-residency-cost-calculator.html:** all 7 products (SAR 800,000 once; SAR 100,000/yr; SAR 4,000 once for the 5 specialised products, plus the SAR 4M property rule for Real Estate Owner). The calculator compares fees with the dependent levy avoided.
+- **musaned-calculator.html:** SAR 2,000 visa fee, HRSD recruitment caps by nationality (Jan 2024), free contract authentication, first-year cost with salary, and a warning when an office quote is above the cap.
+All three are back in the sitemap, footer and homepage, with ads and the author box.

@@ -55,4 +55,3 @@ Every link in these drafts carries a UTM tag such as `?utm_source=reddit&utm_med
 
 1. **Posting.** Reddit, Facebook groups and Quora have no connector, and their rules ban automated or ghost-run accounts. Banned domains stay banned. If you don't have time, hire a part-time virtual assistant (about 1 hour a day). Give them this folder and the account rules above, and have them post from accounts in your name, or from their own account with disclosure.
 2. **Scheduling (zero effort after setup).** Connect Typefully (or Metricool) to claude.ai, then ask Claude to load the X and LinkedIn drafts into the queue.
-3. **Arabic spelling of the pen name.** Arabic pages show "Abdullah Al Kathani" in Latin letters until you confirm the Arabic spelling.

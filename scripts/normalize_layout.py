@@ -26,16 +26,6 @@ NOINDEX_NO_ADS = {
     "noc-letter-generator.html",
     "salary-certificate.html",
     "salary-slip-generator.html",
-    # Paused 2026-10-03: its fees and "service centres" could not be matched to
-    # Musaned's own site (which lists contract authentication as free). Kept
-    # reachable but out of search until it is rewritten from primary sources.
-    "musaned-calculator.html",
-    # Paused 2026-10-03: per-violation fines were single figures that do not
-    # match the published min–max ranges (e.g. mobile use is SAR 500–900).
-    "traffic-fine-calculator.html",
-    # Paused 2026-10-03: category fees stated as annual and a broken family
-    # comparison; needs re-verifying against the Premium Residency Center.
-    "premium-residency-cost-calculator.html",
 }
 
 # Pages that carry the founder/author box above the footer. Policy and
@@ -44,7 +34,7 @@ NO_AUTHOR_BOX = NOINDEX_NO_ADS | {
     "index.html", "about.html", "contact.html", "privacy.html", "terms.html",
     "editorial-team.html", "404.html",
 }
-AUTHOR_NAME = "Abdullah Al Kathani"
+AUTHOR_NAME = "Abdullah Al-Qahtani"
 
 NAV = [
     ("Salary", "/salary-calculator.html"),
@@ -86,6 +76,7 @@ FOOTER_COLUMNS = [
         ("Fuel Cost Calculator", "/fuel-cost-calculator.html"),
         ("Cost of Living Dashboard", "/expat-affordability-dashboard.html"),
         ("Gold Price Calculator", "/gold-prices.html"),
+        ("Traffic Fine Calculator", "/traffic-fine-calculator.html"),
         ("Home Finance Calculator", "/mortgage-calculator.html"),
         ("Islamic Finance Calculator", "/islamic-finance-calculator.html"),
         ("Driving Licence Conversion", "/driving-license-conversion.html"),
@@ -143,7 +134,7 @@ def build_author_box():
         "<!-- suh:author -->\n"
         '<div class="suh-author" role="complementary" aria-label="About the author">\n'
         '<div class="suh-wrap">\n'
-        '<div class="suh-author-avatar" aria-hidden="true">AK</div>\n'
+        '<div class="suh-author-avatar" aria-hidden="true">AQ</div>\n'
         "<div>\n"
         f'<p class="suh-author-name">Written and maintained by <a href="{SITE}/about.html#founder">{AUTHOR_NAME}</a>, founder &amp; editor</p>\n'
         "<p>Expats kept asking Abdullah the same questions about salary, end of service, GOSI and iqama rules, so he built "
