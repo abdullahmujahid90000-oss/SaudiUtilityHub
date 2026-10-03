@@ -44,6 +44,7 @@ FOOTER_COLUMNS = [
         ("Gross-to-Net Salary Table", "/gross-to-net-salary-saudi-arabia.html"),
         ("GOSI Calculator", "/gosi-calculator.html"),
         ("End of Service Calculator", "/ksa-eos-calculator.html"),
+        ("EOS Payouts by Salary (Data)", "/eos-payouts-by-salary-2026.html"),
         ("Final Settlement Calculator", "/final-settlement-calculator.html"),
         ("Annual Leave Calculator", "/leave-calculator.html"),
         ("Working Hours Calculator", "/working-hours-calculator.html"),
