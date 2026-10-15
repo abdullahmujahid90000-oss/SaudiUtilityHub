@@ -321,6 +321,31 @@
       "source": "/blog/exit-visa.html",
       "destination": "/exit-reentry-calculator.html",
       "permanent": true
+    },
+    {
+      "source": "/blog/gosi-guide.html",
+      "destination": "/gosi-calculator.html",
+      "permanent": true
+    },
+    {
+      "source": "/ur",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ur/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ur/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ur/:path*",
+      "destination": "/:path*",
+      "permanent": true
     }
   ],
   "headers": [

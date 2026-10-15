@@ -659,6 +659,22 @@
     
 
     <!-- Official Sources -->
+    <h2>🔢 How the IBAN Check Digits Work (Worked Example)</h2>
+    <p>The two digits after "SA" are check digits calculated from the rest of the IBAN using the international ISO 13616 method (modulo 97). This is how a validator catches a mistyped digit before you send money, and you can do the check yourself:</p>
+    <ol>
+      <li><strong>Move the first four characters to the end.</strong> SA0380000000608010167519 becomes 80000000608010167519<strong>SA03</strong>.</li>
+      <li><strong>Replace letters with numbers</strong> (A = 10, B = 11 … Z = 35). S becomes 28 and A becomes 10, giving 80000000608010167519<strong>281003</strong>.</li>
+      <li><strong>Divide by 97.</strong> A valid IBAN always leaves a remainder of exactly <strong>1</strong>. Here, 80000000608010167519281003 mod 97 = 1, so the IBAN is valid.</li>
+    </ol>
+    <p>Change a single digit, for example the last 9 to an 8, and the remainder is no longer 1, so the validator rejects it. That's why a checksum catches almost every single-digit typo and most swapped digits.</p>
+    <h3>What a valid IBAN does <em>not</em> prove</h3>
+    <ul>
+      <li>It doesn't confirm that the account exists or is still open. Only the bank can confirm that when the transfer is processed.</li>
+      <li>It doesn't confirm the account holder's name. Check the beneficiary name your banking app shows before you approve the transfer.</li>
+      <li>It doesn't protect against fraud. An IBAN sent in an unexpected message ("our bank details have changed") should be confirmed by phone with someone you know before you pay.</li>
+    </ul>
+    <p>For salary payments, employers register your IBAN for wage-protection transfers, so a single wrong digit can delay your salary. Validate it here before you hand it to HR, then compare the bank code with your bank in the table above.</p>
+
     <h2>📜 Official Sources</h2>
     <ul>
       <li><a href="https://www.sama.gov.sa" target="_blank" rel="noopener">Saudi Central Bank (SAMA)</a> – Official IBAN standards and bank code registry.</li>
