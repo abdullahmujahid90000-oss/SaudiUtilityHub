@@ -32,7 +32,7 @@ NOINDEX_NO_ADS = {
 # contact pages are excluded; they already say who runs the site.
 NO_AUTHOR_BOX = NOINDEX_NO_ADS | {
     "index.html", "about.html", "contact.html", "privacy.html", "terms.html",
-    "editorial-team.html", "404.html",
+    "editorial-team.html", "404.html", "disclaimer.html",
 }
 AUTHOR_NAME = "Abdullah Al-Qahtani"
 
@@ -87,6 +87,7 @@ FOOTER_COLUMNS = [
         ("Contact", "/contact.html"),
         ("Privacy Policy", "/privacy.html"),
         ("Terms of Use", "/terms.html"),
+        ("Disclaimer", "/disclaimer.html"),
         ("العربية", "/ar"),
     ]),
 ]
