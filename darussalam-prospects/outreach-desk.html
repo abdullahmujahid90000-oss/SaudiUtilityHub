@@ -1,0 +1,329 @@
+<title>Darussalam Outreach Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a sticky composer column on the left, the lead list on the right; one column on phones. */
+:root {
+  --bg: #f6f7f5; --panel: #ffffff; --ink: #17232b; --muted: #5d6b72; --line: #dde2df;
+  --accent: #1d6b57; --accent-ink: #ffffff; --accent-soft: #e2efe9;
+  --pa: #1d6b57; --pb: #9a6a12; --pc: #6b7479; --warn-bg: #fdf3e1; --warn-ink: #7a4f06;
+  --display: "Source Serif 4", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11181c; --panel: #182227; --ink: #e6ecea; --muted: #9aa8ad; --line: #2a373d;
+  --accent: #4fb495; --accent-ink: #0d1a16; --accent-soft: #1d3a32;
+  --pa: #4fb495; --pb: #d9a441; --pc: #8f9aa0; --warn-bg: #3a2d12; --warn-ink: #f0c879; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11181c; --panel: #182227; --ink: #e6ecea; --muted: #9aa8ad; --line: #2a373d;
+  --accent: #4fb495; --accent-ink: #0d1a16; --accent-soft: #1d3a32;
+  --pa: #4fb495; --pb: #d9a441; --pc: #8f9aa0; --warn-bg: #3a2d12; --warn-ink: #f0c879; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px }
+.wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px }
+header h1 { font-family: var(--display); font-size: 2rem; margin: 0; text-wrap: balance; letter-spacing: -0.01em }
+header p { margin: 6px 0 0; color: var(--muted); max-width: 68ch }
+.grid { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); gap: 24px; align-items: start }
+@media (max-width: 900px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 14px; min-width: 0 }
+.composer { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px) }
+@media (max-width: 900px) { .composer { position: static } }
+h2 { font-family: var(--display); font-size: 1.15rem; margin: 0 }
+.eyebrow { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600 }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: var(--muted); font-weight: 500 }
+input, select, textarea { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; width: 100% }
+textarea { font-family: var(--mono); font-size: 0.8rem; line-height: 1.45; resize: vertical; min-height: 220px }
+input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px }
+.seg { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 8px; overflow: hidden }
+.seg button { border: 0; background: transparent; color: var(--ink); padding: 10px 8px; font: inherit; font-weight: 600; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px }
+.seg button small { font-weight: 400; color: var(--muted); font-size: 0.75rem }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink) }
+.seg button[aria-pressed="true"] small { color: var(--accent-ink); opacity: 0.85 }
+.note { background: var(--warn-bg); color: var(--warn-ink); border-radius: 8px; padding: 10px 12px; font-size: 0.82rem }
+.btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 6px; padding: 6px 10px; font: inherit; font-size: 0.82rem; font-weight: 500; cursor: pointer; text-decoration: none; white-space: nowrap }
+.btn.wa { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+.btn:hover { border-color: var(--accent) }
+.filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: end }
+.filters label { flex: 1 1 160px }
+.chips { display: flex; gap: 6px }
+.chip { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink) }
+.count { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums }
+.leads { display: flex; flex-direction: column; gap: 10px }
+.lead { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--pc); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0 }
+.lead[data-p="A"] { border-left-color: var(--pa) } .lead[data-p="B"] { border-left-color: var(--pb) }
+.lead.sent { opacity: 0.55 }
+.lead-top { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap }
+.pill { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 999px; color: var(--bg); background: var(--pc) }
+.lead[data-p="A"] .pill { background: var(--pa) } .lead[data-p="B"] .pill { background: var(--pb) }
+.lead h3 { margin: 0; font-size: 1rem; font-weight: 600 }
+.place { color: var(--muted); font-size: 0.85rem }
+.biz { font-size: 0.85rem; color: var(--muted); margin: 0 }
+.contacts { display: flex; flex-wrap: wrap; gap: 6px 14px; font-family: var(--mono); font-size: 0.8rem }
+.contacts span { display: inline-flex; align-items: center; gap: 6px; user-select: all }
+.concern { font-size: 0.8rem; color: var(--warn-ink); background: var(--warn-bg); padding: 4px 8px; border-radius: 6px; align-self: flex-start }
+.actions { display: flex; flex-wrap: wrap; gap: 6px }
+.empty { color: var(--muted); padding: 24px; text-align: center }
+.playbook { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px }
+.step { border: 1px solid var(--line); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 6px; background: var(--bg) }
+.step h3 { margin: 0; font-size: 0.92rem }
+.step p { margin: 0; font-size: 0.85rem; color: var(--muted) }
+.step pre { margin: 0; white-space: pre-wrap; font-family: var(--mono); font-size: 0.78rem; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 8px }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 6px; font-size: 0.85rem }
+@media (prefers-reduced-motion: no-preference) { .lead { transition: opacity .2s } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Darussalam trade outreach · Ramadan 1448 starts ~8 Feb 2027</div>
+    <h1>Darussalam Outreach Desk</h1>
+    <p>Fill in your details, pick a campaign, then message each shop. The first message only asks permission to send prices, so shops that reply "yes" have opted in. WhatsApp opens with the message ready; you press send yourself.</p>
+  </header>
+
+  <div class="grid">
+    <section class="panel composer" aria-labelledby="c-h">
+      <h2 id="c-h">1 · Your introduction</h2>
+      <div class="row2">
+        <label for="f-name">Your name<input id="f-name" placeholder="Abdullah Mujahid"></label>
+        <label for="f-company">Company<input id="f-company" placeholder="Your company name"></label>
+      </div>
+      <label for="f-about">One line about you (write it in the message language)
+        <input id="f-about" placeholder="We are an authorised Darussalam supplier shipping across Europe.">
+      </label>
+
+      <h2>2 · Campaign</h2>
+      <div class="seg" role="group" aria-label="Campaign">
+        <button id="camp-ramadan" type="button" aria-pressed="true">Ramadan<small>Ramadan trade prices</small></button>
+        <button id="camp-discount" type="button" aria-pressed="false">Discount<small>Up to X% off</small></button>
+      </div>
+      <div class="row2">
+        <label for="f-pct">Discount, up to %<input id="f-pct" type="number" min="5" max="90" value="70"></label>
+        <label for="f-lang">Language<select id="f-lang">
+          <option value="auto">Auto by country</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option>
+        </select></label>
+      </div>
+      <div class="note">Only quote a discount you are authorised to give in writing. Very deep discounts on Darussalam can make shops suspect unofficial copies, so say you are an authorised supplier and offer the certificate when they reply.</div>
+
+      <h2>3 · Message template</h2>
+      <label for="f-tpl">Edit freely. {shop}, {country}, {name}, {company}, {about}, {pct} fill in automatically.
+        <textarea id="f-tpl" spellcheck="true"></textarea>
+      </label>
+      <div class="actions">
+        <button class="btn" id="tpl-reset" type="button">Restore default template</button>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="l-h" style="gap:16px">
+      <h2 id="l-h">4 · Leads <span class="count" id="count"></span></h2>
+      <div class="filters">
+        <div class="chips" role="group" aria-label="Priority">
+          <button class="chip" data-p="A" aria-pressed="true" type="button">A</button>
+          <button class="chip" data-p="B" aria-pressed="true" type="button">B</button>
+          <button class="chip" data-p="C" aria-pressed="true" type="button">C</button>
+        </div>
+        <label for="f-country">Country<select id="f-country"><option value="">All countries</option></select></label>
+        <label for="f-search">Search<input id="f-search" placeholder="Shop or city"></label>
+        <label for="f-hide" style="flex:0 0 auto;flex-direction:row;align-items:center;gap:6px"><input id="f-hide" type="checkbox" style="width:auto"> Hide sent</label>
+      </div>
+      <div class="leads" id="leads"></div>
+    </section>
+  </div>
+
+  <section class="panel" aria-labelledby="p-h">
+    <h2 id="p-h">5 · What to send when they reply</h2>
+    <div class="playbook">
+      <div class="step"><h3>They say yes</h3><p>Send prices the same day. Attach the PDF price list and authorisation certificate.</p>
+        <pre>JazakAllahu khairan! Here is our price list and our Darussalam authorisation. Minimum first order is ___ and delivery to your country takes about ___ days. Which titles sell best in your shop? I can put together a starter pack for Ramadan.</pre></div>
+      <div class="step"><h3>No reply after 5 days</h3><p>Send one gentle reminder, then stop. Never send a third message.</p>
+        <pre>Assalamu alaikum, a gentle reminder about my message on Darussalam trade prices. Happy to send the list if useful, and no problem at all if not.</pre></div>
+      <div class="step"><h3>They say no or stop</h3><p>Thank them, mark the lead as sent, and do not contact again.</p>
+        <pre>No problem at all, JazakAllahu khairan for letting me know. I won't message again. May Allah bless your work.</pre></div>
+      <div class="step"><h3>They ask questions</h3><p>Answer within a day. The usual questions are minimum order, shipping cost, payment terms, and whether stock is genuine.</p>
+        <pre>Good question. Minimum order: ___. Shipping: ___. Payment: ___. All books come with original Darussalam printing and ISBNs.</pre></div>
+    </div>
+  </section>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const LEADS = [{"p": "A", "name": "Basari Buchhandlung", "place": "Dortmund, Germany", "country": "Germany", "emails": ["info@basari.de"], "phones": [{"d": "492315809065", "label": "+49 231 580 9065", "wa": true}, {"d": "4915227831556", "label": "+49 1522 7831556", "wa": true}], "site": "basari.de", "biz": "Islamic bookshop + online store + own imprint (Ilm Verlag); German-language Islamic literature, accessories. Darussalam stock: not confirmed", "approach": "Owner/purchasing (Impressum names Erden Karsli). Angle: be the German hub for genuine English/Arabic Darussalam titles and license German translations for Ilm Verlag.", "concern": ""}, {"p": "B", "name": "Muslim-Buch.de", "place": "Düsseldorf, Germany", "country": "Germany", "emails": ["salam@muslim-buch.de"], "phones": [{"d": "492117952335", "label": "+49 211 795 2335", "wa": false}], "site": "muslim-buch.de", "biz": "Online Islamic bookshop since 2004; German titles, children's books, distributes German Islamic imprints (IB Verlag, Makkah Verlag). Darussalam: not confirmed", "approach": "Owner (Impressum: Abderrahim Khouja). Angle: add an English/Arabic 'original Darussalam' range for students and converts.", "concern": "Impressum may be dated (cites old TDG law) – confirm details"}, {"p": "B", "name": "Al-Madina Markt", "place": "Munich, Germany", "country": "Germany", "emails": ["info@al-madinamarkt.de"], "phones": [{"d": "498931813908", "label": "+49 89 3181 3908", "wa": false}, {"d": "491608519089", "label": "+49 160 851 9089", "wa": true}, {"d": "4915731436007", "label": "+49 157 3143 6007", "wa": false}], "site": "al-madinamarkt.de", "biz": "Online shop + appointment showroom; Islamic books in German and other languages, Qurans, clothing", "approach": "Owner. Angle: Darussalam Qurans & children's series for affluent Munich families before Ramadan.", "concern": "Impressum and privacy page name different operators – confirm owner"}, {"p": "C", "name": "Islammarkt.de (Sefer GmbH Buchhandlung)", "place": "Hamburg, Germany", "country": "Germany", "emails": [], "phones": [{"d": "4940241607", "label": "+49 40 241607", "wa": false}], "site": "islammarkt.de", "biz": "Islamic books, children's books, gifts. Shop states it is 'im Aufbau' (under construction)", "approach": "Owner. Angle: launch range for a new shop – starter pack of bestsellers.", "concern": "Site pages name two different operating companies"}, {"p": "C", "name": "Darulkitab Verlagshaus (ShayLa GmbH)", "place": "Heidelberg, Germany", "country": "Germany", "emails": [], "phones": [], "site": "darulkitab.de", "biz": "German Islamic publisher/shop", "approach": "Managing director. Angle: German-translation licensing of Darussalam titles.", "concern": ""}, {"p": "A", "name": "Al Hamra Buchhandel & Verlag", "place": "Vienna, Austria", "country": "Austria", "emails": ["info@alhamra.at"], "phones": [{"d": "4368110889085", "label": "+43 681 108 890 85", "wa": false}], "site": "alhamra.at", "biz": "Islamic bookseller + publisher, multimedia; German-language Islamic and children's books", "approach": "Owner. Angle: exclusive Austrian stockist for genuine Darussalam English/Arabic titles.", "concern": ""}, {"p": "B", "name": "Islamische Literatur", "place": "Zurich, Switzerland", "country": "Switzerland", "emails": [], "phones": [{"d": "41442401338", "label": "+41 44 240 13 38", "wa": false}], "site": "islamische-literatur.ch", "biz": "Mail-order Islamic bookshop", "approach": "Owner. Angle: Swiss customers pay premium – offer genuine hardcover sets & gift Qurans.", "concern": "Directory may be dated – call to confirm"}, {"p": "A", "name": "Islamitische Boekhandel Refah", "place": "Beverwijk, Netherlands", "country": "Netherlands", "emails": ["info@islamitische-boekhandel.nl"], "phones": [{"d": "31850600723", "label": "+31 85 060 0723", "wa": false}], "site": "islamitische-boekhandel.nl", "biz": "Large online Islamic bookstore; Dutch, English, Arabic books; dedicated Darussalam brand page (Sealed Nectar, Riyad us-Saliheen). Has B2B & institutional programme; ships NL, BE, EU", "approach": "B2B/purchasing manager. Angle: buy direct from Darussalam (better margins, full range) and become Benelux sub-distributor to mosques & shops.", "concern": ""}, {"p": "C", "name": "Soennah-Dokter", "place": "Rotterdam, Netherlands", "country": "Netherlands", "emails": ["soennah-dokter@hotmail.com"], "phones": [{"d": "31107511780", "label": "+31 10 751 1780", "wa": false}], "site": "soennah-dokter.nl", "biz": "Prophetic-medicine shop with Islamic books category", "approach": "Owner. Angle: add Darussalam health/medicine & dua titles.", "concern": ""}, {"p": "C", "name": "Alhusayn", "place": "Netherlands (online)", "country": "Netherlands", "emails": [], "phones": [{"d": "31685395534", "label": "+31 6 8539 5534", "wa": true}], "site": "shop.alhusayn.nl", "biz": "Online Islamic bookshop, ships NL & BE", "approach": "Owner. Angle: test order of English bestsellers.", "concern": "Catalogue focus not verified – check fit"}, {"p": "A", "name": "Al-Imen", "place": "Brussels, Belgium", "country": "Belgium", "emails": ["info@al-imen.be", "support@al-imen.be"], "phones": [{"d": "3228822150", "label": "+32 2 882 21 50", "wa": false}, {"d": "3225132644", "label": "+32 2 513 26 44", "wa": true}, {"d": "32493482708", "label": "+32 493 48 27 08", "wa": true}], "site": "al-imen.com", "biz": "Major French-language Islamic bookstore + online (incl. US storefront); dedicated Daroussalam collection (Tafsir Ibn Kathir 10 vol, Histoire de l'Islam)", "approach": "Purchasing/commercial dept. Angle: direct supply incl. English/Arabic range + Benelux exclusivity for French Daroussalam sets.", "concern": "Two different landline numbers published – confirm"}, {"p": "A", "name": "HadithShop (Éditions Al Hadith)", "place": "Brussels, Belgium", "country": "Belgium", "emails": ["hadithshop@gmail.com"], "phones": [{"d": "3224762819", "label": "+32 2 476 28 19", "wa": false}, {"d": "3222237890", "label": "+32 2 223 78 90", "wa": false}, {"d": "32486511260", "label": "+32 486 51 12 60", "wa": false}], "site": "hadithshop.com", "biz": "Bookshop + publisher; sells wholesale/semi-wholesale on quotation; stocks Éditions Daroussalam (Tafsir Ibn Kathir 10 vol)", "approach": "Wholesale manager (email for devis). Angle: direct supply so they can wholesale genuine Daroussalam to French-speaking shops.", "concern": ""}, {"p": "B", "name": "Librairie Salam", "place": "Molenbeek, Brussels, Belgium", "country": "Belgium", "emails": ["info@librairie-salam.com"], "phones": [{"d": "32484613202", "label": "+32 484 61 32 02", "wa": true}], "site": "librairie-salam.com", "biz": "Islamic bookstore + online shop; promotes wholesale ('grossiste livre islamique Belgique')", "approach": "Owner. Angle: genuine Darussalam stock for its wholesale customers.", "concern": ""}, {"p": "C", "name": "Deenshop / Librairie Ar-Rissala", "place": "Brussels, Belgium", "country": "Belgium", "emails": ["info@deenshop.be"], "phones": [{"d": "32466268635", "label": "+32 466 26 86 35", "wa": false}], "site": "deenshop.be", "biz": "Islamic bookshop", "approach": "Owner. Angle: Ramadan bestseller pack.", "concern": ""}, {"p": "B", "name": "IqraShop / Orientica network", "place": "Argenteuil (Paris region), France", "country": "France", "emails": [], "phones": [{"d": "33134108814", "label": "+33 1 34 10 88 14", "wa": false}, {"d": "33183643954", "label": "+33 1 83 64 39 54", "wa": false}], "site": "iqrashop.be, orientica.com", "biz": "Islamic publisher-wholesaler with reseller/association pricing; Paris, Argenteuil, Lyon", "approach": "Commercial director. Angle: English/Arabic titles (outside SANA's French range) for their wholesale channel.", "concern": "France already has a Darussalam distributor (SANA, Paris) – check territory before approaching"}, {"p": "C", "name": "Librairie Al Bayyinah", "place": "Argenteuil, France", "country": "France", "emails": [], "phones": [{"d": "33139477061", "label": "+33 1 39 47 70 61", "wa": false}], "site": "Tel +33 1 39 47 70 61", "biz": "Islamic bookshop since 2008; online ordering, delivery", "approach": "Owner. Angle: refer to SANA or supply English/Arabic titles only.", "concern": "France has Darussalam distributor (SANA) – coordinate"}, {"p": "A", "name": "Sendebad Library", "place": "Landskrona, Sweden", "country": "Sweden", "emails": ["info@booksendebad.com"], "phones": [{"d": "46700958535", "label": "+46 70 095 85 35", "wa": false}], "site": "booksendebad.se", "biz": "Arabic books & educational tools; Islamic books collection; serves Sweden, Denmark, Norway, Finland", "approach": "Owner/buyer. Angle: Nordic distribution of Darussalam Arabic + English titles and Islamic Studies school series.", "concern": ""}, {"p": "B", "name": "Nabawi Books", "place": "Huddinge (Stockholm), Sweden", "country": "Sweden", "emails": [], "phones": [{"d": "46762427564", "label": "+46 76 242 75 64", "wa": true}], "site": "nabawibooks.se", "biz": "Islamic bookshop, ships across Europe; stocks Darussalam (Riyad us-Saliheen, Fatawa Islamiyah 8 vol, Summarized Bukhari)", "approach": "Owner. Angle: direct account / Nordic terms if not already supplied.", "concern": "A 'Nabawi Books' is on Darussalam UK's approved list – check if same company before approaching"}, {"p": "C", "name": "Islamic Center Malmö (Malmö Moskén)", "place": "Sweden", "country": "Sweden", "emails": ["icmalmo@mosken.se"], "phones": [{"d": "4640228320", "label": "+46 40 228320", "wa": false}], "site": "mosken.se", "biz": "Mosque with book shop (mail order)", "approach": "Centre administration. Angle: mosque bookstall consignment for Ramadan.", "concern": "Shop page footer dated 2015 – confirm active"}, {"p": "A", "name": "IslamGuide.dk", "place": "Copenhagen, Denmark", "country": "Denmark", "emails": ["info@islamguide.dk"], "phones": [{"d": "4570222177", "label": "+45 70 22 21 77", "wa": false}], "site": "islamguide.dk", "biz": "Islamic bookshop since 2002, ~3,000 products; English + Danish; stocks Darussalam (Sealed Nectar, Fortress of the Muslim, Arabic Course 3 vol)", "approach": "Owner. Angle: direct supply at better margin than via UK/EU resellers + Danish translation rights.", "concern": ""}, {"p": "B", "name": "Just Halal Shop ApS", "place": "Herlev (Copenhagen), Denmark", "country": "Denmark", "emails": ["shop@justhalal.dk"], "phones": [{"d": "4551909060", "label": "+45 51 90 90 60", "wa": false}], "site": "webshop.justhalal.dk", "biz": "Islamic webshop + store; claims Denmark's largest Danish-language Islamic literature range; runs a mosque directory", "approach": "Owner. Angle: add English Darussalam range; use their mosque directory for joint outreach.", "concern": ""}, {"p": "B", "name": "Risala / Minhaj Bokhandel", "place": "Oslo (+Drammen, Kløfta), Norway", "country": "Norway", "emails": ["post@risala.no"], "phones": [{"d": "4798880486", "label": "+47 98 88 04 86", "wa": false}], "site": "risala.no", "biz": "Islamic bookstore chain (3 locations) + webshop; publisher of Norwegian Quran", "approach": "Manager. Angle: English/Urdu Darussalam titles for Norway's large Pakistani-heritage community.", "concern": "Several phone numbers published – confirm"}, {"p": "C", "name": "Mini Alim", "place": "Oslo, Norway", "country": "Norway", "emails": ["post@minialim.no"], "phones": [], "site": "minialim.no", "biz": "Publisher of Islamic books for children (5–16)", "approach": "Founder. Angle: Norwegian editions of Darussalam children's series.", "concern": ""}, {"p": "B", "name": "SifatuSafwa", "place": "Cork, Ireland (online, global)", "country": "Ireland", "emails": ["contact@sifatusafwa.com"], "phones": [], "site": "sifatusafwa.com", "biz": "Large online Arabic Islamic bookstore; worldwide shipping", "approach": "Purchasing. Angle: Darussalam Arabic editions & bilingual hadith sets for their student customer base.", "concern": "Two different Cork addresses published"}, {"p": "B", "name": "Islamic Cultural Centre of Ireland", "place": "Clonskeagh, Dublin", "country": "Ireland", "emails": ["info@islamireland.ie"], "phones": [{"d": "35312080000", "label": "+353 1 208 0000", "wa": false}], "site": "islamireland.ie", "biz": "Main mosque + school + Arabic classes – institutional buyer", "approach": "Administrator / school principal. Angle: Islamic Studies grades 1–12 series + library set.", "concern": ""}, {"p": "C", "name": "Islamic Resource Store", "place": "Tallaght, Dublin, Ireland", "country": "Ireland", "emails": [], "phones": [{"d": "353899636714", "label": "+353 89 963 6714", "wa": false}], "site": "islamicresourcestore.com", "biz": "Islamic books, gifts, clothing, Eid décor", "approach": "Owner. Angle: Ramadan/Eid gift & kids' book bundle.", "concern": ""}, {"p": "B", "name": "Librería Annur", "place": "Valencia, Spain (online)", "country": "Spain", "emails": ["libreria_an-nur@hotmail.es"], "phones": [{"d": "34617589489", "label": "+34 617 58 94 89", "wa": true}], "site": "libreriaannur.com", "biz": "Specialised Islamic bookshop; Spanish titles; free shipping in Spain >€60", "approach": "Owner. Angle: Spanish-language Darussalam titles + English range.", "concern": ""}, {"p": "C", "name": "Librería Balqís", "place": "Madrid, Spain", "country": "Spain", "emails": ["libreriabalqis@gmail.com"], "phones": [{"d": "34636814324", "label": "+34 636 814 324", "wa": false}], "site": "libreriabalqis.es", "biz": "Islamic/Arab-world bookshop", "approach": "Owner. Angle: trial order of bestsellers.", "concern": ""}, {"p": "C", "name": "Librería Islámica Atturtuchi", "place": "Barcelona, Spain", "country": "Spain", "emails": ["atturtuchi.bookstore@gmail.com"], "phones": [{"d": "34602084838", "label": "+34 602 084 838", "wa": false}], "site": "atturtuchi.com", "biz": "Arabic Islamic books", "approach": "Owner. Angle: Arabic Darussalam editions.", "concern": ""}, {"p": "B", "name": "Libreria Islamica (Al Hikma)", "place": "Italy", "country": "Italy", "emails": ["commercialealhikma@gmail.com", "info@libreriaislamica.net"], "phones": [{"d": "393472580070", "label": "+39 347 258 0070", "wa": false}, {"d": "393714180927", "label": "+39 371 418 0927", "wa": false}], "site": "libreriaislamica.net", "biz": "Italian-language Islamic books, 30+ years serving community; publisher Al Hikma", "approach": "Commercial dept (commerciale@). Angle: Italian translation rights + English/Arabic import range.", "concern": ""}, {"p": "B", "name": "Libreria Iman", "place": "Milan, Italy", "country": "Italy", "emails": ["info@libreriaiman.it"], "phones": [{"d": "393386317446", "label": "+39 338 631 7446", "wa": false}], "site": "libreriaiman.it", "biz": "Self-described first Islamic bookshop in Milan", "approach": "Owner. Angle: genuine Darussalam Qurans & gift sets.", "concern": "Two phone numbers published – confirm"}, {"p": "C", "name": "Kitab Paradise", "place": "Italy (online)", "country": "Italy", "emails": [], "phones": [{"d": "393513671749", "label": "+39 351 367 1749", "wa": true}], "site": "kitabparadise.com", "biz": "Online Islamic books, Qurans, hadith", "approach": "Owner. Angle: drop-ship / small wholesale.", "concern": ""}, {"p": "A", "name": "iERA", "place": "London, UK (dawah)", "country": "UK", "emails": [], "phones": [{"d": "443001111365", "label": "+44 300 111 1365", "wa": false}], "site": "iera.org", "biz": "Large dawah organisation; Qur'an Fund prints & distributes Qurans worldwide", "approach": "Head of dawah projects / Qur'an Fund. Angle: bulk Noble Quran translations at volume pricing.", "concern": ""}, {"p": "B", "name": "An Nasihah Publications", "place": "Leicester, UK", "country": "UK", "emails": ["admin@an-nasihah.com"], "phones": [{"d": "441162966442", "label": "+44 116 296 6442", "wa": true}, {"d": "447414044561", "label": "+44 7414 044 561", "wa": true}], "site": "an-nasihah.com, orders.an-nasihah.com", "biz": "Islamic publisher with UK-only wholesale site for madrasahs/institutions", "approach": "Wholesale manager. Angle: add Darussalam Islamic Studies & Quran titles to their madrasah catalogue.", "concern": "UK has Darussalam UK branch – position as complementary range"}, {"p": "B", "name": "Al-Hidaayah Publishing & Distribution", "place": "Birmingham, UK", "country": "UK", "emails": [], "phones": [{"d": "441217537890", "label": "+44 121 753 7890", "wa": false}], "site": "al-hidaayah.co.uk", "biz": "UK publisher, retailer & distributor; children's books and gifts", "approach": "Sales director. Angle: become approved reseller with genuine-supply guarantee.", "concern": "Not on Darussalam UK's approved list – check if they currently stock genuine titles"}, {"p": "C", "name": "The Islamic Foundation / Kube Publishing", "place": "Markfield, UK", "country": "UK", "emails": ["info@islamic-foundation.org.uk"], "phones": [{"d": "441530244944", "label": "+44 1530 244944", "wa": false}], "site": "islamic-foundation.org.uk", "biz": "Major institution + publisher with trade distribution", "approach": "Director. Angle: library supply + reciprocal distribution.", "concern": "Partly a competitor publisher"}, {"p": "A", "name": "GainPeace", "place": "Oakbrook Terrace, Illinois, USA (dawah)", "country": "USA", "emails": ["info@gainpeace.com"], "phones": [], "site": "gainpeace.com", "biz": "Dawah NGO mailing thousands of free Qurans & literature", "approach": "Director. Angle: bulk Noble Quran (English) at institutional price, shipped from Darussalam US.", "concern": ""}, {"p": "A", "name": "ICNA WhyIslam", "place": "USA (dawah)", "country": "USA", "emails": ["info@whyislam.org", "admin@icna.org"], "phones": [], "site": "whyislam.org, icna.org", "biz": "National dawah project – free Quran packages, booths", "approach": "WhyIslam program director. Angle: annual bulk supply contract for dawah Qurans/booklets.", "concern": ""}, {"p": "B", "name": "Mecca Books", "place": "Allentown, Pennsylvania, USA", "country": "USA", "emails": ["wholesale@meccabooks.com"], "phones": [], "site": "meccabooks.com", "biz": "Large online store for traditional Islamic books; has Wholesale/Institutional channel", "approach": "Wholesale manager. Angle: direct account on Darussalam hadith/tafsir sets.", "concern": "US has Darussalam US branch – position as wholesale account"}, {"p": "B", "name": "IslamicBookstore.com", "place": "Baltimore, Maryland, USA", "country": "USA", "emails": ["service@islamic-bookstore.net"], "phones": [], "site": "islamicbookstore.com", "biz": "Large long-running online Islamic store; extensive Darussalam range (Bukhari 9 vol, Tafsir Ibn Kathir 'original, authorized edition'); bulk dawah cases", "approach": "Purchasing. Angle: volume terms / direct container shipments.", "concern": "None – already labels authorised Darussalam editions"}, {"p": "B", "name": "HilalPlaza.com", "place": "California, USA", "country": "USA", "emails": ["admin@hilalplaza.com"], "phones": [], "site": "hilalplaza.com", "biz": "Online Islamic bookstore since 2003; sells wholesale; stocks Darussalam (e.g. Urdu Sahih Muslim 5 vol)", "approach": "Owner. Angle: Urdu & English multi-volume sets at wholesale.", "concern": ""}, {"p": "C", "name": "Albalagh Bookstore", "place": "Garden Grove, California, USA", "country": "USA", "emails": ["store@albalagh.net"], "phones": [{"d": "17143223049", "label": "+1 714-322-3049", "wa": false}, {"d": "16573425429", "label": "+1 657-342-5429", "wa": false}], "site": "albalaghbooks.com", "biz": "Islamic bookstore, ships worldwide; Hanafi/Deobandi & Urdu focus", "approach": "Owner. Angle: Urdu Darussalam titles.", "concern": ""}, {"p": "C", "name": "ar-Rahmah Books", "place": "New York, USA", "country": "USA", "emails": ["info@arrahmahbooks.com"], "phones": [{"d": "19175650709", "label": "+1 917-565-0709", "wa": false}], "site": "arrahmahbooks.com", "biz": "Online Islamic bookstore, North America", "approach": "Owner. Angle: trial wholesale order.", "concern": ""}, {"p": "C", "name": "Wondrous Islam", "place": "Greater Toronto, Canada", "country": "Canada", "emails": ["contact@wondrousislam.ca"], "phones": [], "site": "wondrousislam.ca", "biz": "Online Sunni (Ash'ari/Sufi) bookstore, ships worldwide", "approach": "Owner. Angle: Quran translations & seerah only.", "concern": "Catalogue orientation may limit fit"}, {"p": "A", "name": "Darul Hijrah Books", "place": "New Zealand (online)", "country": "New Zealand", "emails": [], "phones": [], "site": "darulhijrah.co.nz", "biz": "Self-described largest Islamic bookstore in NZ; books, kids' resources, games", "approach": "Owner. Angle: become NZ stockist for genuine Darussalam (shipped from AU branch).", "concern": ""}, {"p": "B", "name": "Ummah Store", "place": "Auckland, New Zealand", "country": "New Zealand", "emails": ["contact@ummahstore.co.nz"], "phones": [{"d": "64220348256", "label": "+64 22 034 8256", "wa": false}, {"d": "64210460763", "label": "+64 21 046 0763", "wa": false}], "site": "ummahstore.co.nz", "biz": "Online store; Qurans, tafsir, hadith, Urdu/Hindi books", "approach": "Owner. Angle: Urdu + English Darussalam sets.", "concern": ""}, {"p": "B", "name": "My Little Library", "place": "Mt Roskill, Auckland, New Zealand", "country": "New Zealand", "emails": ["mylittlelibrarynz@gmail.com"], "phones": [], "site": "mylittlelibrarynz.com", "biz": "Possibly NZ's only physical Islamic bookshop; children & adults", "approach": "Owner (Saadiyah Musa, publicly named in RNZ). Angle: Darussalam children's series.", "concern": ""}, {"p": "C", "name": "The Islamic Bookstore", "place": "Lakemba, Sydney, Australia", "country": "Australia", "emails": ["sales@islamicbookstore.com.au"], "phones": [{"d": "61297584040", "label": "+61 2 9758 4040", "wa": false}], "site": "islamicbookstore.com.au", "biz": "Islamic bookstore with wholesale sales", "approach": "Coordinate with Darussalam Australia before approaching.", "concern": "Direct competitor of Darussalam AU store on same street"}, {"p": "B", "name": "The Storyteller QA", "place": "Doha, Qatar", "country": "Qatar", "emails": [], "phones": [], "site": "thestorytellerqa.com", "biz": "Online Islamic bookstore (kids & adults), Ramadan/Eid gifts", "approach": "Owner. Angle: English Darussalam kids' series & gift sets for Ramadan.", "concern": ""}, {"p": "B", "name": "Alif Stores", "place": "Doha, Qatar", "country": "Qatar", "emails": ["support@alifstores.com"], "phones": [], "site": "alifstores.com", "biz": "Described as biggest bookstore in Qatar (Al Dafna + Place Vendôme Mall); English, Arabic, French", "approach": "Book buyer. Angle: Islamic section anchored by Darussalam English titles.", "concern": ""}, {"p": "C", "name": "Hadiya Islamic Store", "place": "Dubai, UAE", "country": "UAE", "emails": ["support@hadiyaislamicstore.com"], "phones": [{"d": "971509230588", "label": "+971 50 923 0588", "wa": true}], "site": "hadiyaislamicstore.com", "biz": "Islamic store; Qurans, duas, children's books; delivers UAE, Oman, Qatar", "approach": "Route via Darussalam UAE as sub-reseller.", "concern": "UAE already served by Darussalam UAE"}, {"p": "C", "name": "DeenSquare", "place": "UAE (marketplace)", "country": "UAE", "emails": ["info@DeenSquare.com"], "phones": [{"d": "97142675329", "label": "+971 4 267 5329", "wa": false}], "site": "deensquare.com", "biz": "Islamic lifestyle marketplace, delivers worldwide", "approach": "Category manager. Angle: list Darussalam as official brand store.", "concern": "UAE already served by Darussalam UAE"}, {"p": "C", "name": "Wardah Books", "place": "Singapore", "country": "Singapore", "emails": ["books@wardahbooks.com"], "phones": [{"d": "6596583677", "label": "+65 9658 3677", "wa": true}], "site": "wardahbooks.com", "biz": "Well-known Islamic bookshop (Sufism, history, philosophy); bulk purchases", "approach": "Coordinate with Darussalam Singapore.", "concern": "Singapore already has a Darussalam branch"}];
+
+const TPL = {
+  en: {
+    ramadan: `Assalamu alaikum {shop} team,
+
+My name is {name} from {company}. {about}
+
+Ramadan begins in early February, and we are offering Ramadan trade prices on genuine Darussalam books (Qurans, hadith collections, seerah and children's series) to a small number of bookshops in {country}.
+
+Would you like me to send you our Ramadan price list? A short "yes" is enough. If this isn't of interest, just let me know and I won't message again.
+
+JazakAllahu khairan,
+{name}`,
+    discount: `Assalamu alaikum {shop} team,
+
+My name is {name} from {company}. {about}
+
+We are looking for partners in {country} to help spread authentic Islamic knowledge, and we are offering selected genuine Darussalam titles at up to {pct}% off for new trade partners.
+
+May I send you the list of titles and prices? A short "yes" is enough. If it isn't relevant for you, just tell me and I won't contact you again.
+
+JazakAllahu khairan,
+{name}`
+  },
+  fr: {
+    ramadan: `Assalamou alaykoum à l'équipe {shop},
+
+Je m'appelle {name}, de {company}. {about}
+
+Le Ramadan commence début février et nous proposons des prix revendeurs spécial Ramadan sur les livres authentiques Darussalam (Corans, recueils de hadiths, sîra et collections pour enfants) à quelques librairies dans votre pays.
+
+Souhaitez-vous recevoir notre liste de prix Ramadan ? Un simple « oui » suffit. Si cela ne vous intéresse pas, dites-le-moi et je ne vous recontacterai pas.
+
+BarakAllahou fikoum,
+{name}`,
+    discount: `Assalamou alaykoum à l'équipe {shop},
+
+Je m'appelle {name}, de {company}. {about}
+
+Nous recherchons des partenaires dans votre pays pour diffuser la science islamique authentique, et nous proposons une sélection de titres Darussalam authentiques jusqu'à -{pct} % pour les nouveaux revendeurs.
+
+Puis-je vous envoyer la liste des titres et des prix ? Un simple « oui » suffit. Si ce n'est pas pertinent pour vous, dites-le-moi et je ne vous recontacterai pas.
+
+BarakAllahou fikoum,
+{name}`
+  },
+  de: {
+    ramadan: `Assalamu alaikum liebes Team von {shop},
+
+mein Name ist {name} von {company}. {about}
+
+Der Ramadan beginnt Anfang Februar, und wir bieten einigen Buchhandlungen in Ihrem Land Ramadan-Händlerpreise für originale Darussalam-Bücher an (Koranausgaben, Hadith-Sammlungen, Sira und Kinderbuchreihen).
+
+Darf ich Ihnen unsere Ramadan-Preisliste schicken? Ein kurzes „Ja" genügt. Falls kein Interesse besteht, sagen Sie einfach Bescheid, dann melde ich mich nicht wieder.
+
+Barakallahu fikum,
+{name}`,
+    discount: `Assalamu alaikum liebes Team von {shop},
+
+mein Name ist {name} von {company}. {about}
+
+Wir suchen Partner in Ihrem Land, um authentisches islamisches Wissen zu verbreiten, und bieten neuen Handelspartnern ausgewählte Original-Darussalam-Titel mit bis zu {pct} % Rabatt an.
+
+Darf ich Ihnen die Titel- und Preisliste schicken? Ein kurzes „Ja" genügt. Falls es für Sie nicht passt, sagen Sie einfach Bescheid, dann melde ich mich nicht wieder.
+
+Barakallahu fikum,
+{name}`
+  }
+};
+const LANG_BY_COUNTRY = { France: "fr", Belgium: "fr", Germany: "de", Austria: "de", Switzerland: "de" };
+const EN_COUNTRY = { UK: "the UK", USA: "the USA", Netherlands: "the Netherlands", UAE: "the UAE" };
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("od:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("od:" + k, JSON.stringify(v)); } catch {} }
+};
+const $ = id => document.getElementById(id);
+const state = {
+  campaign: store.get("campaign", "ramadan"),
+  prio: new Set(store.get("prio", ["A", "B", "C"])),
+  sent: new Set(store.get("sent", [])),
+  custom: store.get("custom", {})   // key `${lang}:${campaign}` -> edited template
+};
+
+["name", "company", "about", "pct", "lang"].forEach(k => {
+  const el = $("f-" + k); const v = store.get("f-" + k, null);
+  if (v !== null) el.value = v;
+  el.addEventListener("input", () => { store.set("f-" + k, el.value); if (k === "lang") loadTemplate(); render(); });
+});
+
+function editorLang() { const l = $("f-lang").value; return l === "auto" ? "en" : l; }
+function tplFor(lang) { return state.custom[lang + ":" + state.campaign] ?? TPL[lang][state.campaign]; }
+function loadTemplate() { $("f-tpl").value = tplFor(editorLang()); }
+$("f-tpl").addEventListener("input", () => {
+  state.custom[editorLang() + ":" + state.campaign] = $("f-tpl").value; store.set("custom", state.custom); render();
+});
+$("tpl-reset").addEventListener("click", () => {
+  delete state.custom[editorLang() + ":" + state.campaign]; store.set("custom", state.custom); loadTemplate(); render(); toast("Default template restored");
+});
+
+function setCampaign(c) {
+  state.campaign = c; store.set("campaign", c);
+  $("camp-ramadan").setAttribute("aria-pressed", c === "ramadan");
+  $("camp-discount").setAttribute("aria-pressed", c === "discount");
+  loadTemplate(); render();
+}
+$("camp-ramadan").onclick = () => setCampaign("ramadan");
+$("camp-discount").onclick = () => setCampaign("discount");
+
+function messageFor(lead) {
+  const pick = $("f-lang").value;
+  const lang = pick === "auto" ? (LANG_BY_COUNTRY[lead.country] || "en") : pick;
+  const vals = {
+    shop: lead.name, country: lang === "en" ? (EN_COUNTRY[lead.country] || lead.country) : lead.country,
+    name: $("f-name").value.trim() || "[your name]", company: $("f-company").value.trim() || "[your company]",
+    about: $("f-about").value.trim(), pct: $("f-pct").value || "70"
+  };
+  return tplFor(lang).replace(/\{(\w+)\}/g, (m, k) => k in vals ? vals[k] : m).replace(/\n{3,}/g, "\n\n");
+}
+
+let toastTimer;
+function toast(t) { const el = $("toast"); el.textContent = t; el.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => el.hidden = true, 1800); }
+async function copy(text, what) {
+  try { await navigator.clipboard.writeText(text); toast(what + " copied"); }
+  catch { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); toast(what + " copied"); } catch { toast("Select the text and copy it manually"); } ta.remove(); }
+}
+
+const countries = [...new Set(LEADS.map(l => l.country))].sort();
+countries.forEach(c => $("f-country").add(new Option(c, c)));
+$("f-country").value = store.get("f-country", "");
+$("f-country").onchange = () => { store.set("f-country", $("f-country").value); render(); };
+$("f-search").oninput = render;
+$("f-hide").checked = store.get("hide", false);
+$("f-hide").onchange = () => { store.set("hide", $("f-hide").checked); render(); };
+document.querySelectorAll(".chip").forEach(b => {
+  b.setAttribute("aria-pressed", state.prio.has(b.dataset.p));
+  b.onclick = () => { state.prio.has(b.dataset.p) ? state.prio.delete(b.dataset.p) : state.prio.add(b.dataset.p);
+    b.setAttribute("aria-pressed", state.prio.has(b.dataset.p)); store.set("prio", [...state.prio]); render(); };
+});
+
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) k === "class" ? e.className = v : k.startsWith("on") ? e[k] = v : e.setAttribute(k, v);
+  kids.flat().forEach(k => k != null && e.append(k)); return e;
+}
+
+function render() {
+  const q = $("f-search").value.trim().toLowerCase(), c = $("f-country").value, hide = $("f-hide").checked;
+  const list = LEADS.filter(l => state.prio.has(l.p) && (!c || l.country === c) && (!hide || !state.sent.has(l.name))
+    && (!q || (l.name + " " + l.place).toLowerCase().includes(q)));
+  const box = $("leads"); box.replaceChildren();
+  $("count").textContent = `${list.length} shown · ${state.sent.size} sent`;
+  if (!list.length) { box.append(el("div", { class: "empty" }, "No leads match these filters.")); return; }
+  for (const l of list) {
+    const msg = messageFor(l), sent = state.sent.has(l.name);
+    const contacts = el("div", { class: "contacts" },
+      l.emails.map(e => el("span", {}, e)), l.phones.map(p => el("span", {}, p.label + (p.wa ? " (WhatsApp)" : ""))));
+    if (!l.emails.length && !l.phones.length) contacts.append(el("span", {}, "Use the contact form on " + l.site));
+    const actions = el("div", { class: "actions" },
+      l.phones.map(p => el("a", { class: "btn wa", href: `https://wa.me/${p.d}?text=${encodeURIComponent(msg)}`, target: "_blank", rel: "noopener" },
+        "WhatsApp " + p.label)),
+      el("button", { class: "btn", type: "button", onclick: () => copy(msg, "Message") }, "Copy message"),
+      l.emails.length ? el("button", { class: "btn", type: "button", onclick: () => copy(l.emails[0], "Email address") }, "Copy email") : null,
+      el("button", { class: "btn", type: "button", "aria-pressed": sent, onclick: () => {
+        sent ? state.sent.delete(l.name) : state.sent.add(l.name); store.set("sent", [...state.sent]); render(); } },
+        sent ? "✓ Sent · undo" : "Mark as sent"));
+    box.append(el("article", { class: "lead" + (sent ? " sent" : ""), "data-p": l.p },
+      el("div", { class: "lead-top" }, el("span", { class: "pill" }, l.p), el("h3", {}, l.name), el("span", { class: "place" }, l.place)),
+      el("p", { class: "biz" }, l.biz),
+      l.concern ? el("div", { class: "concern" }, "Check first: " + l.concern) : null,
+      contacts, actions));
+  }
+}
+setCampaign(state.campaign);
+</script>

@@ -1,0 +1,329 @@
+<title>Darussalam Outreach Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a sticky composer column on the left, the lead list on the right; one column on phones. */
+:root {
+  --bg: #f6f7f5; --panel: #ffffff; --ink: #17232b; --muted: #5d6b72; --line: #dde2df;
+  --accent: #1d6b57; --accent-ink: #ffffff; --accent-soft: #e2efe9;
+  --pa: #1d6b57; --pb: #9a6a12; --pc: #6b7479; --warn-bg: #fdf3e1; --warn-ink: #7a4f06;
+  --display: "Source Serif 4", Georgia, serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #11181c; --panel: #182227; --ink: #e6ecea; --muted: #9aa8ad; --line: #2a373d;
+  --accent: #4fb495; --accent-ink: #0d1a16; --accent-soft: #1d3a32;
+  --pa: #4fb495; --pb: #d9a441; --pc: #8f9aa0; --warn-bg: #3a2d12; --warn-ink: #f0c879; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #11181c; --panel: #182227; --ink: #e6ecea; --muted: #9aa8ad; --line: #2a373d;
+  --accent: #4fb495; --accent-ink: #0d1a16; --accent-soft: #1d3a32;
+  --pa: #4fb495; --pb: #d9a441; --pc: #8f9aa0; --warn-bg: #3a2d12; --warn-ink: #f0c879; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px }
+.wrap { max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px }
+header h1 { font-family: var(--display); font-size: 2rem; margin: 0; text-wrap: balance; letter-spacing: -0.01em }
+header p { margin: 6px 0 0; color: var(--muted); max-width: 68ch }
+.grid { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 1fr); gap: 24px; align-items: start }
+@media (max-width: 900px) { .grid { grid-template-columns: minmax(0, 1fr) } }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 14px; min-width: 0 }
+.composer { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px) }
+@media (max-width: 900px) { .composer { position: static } }
+h2 { font-family: var(--display); font-size: 1.15rem; margin: 0 }
+.eyebrow { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); font-weight: 600 }
+label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: var(--muted); font-weight: 500 }
+input, select, textarea { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; width: 100% }
+textarea { font-family: var(--mono); font-size: 0.8rem; line-height: 1.45; resize: vertical; min-height: 220px }
+input:focus-visible, select:focus-visible, textarea:focus-visible, button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px }
+.seg { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 8px; overflow: hidden }
+.seg button { border: 0; background: transparent; color: var(--ink); padding: 10px 8px; font: inherit; font-weight: 600; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px }
+.seg button small { font-weight: 400; color: var(--muted); font-size: 0.75rem }
+.seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink) }
+.seg button[aria-pressed="true"] small { color: var(--accent-ink); opacity: 0.85 }
+.note { background: var(--warn-bg); color: var(--warn-ink); border-radius: 8px; padding: 10px 12px; font-size: 0.82rem }
+.btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 6px; padding: 6px 10px; font: inherit; font-size: 0.82rem; font-weight: 500; cursor: pointer; text-decoration: none; white-space: nowrap }
+.btn.wa { background: var(--accent); color: var(--accent-ink); border-color: var(--accent) }
+.btn:hover { border-color: var(--accent) }
+.filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: end }
+.filters label { flex: 1 1 160px }
+.chips { display: flex; gap: 6px }
+.chip { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 6px 12px; font: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink) }
+.count { color: var(--muted); font-size: 0.85rem; font-variant-numeric: tabular-nums }
+.leads { display: flex; flex-direction: column; gap: 10px }
+.lead { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--pc); border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0 }
+.lead[data-p="A"] { border-left-color: var(--pa) } .lead[data-p="B"] { border-left-color: var(--pb) }
+.lead.sent { opacity: 0.55 }
+.lead-top { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap }
+.pill { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 999px; color: var(--bg); background: var(--pc) }
+.lead[data-p="A"] .pill { background: var(--pa) } .lead[data-p="B"] .pill { background: var(--pb) }
+.lead h3 { margin: 0; font-size: 1rem; font-weight: 600 }
+.place { color: var(--muted); font-size: 0.85rem }
+.biz { font-size: 0.85rem; color: var(--muted); margin: 0 }
+.contacts { display: flex; flex-wrap: wrap; gap: 6px 14px; font-family: var(--mono); font-size: 0.8rem }
+.contacts span { display: inline-flex; align-items: center; gap: 6px; user-select: all }
+.concern { font-size: 0.8rem; color: var(--warn-ink); background: var(--warn-bg); padding: 4px 8px; border-radius: 6px; align-self: flex-start }
+.actions { display: flex; flex-wrap: wrap; gap: 6px }
+.empty { color: var(--muted); padding: 24px; text-align: center }
+.playbook { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px }
+.step { border: 1px solid var(--line); border-radius: 8px; padding: 12px; display: flex; flex-direction: column; gap: 6px; background: var(--bg) }
+.step h3 { margin: 0; font-size: 0.92rem }
+.step p { margin: 0; font-size: 0.85rem; color: var(--muted) }
+.step pre { margin: 0; white-space: pre-wrap; font-family: var(--mono); font-size: 0.78rem; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 8px }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 14px; border-radius: 6px; font-size: 0.85rem }
+@media (prefers-reduced-motion: no-preference) { .lead { transition: opacity .2s } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Darussalam trade outreach · Ramadan 1448 starts ~8 Feb 2027</div>
+    <h1>Darussalam Outreach Desk</h1>
+    <p>Fill in your details, pick a campaign, then message each shop. The first message only asks permission to send prices, so shops that reply "yes" have opted in. WhatsApp opens with the message ready; you press send yourself.</p>
+  </header>
+
+  <div class="grid">
+    <section class="panel composer" aria-labelledby="c-h">
+      <h2 id="c-h">1 · Your introduction</h2>
+      <div class="row2">
+        <label for="f-name">Your name<input id="f-name" placeholder="Abdullah Mujahid"></label>
+        <label for="f-company">Company<input id="f-company" placeholder="Your company name"></label>
+      </div>
+      <label for="f-about">One line about you (write it in the message language)
+        <input id="f-about" placeholder="We are an authorised Darussalam supplier shipping across Europe.">
+      </label>
+
+      <h2>2 · Campaign</h2>
+      <div class="seg" role="group" aria-label="Campaign">
+        <button id="camp-ramadan" type="button" aria-pressed="true">Ramadan<small>Ramadan trade prices</small></button>
+        <button id="camp-discount" type="button" aria-pressed="false">Discount<small>Up to X% off</small></button>
+      </div>
+      <div class="row2">
+        <label for="f-pct">Discount, up to %<input id="f-pct" type="number" min="5" max="90" value="70"></label>
+        <label for="f-lang">Language<select id="f-lang">
+          <option value="auto">Auto by country</option><option value="en">English</option><option value="fr">Français</option><option value="de">Deutsch</option>
+        </select></label>
+      </div>
+      <div class="note">Only quote a discount you are authorised to give in writing. Very deep discounts on Darussalam can make shops suspect unofficial copies, so say you are an authorised supplier and offer the certificate when they reply.</div>
+
+      <h2>3 · Message template</h2>
+      <label for="f-tpl">Edit freely. {shop}, {country}, {name}, {company}, {about}, {pct} fill in automatically.
+        <textarea id="f-tpl" spellcheck="true"></textarea>
+      </label>
+      <div class="actions">
+        <button class="btn" id="tpl-reset" type="button">Restore default template</button>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="l-h" style="gap:16px">
+      <h2 id="l-h">4 · Leads <span class="count" id="count"></span></h2>
+      <div class="filters">
+        <div class="chips" role="group" aria-label="Priority">
+          <button class="chip" data-p="A" aria-pressed="true" type="button">A</button>
+          <button class="chip" data-p="B" aria-pressed="true" type="button">B</button>
+          <button class="chip" data-p="C" aria-pressed="true" type="button">C</button>
+        </div>
+        <label for="f-country">Country<select id="f-country"><option value="">All countries</option></select></label>
+        <label for="f-search">Search<input id="f-search" placeholder="Shop or city"></label>
+        <label for="f-hide" style="flex:0 0 auto;flex-direction:row;align-items:center;gap:6px"><input id="f-hide" type="checkbox" style="width:auto"> Hide sent</label>
+      </div>
+      <div class="leads" id="leads"></div>
+    </section>
+  </div>
+
+  <section class="panel" aria-labelledby="p-h">
+    <h2 id="p-h">5 · What to send when they reply</h2>
+    <div class="playbook">
+      <div class="step"><h3>They say yes</h3><p>Send prices the same day. Attach the PDF price list and authorisation certificate.</p>
+        <pre>JazakAllahu khairan! Here is our price list and our Darussalam authorisation. Minimum first order is ___ and delivery to your country takes about ___ days. Which titles sell best in your shop? I can put together a starter pack for Ramadan.</pre></div>
+      <div class="step"><h3>No reply after 5 days</h3><p>Send one gentle reminder, then stop. Never send a third message.</p>
+        <pre>Assalamu alaikum, a gentle reminder about my message on Darussalam trade prices. Happy to send the list if useful, and no problem at all if not.</pre></div>
+      <div class="step"><h3>They say no or stop</h3><p>Thank them, mark the lead as sent, and do not contact again.</p>
+        <pre>No problem at all, JazakAllahu khairan for letting me know. I won't message again. May Allah bless your work.</pre></div>
+      <div class="step"><h3>They ask questions</h3><p>Answer within a day. The usual questions are minimum order, shipping cost, payment terms, and whether stock is genuine.</p>
+        <pre>Good question. Minimum order: ___. Shipping: ___. Payment: ___. All books come with original Darussalam printing and ISBNs.</pre></div>
+    </div>
+  </section>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const LEADS = __LEADS__;
+
+const TPL = {
+  en: {
+    ramadan: `Assalamu alaikum {shop} team,
+
+My name is {name} from {company}. {about}
+
+Ramadan begins in early February, and we are offering Ramadan trade prices on genuine Darussalam books (Qurans, hadith collections, seerah and children's series) to a small number of bookshops in {country}.
+
+Would you like me to send you our Ramadan price list? A short "yes" is enough. If this isn't of interest, just let me know and I won't message again.
+
+JazakAllahu khairan,
+{name}`,
+    discount: `Assalamu alaikum {shop} team,
+
+My name is {name} from {company}. {about}
+
+We are looking for partners in {country} to help spread authentic Islamic knowledge, and we are offering selected genuine Darussalam titles at up to {pct}% off for new trade partners.
+
+May I send you the list of titles and prices? A short "yes" is enough. If it isn't relevant for you, just tell me and I won't contact you again.
+
+JazakAllahu khairan,
+{name}`
+  },
+  fr: {
+    ramadan: `Assalamou alaykoum à l'équipe {shop},
+
+Je m'appelle {name}, de {company}. {about}
+
+Le Ramadan commence début février et nous proposons des prix revendeurs spécial Ramadan sur les livres authentiques Darussalam (Corans, recueils de hadiths, sîra et collections pour enfants) à quelques librairies dans votre pays.
+
+Souhaitez-vous recevoir notre liste de prix Ramadan ? Un simple « oui » suffit. Si cela ne vous intéresse pas, dites-le-moi et je ne vous recontacterai pas.
+
+BarakAllahou fikoum,
+{name}`,
+    discount: `Assalamou alaykoum à l'équipe {shop},
+
+Je m'appelle {name}, de {company}. {about}
+
+Nous recherchons des partenaires dans votre pays pour diffuser la science islamique authentique, et nous proposons une sélection de titres Darussalam authentiques jusqu'à -{pct} % pour les nouveaux revendeurs.
+
+Puis-je vous envoyer la liste des titres et des prix ? Un simple « oui » suffit. Si ce n'est pas pertinent pour vous, dites-le-moi et je ne vous recontacterai pas.
+
+BarakAllahou fikoum,
+{name}`
+  },
+  de: {
+    ramadan: `Assalamu alaikum liebes Team von {shop},
+
+mein Name ist {name} von {company}. {about}
+
+Der Ramadan beginnt Anfang Februar, und wir bieten einigen Buchhandlungen in Ihrem Land Ramadan-Händlerpreise für originale Darussalam-Bücher an (Koranausgaben, Hadith-Sammlungen, Sira und Kinderbuchreihen).
+
+Darf ich Ihnen unsere Ramadan-Preisliste schicken? Ein kurzes „Ja" genügt. Falls kein Interesse besteht, sagen Sie einfach Bescheid, dann melde ich mich nicht wieder.
+
+Barakallahu fikum,
+{name}`,
+    discount: `Assalamu alaikum liebes Team von {shop},
+
+mein Name ist {name} von {company}. {about}
+
+Wir suchen Partner in Ihrem Land, um authentisches islamisches Wissen zu verbreiten, und bieten neuen Handelspartnern ausgewählte Original-Darussalam-Titel mit bis zu {pct} % Rabatt an.
+
+Darf ich Ihnen die Titel- und Preisliste schicken? Ein kurzes „Ja" genügt. Falls es für Sie nicht passt, sagen Sie einfach Bescheid, dann melde ich mich nicht wieder.
+
+Barakallahu fikum,
+{name}`
+  }
+};
+const LANG_BY_COUNTRY = { France: "fr", Belgium: "fr", Germany: "de", Austria: "de", Switzerland: "de" };
+const EN_COUNTRY = { UK: "the UK", USA: "the USA", Netherlands: "the Netherlands", UAE: "the UAE" };
+
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("od:" + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("od:" + k, JSON.stringify(v)); } catch {} }
+};
+const $ = id => document.getElementById(id);
+const state = {
+  campaign: store.get("campaign", "ramadan"),
+  prio: new Set(store.get("prio", ["A", "B", "C"])),
+  sent: new Set(store.get("sent", [])),
+  custom: store.get("custom", {})   // key `${lang}:${campaign}` -> edited template
+};
+
+["name", "company", "about", "pct", "lang"].forEach(k => {
+  const el = $("f-" + k); const v = store.get("f-" + k, null);
+  if (v !== null) el.value = v;
+  el.addEventListener("input", () => { store.set("f-" + k, el.value); if (k === "lang") loadTemplate(); render(); });
+});
+
+function editorLang() { const l = $("f-lang").value; return l === "auto" ? "en" : l; }
+function tplFor(lang) { return state.custom[lang + ":" + state.campaign] ?? TPL[lang][state.campaign]; }
+function loadTemplate() { $("f-tpl").value = tplFor(editorLang()); }
+$("f-tpl").addEventListener("input", () => {
+  state.custom[editorLang() + ":" + state.campaign] = $("f-tpl").value; store.set("custom", state.custom); render();
+});
+$("tpl-reset").addEventListener("click", () => {
+  delete state.custom[editorLang() + ":" + state.campaign]; store.set("custom", state.custom); loadTemplate(); render(); toast("Default template restored");
+});
+
+function setCampaign(c) {
+  state.campaign = c; store.set("campaign", c);
+  $("camp-ramadan").setAttribute("aria-pressed", c === "ramadan");
+  $("camp-discount").setAttribute("aria-pressed", c === "discount");
+  loadTemplate(); render();
+}
+$("camp-ramadan").onclick = () => setCampaign("ramadan");
+$("camp-discount").onclick = () => setCampaign("discount");
+
+function messageFor(lead) {
+  const pick = $("f-lang").value;
+  const lang = pick === "auto" ? (LANG_BY_COUNTRY[lead.country] || "en") : pick;
+  const vals = {
+    shop: lead.name, country: lang === "en" ? (EN_COUNTRY[lead.country] || lead.country) : lead.country,
+    name: $("f-name").value.trim() || "[your name]", company: $("f-company").value.trim() || "[your company]",
+    about: $("f-about").value.trim(), pct: $("f-pct").value || "70"
+  };
+  return tplFor(lang).replace(/\{(\w+)\}/g, (m, k) => k in vals ? vals[k] : m).replace(/\n{3,}/g, "\n\n");
+}
+
+let toastTimer;
+function toast(t) { const el = $("toast"); el.textContent = t; el.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => el.hidden = true, 1800); }
+async function copy(text, what) {
+  try { await navigator.clipboard.writeText(text); toast(what + " copied"); }
+  catch { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy"); toast(what + " copied"); } catch { toast("Select the text and copy it manually"); } ta.remove(); }
+}
+
+const countries = [...new Set(LEADS.map(l => l.country))].sort();
+countries.forEach(c => $("f-country").add(new Option(c, c)));
+$("f-country").value = store.get("f-country", "");
+$("f-country").onchange = () => { store.set("f-country", $("f-country").value); render(); };
+$("f-search").oninput = render;
+$("f-hide").checked = store.get("hide", false);
+$("f-hide").onchange = () => { store.set("hide", $("f-hide").checked); render(); };
+document.querySelectorAll(".chip").forEach(b => {
+  b.setAttribute("aria-pressed", state.prio.has(b.dataset.p));
+  b.onclick = () => { state.prio.has(b.dataset.p) ? state.prio.delete(b.dataset.p) : state.prio.add(b.dataset.p);
+    b.setAttribute("aria-pressed", state.prio.has(b.dataset.p)); store.set("prio", [...state.prio]); render(); };
+});
+
+function el(tag, attrs = {}, ...kids) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) k === "class" ? e.className = v : k.startsWith("on") ? e[k] = v : e.setAttribute(k, v);
+  kids.flat().forEach(k => k != null && e.append(k)); return e;
+}
+
+function render() {
+  const q = $("f-search").value.trim().toLowerCase(), c = $("f-country").value, hide = $("f-hide").checked;
+  const list = LEADS.filter(l => state.prio.has(l.p) && (!c || l.country === c) && (!hide || !state.sent.has(l.name))
+    && (!q || (l.name + " " + l.place).toLowerCase().includes(q)));
+  const box = $("leads"); box.replaceChildren();
+  $("count").textContent = `${list.length} shown · ${state.sent.size} sent`;
+  if (!list.length) { box.append(el("div", { class: "empty" }, "No leads match these filters.")); return; }
+  for (const l of list) {
+    const msg = messageFor(l), sent = state.sent.has(l.name);
+    const contacts = el("div", { class: "contacts" },
+      l.emails.map(e => el("span", {}, e)), l.phones.map(p => el("span", {}, p.label + (p.wa ? " (WhatsApp)" : ""))));
+    if (!l.emails.length && !l.phones.length) contacts.append(el("span", {}, "Use the contact form on " + l.site));
+    const actions = el("div", { class: "actions" },
+      l.phones.map(p => el("a", { class: "btn wa", href: `https://wa.me/${p.d}?text=${encodeURIComponent(msg)}`, target: "_blank", rel: "noopener" },
+        "WhatsApp " + p.label)),
+      el("button", { class: "btn", type: "button", onclick: () => copy(msg, "Message") }, "Copy message"),
+      l.emails.length ? el("button", { class: "btn", type: "button", onclick: () => copy(l.emails[0], "Email address") }, "Copy email") : null,
+      el("button", { class: "btn", type: "button", "aria-pressed": sent, onclick: () => {
+        sent ? state.sent.delete(l.name) : state.sent.add(l.name); store.set("sent", [...state.sent]); render(); } },
+        sent ? "✓ Sent · undo" : "Mark as sent"));
+    box.append(el("article", { class: "lead" + (sent ? " sent" : ""), "data-p": l.p },
+      el("div", { class: "lead-top" }, el("span", { class: "pill" }, l.p), el("h3", {}, l.name), el("span", { class: "place" }, l.place)),
+      el("p", { class: "biz" }, l.biz),
+      l.concern ? el("div", { class: "concern" }, "Check first: " + l.concern) : null,
+      contacts, actions));
+  }
+}
+setCampaign(state.campaign);
+</script>
