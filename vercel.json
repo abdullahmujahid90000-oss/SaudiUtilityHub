@@ -3,6 +3,21 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/saudi-visa-check.html",
+      "destination": "/muqeem-visa-check.html",
+      "permanent": true
+    },
+    {
+      "source": "/dependent-levy-guide.html",
+      "destination": "/dependent-levy-calculator.html",
+      "permanent": true
+    },
+    {
+      "source": "/exit-reentry-visa-guide.html",
+      "destination": "/exit-reentry-calculator.html",
+      "permanent": true
+    },
+    {
       "source": "/eos-calculator.html",
       "destination": "/ksa-eos-calculator.html",
       "permanent": true
@@ -209,7 +224,7 @@
     },
     {
       "source": "/saudi-work-visa-types-2026.html",
-      "destination": "/saudi-visa-check.html",
+      "destination": "/muqeem-visa-check.html",
       "permanent": true
     },
     {

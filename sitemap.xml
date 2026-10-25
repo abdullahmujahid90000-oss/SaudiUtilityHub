@@ -2,7 +2,7 @@
 <urlset xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.saudiutilityhub.com/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -20,7 +20,7 @@
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/ksa-eos-calculator.html</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/dependent-levy-calculator.html</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -74,7 +74,7 @@
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/exit-reentry-calculator.html</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -92,7 +92,7 @@
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/muqeem-visa-check.html</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -104,7 +104,7 @@
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/about.html</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -184,12 +184,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/saudi-visa-check.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/umrah-visa-guide.html</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -256,18 +250,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.saudiutilityhub.com/dependent-levy-guide.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.saudiutilityhub.com/exit-reentry-visa-guide.html</loc>
-    <lastmod>2026-09-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.saudiutilityhub.com/gross-to-net-salary-saudi-arabia.html</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -275,7 +257,7 @@
   </url>
   <url>
     <loc>https://www.saudiutilityhub.com/editorial-team.html</loc>
-    <lastmod>2026-09-07</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -302,5 +284,11 @@
     <lastmod>2026-10-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.saudiutilityhub.com/what-happens-to-iqama-if-you-resign.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
