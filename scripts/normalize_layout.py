@@ -34,7 +34,7 @@ NO_AUTHOR_BOX = NOINDEX_NO_ADS | {
     "index.html", "about.html", "contact.html", "privacy.html", "terms.html",
     "editorial-team.html", "404.html", "disclaimer.html",
 }
-AUTHOR_NAME = "Abdullah Al-Qahtani"
+AUTHOR_NAME = "the Saudi Utility Hub Team"
 
 NAV = [
     ("Salary", "/salary-calculator.html"),
@@ -63,6 +63,7 @@ FOOTER_COLUMNS = [
         ("Iqama Expiry Planner", "/iqama-expiry-calculator.html"),
         ("Iqama Renewal Fees", "/iqama-renewal-fees.html"),
         ("Iqama Transfer Worksheet", "/iqama-transfer-calculator.html"),
+        ("Iqama After Resigning", "/what-happens-to-iqama-if-you-resign.html"),
         ("Dependent Levy Calculator", "/dependent-levy-calculator.html"),
         ("Exit / Re-entry Planner", "/exit-reentry-calculator.html"),
         ("Family Visit Visa Guide", "/family-visit-visa-guide.html"),
@@ -135,12 +136,12 @@ def build_author_box():
         "<!-- suh:author -->\n"
         '<div class="suh-author" role="complementary" aria-label="About the author">\n'
         '<div class="suh-wrap">\n'
-        '<div class="suh-author-avatar" aria-hidden="true">AQ</div>\n'
+        '<div class="suh-author-avatar" aria-hidden="true">SU</div>\n'
         "<div>\n"
-        f'<p class="suh-author-name">Written and maintained by <a href="{SITE}/about.html#founder">{AUTHOR_NAME}</a>, founder &amp; editor</p>\n'
-        "<p>Expats kept asking Abdullah the same questions about salary, end of service, GOSI and iqama rules, so he built "
-        "Saudi Utility Hub to answer them in one place. Every page is built from the rules published by HRSD, GOSI, Qiwa and "
-        f'Absher. Spotted something out of date? <a href="{SITE}/contact.html">Tell us</a> and we will correct it.</p>\n'
+        f'<p class="suh-author-name">Written and maintained by <a href="{SITE}/about.html#team">{AUTHOR_NAME}</a></p>\n'
+        "<p>We are a small team based in Riyadh who have lived and worked in Saudi Arabia for years and dealt with payslips, "
+        "GOSI, iqama renewals and end-of-service settlements ourselves. Every page is checked against the rules published by "
+        f'HRSD, GOSI, Qiwa and Absher. Spotted something out of date? <a href="{SITE}/contact.html">Tell us</a> and we will correct it.</p>\n'
         "</div>\n</div>\n</div>\n<!-- /suh:author -->"
     )
 
