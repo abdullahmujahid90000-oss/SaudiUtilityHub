@@ -26,6 +26,15 @@ NOINDEX_NO_ADS = {
     "noc-letter-generator.html",
     "salary-certificate.html",
     "salary-slip-generator.html",
+} | {
+    # Kept online but out of search and without ads since Nov 2026, to keep
+    # the site focused on Saudi employment and residency. Re-index a page only
+    # after rewriting it from primary sources.
+    "gold-prices.html", "fuel-cost-calculator.html", "saudi-iban-validator.html",
+    "mortgage-calculator.html", "islamic-finance-calculator.html",
+    "sec-electricity-bill-calculator.html", "nwc-water-bill-calculator.html",
+    "traffic-fine-calculator.html", "driving-license-conversion.html",
+    "expat-affordability-dashboard.html",
 }
 
 # Pages that carry the founder/author box above the footer. Policy and
@@ -40,8 +49,8 @@ NAV = [
     ("Salary", "/salary-calculator.html"),
     ("GOSI", "/gosi-calculator.html"),
     ("End of Service", "/ksa-eos-calculator.html"),
-    ("Leave", "/leave-calculator.html"),
     ("Iqama", "/iqama-expiry-calculator.html"),
+    ("Guides", "/guides.html"),
     ("All Tools", "/#all-tools"),
     ("About", "/about.html"),
 ]
@@ -71,16 +80,16 @@ FOOTER_COLUMNS = [
         ("5-Year Resident ID Guide", "/5-year-resident-id-guide-2026.html"),
         ("Umrah Visa Guide", "/umrah-visa-guide.html"),
     ]),
-    ("Living in Saudi Arabia", [
-        ("Electricity Bill Calculator", "/sec-electricity-bill-calculator.html"),
-        ("Water Bill Calculator", "/nwc-water-bill-calculator.html"),
-        ("Fuel Cost Calculator", "/fuel-cost-calculator.html"),
-        ("Cost of Living Dashboard", "/expat-affordability-dashboard.html"),
-        ("Gold Price Calculator", "/gold-prices.html"),
-        ("Traffic Fine Calculator", "/traffic-fine-calculator.html"),
-        ("Home Finance Calculator", "/mortgage-calculator.html"),
-        ("Islamic Finance Calculator", "/islamic-finance-calculator.html"),
-        ("Driving Licence Conversion", "/driving-license-conversion.html"),
+    ("Guides", [
+        ("All Guides", "/guides.html"),
+        ("Notice Period Rules", "/notice-period-saudi-labour-law.html"),
+        ("Final Exit vs Exit Re-entry", "/final-exit-vs-exit-reentry-visa.html"),
+        ("Salary Not Paid", "/salary-not-paid-saudi-arabia.html"),
+        ("File a Labour Complaint", "/how-to-file-a-labour-complaint-saudi-arabia.html"),
+        ("Employer Holding Passport", "/employer-holding-passport-saudi-arabia.html"),
+        ("Company Closed Down", "/company-closed-end-of-service-saudi-arabia.html"),
+        ("Sick &amp; Maternity Leave", "/sick-leave-maternity-leave-saudi-arabia.html"),
+        ("Iqama With Expired Passport", "/renew-iqama-with-expired-passport.html"),
     ]),
     ("Saudi Utility Hub", [
         ("About Us", "/about.html"),
