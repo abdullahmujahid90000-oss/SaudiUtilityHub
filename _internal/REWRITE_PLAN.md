@@ -53,7 +53,7 @@ It should be warm, specific and easy to read, while staying accurate. That is ho
 | Day | Pages | Status |
 |---|---|---|
 | 1 | muqeem-visa-check.html, ksa-eos-calculator.html, dependent-levy-calculator.html | ☑ 2026-11-10 |
-| 2 | iqama-expiry-calculator.html, salary-calculator.html, gosi-calculator.html | ☐ |
+| 2 | iqama-expiry-calculator.html, salary-calculator.html, gosi-calculator.html | ☑ 2026-11-11 |
 | 3 | final-settlement-calculator.html, iqama-renewal-fees.html, iqama-transfer-calculator.html | ☐ |
 | 4 | leave-calculator.html, overtime-calculator.html, working-hours-calculator.html | ☐ |
 | 5 | probation-calculator.html, exit-reentry-calculator.html, gross-to-net-salary-saudi-arabia.html | ☐ |
