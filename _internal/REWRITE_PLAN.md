@@ -57,7 +57,7 @@ It should be warm, specific and easy to read, while staying accurate. That is ho
 | 3 | final-settlement-calculator.html, iqama-renewal-fees.html, iqama-transfer-calculator.html | ☑ 2026-11-12 |
 | 4 | leave-calculator.html, overtime-calculator.html, working-hours-calculator.html | ☑ 2026-11-13 |
 | 5 | probation-calculator.html, exit-reentry-calculator.html, gross-to-net-salary-saudi-arabia.html | ☑ 2026-11-14 |
-| 6 | family-visit-visa-guide.html, family-residence-visa.html, family-visa-cost-calculator.html | ☐ |
+| 6 | family-visit-visa-guide.html, family-residence-visa.html, family-visa-cost-calculator.html | ☑ 2026-11-15 |
 | 7 | 5-year-resident-id-guide-2026.html, umrah-visa-guide.html, musaned-calculator.html | ☐ |
 | 8 | premium-residency-cost-calculator.html, eos-payouts-by-salary-2026.html, index.html | ☐ |
 | 9 | what-happens-to-iqama-if-you-resign.html, notice-period-saudi-labour-law.html, final-exit-vs-exit-reentry-visa.html | ☐ |
