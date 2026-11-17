@@ -59,7 +59,7 @@ It should be warm, specific and easy to read, while staying accurate. That is ho
 | 5 | probation-calculator.html, exit-reentry-calculator.html, gross-to-net-salary-saudi-arabia.html | ☑ 2026-11-14 |
 | 6 | family-visit-visa-guide.html, family-residence-visa.html, family-visa-cost-calculator.html | ☑ 2026-11-15 |
 | 7 | 5-year-resident-id-guide-2026.html, umrah-visa-guide.html, musaned-calculator.html | ☑ 2026-11-16 |
-| 8 | premium-residency-cost-calculator.html, eos-payouts-by-salary-2026.html, index.html | ☐ |
+| 8 | premium-residency-cost-calculator.html, eos-payouts-by-salary-2026.html, index.html | ☑ 2026-11-17 |
 | 9 | what-happens-to-iqama-if-you-resign.html, notice-period-saudi-labour-law.html, final-exit-vs-exit-reentry-visa.html | ☐ |
 | 10 | salary-not-paid-saudi-arabia.html, how-to-file-a-labour-complaint-saudi-arabia.html, employer-holding-passport-saudi-arabia.html | ☐ |
 | 11 | company-closed-end-of-service-saudi-arabia.html, sick-leave-maternity-leave-saudi-arabia.html, renew-iqama-with-expired-passport.html | ☐ |
