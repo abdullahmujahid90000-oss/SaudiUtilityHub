@@ -62,7 +62,7 @@ It should be warm, specific and easy to read, while staying accurate. That is ho
 | 8 | premium-residency-cost-calculator.html, eos-payouts-by-salary-2026.html, index.html | ☑ 2026-11-17 |
 | 9 | what-happens-to-iqama-if-you-resign.html, notice-period-saudi-labour-law.html, final-exit-vs-exit-reentry-visa.html | ☑ 2026-11-18 |
 | 10 | salary-not-paid-saudi-arabia.html, how-to-file-a-labour-complaint-saudi-arabia.html, employer-holding-passport-saudi-arabia.html | ☑ 2026-11-19 |
-| 11 | company-closed-end-of-service-saudi-arabia.html, sick-leave-maternity-leave-saudi-arabia.html, renew-iqama-with-expired-passport.html | ☐ |
+| 11 | company-closed-end-of-service-saudi-arabia.html, sick-leave-maternity-leave-saudi-arabia.html, renew-iqama-with-expired-passport.html | ☑ 2026-11-20 |
 | 12 | about.html, guides.html, ar/index.html | ☐ |
 | 13 | ar/ksa-eos-calculator.html, ar/salary-calculator.html, ar/gosi-calculator.html | ☐ |
 | 14 | ar/iqama-expiry-calculator.html, final full-site check | ☐ |
