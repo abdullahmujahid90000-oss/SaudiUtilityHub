@@ -58,10 +58,21 @@ Notes for AI assistants:
 - [Guides for Working and Living in Saudi Arabia](https://www.saudiutilityhub.com/guides.html): Plain-English guides for expats in Saudi Arabia: resigning, notice periods, final exit, unpaid salary, labour complaints, passports, leave, iqama.
 
 ## Arabic (العربية)
-- [حاسبة نهاية الخدمة في السعودية 2026 | حساب المكافأة](https://www.saudiutilityhub.com/ar/ksa-eos-calculator.html)
-- [حاسبة التأمينات الاجتماعية في السعودية 2026 (GOSI)](https://www.saudiutilityhub.com/ar/gosi-calculator.html)
-- [حاسبة الراتب في السعودية 2026 | حساب صافي الراتب](https://www.saudiutilityhub.com/ar/salary-calculator.html)
-- [حاسبة انتهاء الإقامة في السعودية | الأيام المتبقية](https://www.saudiutilityhub.com/ar/iqama-expiry-calculator.html)
+- [أدلة وحاسبات للمقيمين في السعودية بالعربية](https://www.saudiutilityhub.com/ar/guides.html): أدلة عملية وحاسبات مجانية للمقيم في السعودية: الراتب والتأمينات ونهاية الخدمة والإجازات وتجديد الإقامة وتأشيرات الخروج ورسوم المرافقين.
+- [حاسبة نهاية الخدمة في السعودية 2026 | حساب المكافأة](https://www.saudiutilityhub.com/ar/ksa-eos-calculator.html): حاسبة نهاية الخدمة في السعودية مجانًا: احسب مكافأة نهاية الخدمة عند الاستقالة أو إنهاء العقد وفق المادتين 84 و85 من نظام العمل.
+- [حاسبة التأمينات الاجتماعية في السعودية 2026 (GOSI)](https://www.saudiutilityhub.com/ar/gosi-calculator.html): احسب اشتراك التأمينات الاجتماعية GOSI للموظف وصاحب العمل حسب الأجر الأساسي وبدل السكن والنِسب المعتمدة لعام 2026.
+- [حاسبة الراتب في السعودية 2026 | حساب صافي الراتب](https://www.saudiutilityhub.com/ar/salary-calculator.html): حاسبة الراتب في السعودية: احسب صافي راتبك الشهري بعد بدل السكن والنقل وخصم التأمينات الاجتماعية — مجانًا ومحدثة 2026.
+- [حاسبة انتهاء الإقامة في السعودية | الأيام المتبقية](https://www.saudiutilityhub.com/ar/iqama-expiry-calculator.html): احسب المدة المتبقية على انتهاء إقامتك في السعودية بالأيام والأشهر، واعرف موعد بدء التجديد لتفادي غرامة التأخير.
+- [فترة الإشعار في نظام العمل السعودي — 30 أو 60 يومًا؟](https://www.saudiutilityhub.com/ar/notice-period-saudi-labour-law.html): فترة الإشعار في السعودية بعد تعديلات 2025: 30 يومًا عند الاستقالة و60 يومًا عند إنهاء صاحب العمل، وبدل الإشعار والعقود محددة المدة.
+- [رسوم تجديد الإقامة في السعودية — التكلفة الكاملة](https://www.saudiutilityhub.com/ar/iqama-renewal-fees.html): كم تكلّف الإقامة فعلًا؟ رسوم الإقامة 650 ريالًا، مقابل مالي 800 شهريًا، 400 لكل مرافق، التأمين الطبي وغرامة التأخر 500 ريال، مع حاسبة.
+- [حاسبة المستحقات النهائية في السعودية عند ترك العمل](https://www.saudiutilityhub.com/ar/final-settlement-calculator.html): اجمع مستحقاتك النهائية قبل التوقيع: الراتب المتأخر ومكافأة نهاية الخدمة وبدل الإجازة والإشعار، ناقص الخصومات النظامية، ومهلة الدفع.
+- [حاسبة الإجازة السنوية في السعودية — 21 أو 30 يومًا](https://www.saudiutilityhub.com/ar/leave-calculator.html): احسب رصيد إجازتك السنوية: 21 يومًا في السنة و30 يومًا بعد 5 سنوات، وقيمة الأيام غير المستخدمة التي تُدفع لك عند ترك العمل.
+- [حاسبة العمل الإضافي في السعودية — المادة 107](https://www.saudiutilityhub.com/ar/overtime-calculator.html): احسب أجر ساعات العمل الإضافي في السعودية: أجر الساعة + 50% من الأساسي، وساعات الجمعة والعطل ورمضان، مع أمثلة من كشف الراتب.
+- [رسوم تأشيرة الخروج والعودة في السعودية — حاسبة](https://www.saudiutilityhub.com/ar/exit-reentry-calculator.html): احسب رسوم الخروج والعودة: مفردة 200 ريال لشهرين ثم 100 لكل شهر، ومتعددة 500 ريال لثلاثة أشهر ثم 200، لك ولعائلتك، وكيف تُصدر التأشيرة.
+- [حاسبة رسوم المرافقين في السعودية — 400 ريال شهريًا](https://www.saudiutilityhub.com/ar/dependent-levy-calculator.html): احسب رسوم المرافقين على إقامتك: 400 ريال لكل فرد شهريًا (4,800 سنويًا)، مع جدول للأسرة وطريقة السداد وأخطاء شائعة تُكلّف المال.
+- [ماذا يحدث لإقامتك إذا استقلت؟ مهلة الـ60 يومًا](https://www.saudiutilityhub.com/ar/what-happens-to-iqama-if-you-resign.html): الاستقالة لا تلغي إقامتك. مهلة 60 يومًا لنقل الخدمات عبر قوى أو الخروج النهائي، وكيف تتجنب بلاغ التغيّب «هروب» وتحفظ مكافأتك.
+- [الراتب غير مدفوع في السعودية؟ حقوقك والخطوات](https://www.saudiutilityhub.com/ar/salary-not-paid-saudi-arabia.html): تأخر راتبك؟ حقوقك في حماية الأجور، كيف تشتكي عبر قوى، النقل دون موافقة صاحب العمل، والمغادرة وفق المادة 81 مع مكافأة كاملة.
+- [الخروج النهائي أم الخروج والعودة؟ الفرق والرسوم](https://www.saudiutilityhub.com/ar/final-exit-vs-exit-reentry-visa.html): الفرق بين الخروج النهائي والخروج والعودة في السعودية: الرسوم والصلاحية وما يحدث لإقامتك، وما تسدده قبل السفر وهل هناك منع من العودة.
 
 ## Optional
 - [Sitemap](https://www.saudiutilityhub.com/sitemap.xml)
