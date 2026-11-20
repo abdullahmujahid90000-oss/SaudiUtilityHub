@@ -42,10 +42,10 @@ for title, slugs in GROUPS:
         out.append(f"- [{t}]({SITE}{s}.html)" + (f": {d}" if d else ""))
     out.append("")
 out += ["## Arabic (العربية)"]
-for s in ["ksa-eos-calculator","gosi-calculator","salary-calculator","iqama-expiry-calculator"]:
+for s in ["guides","ksa-eos-calculator","gosi-calculator","salary-calculator","iqama-expiry-calculator","notice-period-saudi-labour-law","iqama-renewal-fees","final-settlement-calculator","leave-calculator","overtime-calculator","exit-reentry-calculator","dependent-levy-calculator","what-happens-to-iqama-if-you-resign","salary-not-paid-saudi-arabia","final-exit-vs-exit-reentry-visa"]:
     try: t, d = meta("ar/" + s)
     except FileNotFoundError: continue
-    out.append(f"- [{t}]({SITE}ar/{s}.html)")
+    out.append(f"- [{t}]({SITE}ar/{s}.html)" + (f": {d}" if d else ""))
 out += ["", "## Optional", f"- [Sitemap]({SITE}sitemap.xml)", ""]
 open("llms.txt", "w", encoding="utf8").write("\n".join(out))
 print("llms.txt written,", len(out), "lines")
