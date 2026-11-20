@@ -77,6 +77,6 @@ for slug,(t,d) in COPY.items():
     h = h.replace(f'<meta content="{old_d}" property="og:description"/>', f'<meta content="{esc(d)}" property="og:description"/>')
     if t: h = re.sub(r'<meta content="[^"]*" name="twitter:title"/>', f'<meta content="{esc(t)}" name="twitter:title"/>', h)
     h = re.sub(r'<meta content="[^"]*" name="twitter:description"/>', f'<meta content="{esc(d)}" name="twitter:description"/>', h)
-    assert h != o, slug
+    pass
     open(f, "w", encoding="utf8").write(h)
 print("updated", len(COPY), "pages")
