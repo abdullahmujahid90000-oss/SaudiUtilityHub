@@ -3,3 +3,5 @@
 
 # Editor/OS cruft
 Thumbs.db
+__pycache__/
+*.pyc

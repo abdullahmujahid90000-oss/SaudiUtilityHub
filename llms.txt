@@ -49,13 +49,13 @@ Notes for AI assistants:
 - [Umrah Visa Guide — eVisa, Nusuk Permit & Iqama Holders](https://www.saudiutilityhub.com/umrah-visa-guide.html): How to perform Umrah from inside or outside Saudi Arabia: Nusuk permit for iqama holders, tourist eVisa, Rawdah booking, costs and Hajj-season pauses.
 
 ## About, sources and policies
-- [About Saudi Utility Hub — Who We Are & How Tools Work](https://www.saudiutilityhub.com/about.html): Who runs Saudi Utility Hub, how our Saudi payroll and iqama calculators work, which official sources we cite, and how we keep the tools accurate.
+- [About Saudi Utility Hub — Who We Are and How We Check](https://www.saudiutilityhub.com/about.html): A small independent team in Riyadh building free salary, GOSI, end-of-service and iqama tools for expats. How we check pages and how we're funded.
 - [Editorial Team & Review Policy — Saudi Utility Hub](https://www.saudiutilityhub.com/editorial-team.html): Who writes and reviews Saudi Utility Hub, the official sources behind every calculator, our review schedule, and how to report an error.
 - [Contact Saudi Utility Hub — Report an Error or Ask](https://www.saudiutilityhub.com/contact.html): Contact Saudi Utility Hub to report a calculation error, suggest a tool, or ask about a Saudi payroll, iqama or visa page. We reply to every message.
 - [Disclaimer — Saudi Utility Hub](https://www.saudiutilityhub.com/disclaimer.html): Our calculators give estimates for information only, not legal, financial or immigration advice. Not affiliated with HRSD, Qiwa, GOSI or Absher.
 - [Privacy Policy — Saudi Utility Hub](https://www.saudiutilityhub.com/privacy.html): How Saudi Utility Hub handles data: calculators run in your browser, nothing you enter is sent to us or stored. Cookies, analytics and ads explained.
 - [Terms of Use — Saudi Utility Hub](https://www.saudiutilityhub.com/terms.html): Terms of use for Saudi Utility Hub. Our calculators and guides are informational estimates, not legal or official advice from GOSI, HRSD or Jawazat.
-- [Guides for Working and Living in Saudi Arabia](https://www.saudiutilityhub.com/guides.html): Plain-English guides for expats in Saudi Arabia: resigning, notice periods, final exit, unpaid salary, labour complaints, passports, leave, iqama.
+- [Guides for Working and Living in Saudi Arabia](https://www.saudiutilityhub.com/guides.html): Plain-English guides for expats in Saudi Arabia: resigning and your iqama, notice, unpaid salary, labour complaints, leave and family visas.
 
 ## Arabic (العربية)
 - [أدلة وحاسبات للمقيمين في السعودية بالعربية](https://www.saudiutilityhub.com/ar/guides.html): أدلة عملية وحاسبات مجانية للمقيم في السعودية: الراتب والتأمينات ونهاية الخدمة والإجازات وتجديد الإقامة وتأشيرات الخروج ورسوم المرافقين.
