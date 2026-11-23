@@ -65,7 +65,7 @@ It should be warm, specific and easy to read, while staying accurate. That is ho
 | 11 | company-closed-end-of-service-saudi-arabia.html, sick-leave-maternity-leave-saudi-arabia.html, renew-iqama-with-expired-passport.html | ☑ 2026-11-20 |
 | 12 | about.html, guides.html, ar/index.html | ☑ 2026-11-21 |
 | 13 | ar/ksa-eos-calculator.html, ar/salary-calculator.html, ar/gosi-calculator.html | ☑ 2026-11-22 |
-| 14 | ar/iqama-expiry-calculator.html, final full-site check | ☐ |
+| 14 | ar/iqama-expiry-calculator.html, final full-site check | ☑ 2026-11-23 |
 
 **Do not re-apply to AdSense** until every row is done **and** about 2 weeks have passed so Google can
 re-crawl. That puts the earliest re-application at the start of December 2026.
